@@ -1,8 +1,8 @@
 import './index.css'
-import jpg from './images/image.jpg'
-
-document.addEventListener('DOMContentLoaded', () => {
-  const image = new Image()
-  image.src = jpg
-  document.querySelector('.images').appendChild(image)
-})
+import './images/Q_Logo.svg';
+import './images/arrow-right.svg';
+import './images/chevron-right.svg';
+import './images/search.svg';
+import './images/telegram.svg';
+import './images/telegramDark.svg';
+import './images/arrow-top.svg';

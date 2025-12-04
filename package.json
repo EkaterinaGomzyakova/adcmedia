@@ -1,6 +1,6 @@
 {
   "name": "static-site-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Zakhar Day",
   "license": "MIT",
   "repository": {
@@ -17,30 +17,35 @@
     "build": "webpack --config webpack.prod.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "babel-loader": "^8.2.3",
-    "css-loader": "^5.2.4",
-    "css-minimizer-webpack-plugin": "^2.0.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "dotenv-webpack": "^8.1.1",
     "file-loader": "^6.2.0",
-    "html-loader": "^4.2.0",
+    "html-loader": "^5.1.0",
     "html-webpack-partials-plugin": "^0.8.0",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^2.6.1",
-    "postcss": "^8.4.14",
-    "postcss-loader": "^7.0.0",
-    "postcss-preset-env": "^7.7.0",
-    "sass": "^1.32.12",
-    "sass-loader": "^11.0.1",
-    "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^4.11.0",
-    "webpack-merge": "^5.7.3"
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.1.1",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.2.4",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "classnames": "^2.5.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "reactflow": "^11.11.4"
   }
 }

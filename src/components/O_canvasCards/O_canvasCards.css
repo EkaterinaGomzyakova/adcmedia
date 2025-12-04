@@ -1,0 +1,112 @@
+.O_canvasCards {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  position: relative;
+}
+
+.flow-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading,
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 16px;
+  padding: 40px;
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e0e0e0;
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error h3 {
+  color: #d32f2f;
+}
+
+/* Стили для нод ReactFlow с M_userCard */
+.react-flow__node {
+  cursor: grab;
+  /* Ensure nodes render above edges so cards are never covered by connection lines */
+  z-index: 1000 !important;
+}
+
+.react-flow__node:active {
+  cursor: grabbing;
+}
+
+.react-flow__node.selected {
+  outline: 2px solid var(--green);
+}
+
+/* Убираем фон и границы дефолтных нод */
+.react-flow__node-userCard {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.react-flow__node-userCard > div {
+  pointer-events: all !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Стили для связей (edges) */
+.react-flow__edges {
+  /* Place edges beneath nodes so lines don't cover cards */
+  z-index: 0 !important;
+  /* Let pointer events pass through edges to nodes beneath */
+  pointer-events: none !important;
+}
+
+.react-flow__edge {
+  /* Individual edge container should not intercept pointer events */
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+.react-flow__edge-path {
+  /* Solid neutral gray connecting lines per request */
+  stroke: #8E8E8E !important;
+  stroke-width: 2.5 !important;
+  stroke-linecap: round !important;
+  fill: none !important;
+  /* Don't block mouse events — nodes should receive them */
+  pointer-events: none !important;
+}
+
+/* Disable the animated dashed style so edges remain solid */
+.react-flow__edge.animated .react-flow__edge-path {
+  stroke-dasharray: none !important;
+  animation: none !important;
+}
+
+@keyframes dashdraw {
+  to { stroke-dashoffset: -12; }
+}
+
+/* Стрелки для связей */
+.react-flow__arrowhead {
+  fill: #8E8E8E !important;
+}

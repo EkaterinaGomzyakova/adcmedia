@@ -1,0 +1,5 @@
+.C_navigationLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

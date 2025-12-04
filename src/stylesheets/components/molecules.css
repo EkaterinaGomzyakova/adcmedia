@@ -1,0 +1,45 @@
+.M_Icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.52vw;
+    width: 64px;
+}
+
+.M_Menu {
+    display: flex;
+    width: 394px;
+    height: 54px;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 900px;
+    background: var(--dark_gray);
+}
+
+.M_telegramCard {
+    display: flex;
+    width: 463px;
+    height: 172px;
+    padding: 24px;
+    gap: 12px;
+    border-radius: 8px;
+    background: var(--dark_gray);
+}
+
+.M_userCard {
+    display: flex;
+    width: 300px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background: var(--dark_gray);
+    transition: all 0.3s ease;
+}
+
+.M_userCard:hover {
+    border: 1px solid var(--green);
+}

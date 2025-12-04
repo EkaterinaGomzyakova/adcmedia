@@ -1,0 +1,23 @@
+.Q_Lightning{
+    position: absolute;
+    top: -1.72vw;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 60.94vw;
+    height: 4.11vw;
+    border-radius: 60.94vw;
+    background: rgba(255, 255, 255, 0.60);
+    filter: blur(5.21vw);
+}
+
+.Q_iconImage {
+    width: 24px;
+    height: 24px;
+}
+
+.Q_pictureUserCard {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}

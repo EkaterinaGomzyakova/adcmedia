@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  background-image: linear-gradient(to right, #2D2D2D 1px, transparent 1px), linear-gradient(to bottom, #2D2D2D 1px, transparent 1px);
+  background-size: 96px 96px;
+  background-position: center center;
+}
+
+p {
+  font-family: 'SuisseIntl';
+  color: var(--almost_white);
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.34px;
+  font-size: 17px;
+}

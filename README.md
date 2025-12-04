@@ -1,12 +1,4 @@
-# Static Site Boilerplate
+# ADC Media
 
-## How to start
+## Медиа про карьерные достижения студентов цифрового блока НИУ ВШЭ
 
-Clone the repository, install packages, start
-
-```
-git clone https://github.com/ZakharDay/static-site-boilerplate.git
-cd static-site-boilerplate
-yarn
-yarn start
-```

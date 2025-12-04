@@ -1,0 +1,63 @@
+.A_Icon {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 46.88vw;
+    background: var(--dark_gray);
+}
+
+.A_mainItemMenu {
+    color: var(--almost_white);
+}
+
+.A_secondItemMenu {
+    color: var(--gray)
+}
+
+.A_telegramIcon {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 900px;
+    background: var(--green);
+    flex-shrink: 0;
+}
+
+.A_greyText {
+    color: var(--gray);
+}
+
+.A_navigationLink {
+    font-family: "Suisse Intl";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.34px;
+    color: #FFF;
+}
+
+.A_buttonTop {
+    padding: 15px;
+    border-radius: 100%;
+    background: var(--almost_white);
+    flex-shrink: 0;
+}
+
+.A_descriptionDote {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 1px solid var(--green);
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.A_descriptionDote--filled {
+    background: var(--green);
+}

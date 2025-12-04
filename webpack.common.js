@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -9,7 +10,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx'
+    page: './src/page.jsx',
+    interview: './src/interview.jsx'
   },
   output: {
     filename: '[name].js',
@@ -24,13 +26,12 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
       {
-        test: /\.(sa|sc|c)ss$/i,
+        test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -41,8 +42,7 @@ module.exports = {
                 plugins: [['postcss-preset-env']]
               }
             }
-          },
-          'sass-loader'
+          }
         ]
       },
       {
@@ -50,29 +50,31 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        resourceQuery: /raw/,
-        type: 'asset/source'
-      },
-      {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]'
+          filename: 'images/[name][ext]'
         }
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
   },
   plugins: [
+    new Dotenv({
+      systemvars: true,
+      safe: false, // Отключаем проверку .env.example
+      silent: false, // Показываем ошибки для отладки
+      defaults: false
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css'
     }),
 
     // Landing page
@@ -88,9 +90,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/pages/interview.html',
+      filename: './pages/interview.html',
+      chunks: ['interview']
     }),
 
     // Partials
@@ -100,10 +102,27 @@ module.exports = {
         location: 'analytics',
         template_filename: '*',
         priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/main_menu.html'),
+        location: 'main-menu',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footer-custom',
+        template_filename: '*',
+        priority: 'replace'
       }
     ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
+  },
+  resolve: {
+    fallback: {
+      stream: require.resolve('stream-browserify')
+    }
   }
 }
