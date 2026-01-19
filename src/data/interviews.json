@@ -1,0 +1,75 @@
+{
+  "interviews": [
+    {
+      "id": "interview-1",
+      "slug": "example-interview-1",
+      "title": "Пример интервью: Дизайн в 2025",
+      "description": "Разбираем ключевые тренды дизайна с экспертом",
+      "author": {
+        "name": "Иван Петров",
+        "image": "images/interviews/author-1.jpg",
+        "bio": "Senior Product Designer в Яндексе"
+      },
+      "meta": {
+        "publishedDate": "2025-01-10",
+        "readingTime": "15 мин",
+        "tags": ["дизайн", "UX", "тренды"]
+      },
+      "content": {
+        "type": "video",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "transcript": "Полный текст интервью будет здесь. Это пример того, как будет выглядеть транскрипция видео интервью.",
+        "highlights": [
+          "Ключевой тренд: минимализм возвращается",
+          "Важность исследований перед дизайном",
+          "Роль AI в современном дизайне"
+        ]
+      },
+      "preview": {
+        "image": "images/interviews/interview-1-cover.jpg",
+        "excerpt": "Обсуждаем главные тренды дизайна 2025 года и роль AI в творческом процессе"
+      },
+      "seo": {
+        "metaTitle": "Пример интервью: Дизайн в 2025 | ADC Media",
+        "metaDescription": "Разбираем ключевые тренды дизайна с экспертом Иваном Петровым",
+        "ogImage": "images/og/interview-1.jpg",
+        "keywords": ["дизайн", "интервью", "UX", "тренды 2025"]
+      }
+    },
+    {
+      "id": "interview-2",
+      "slug": "example-interview-2",
+      "title": "Интервью про UX исследования",
+      "description": "Как правильно проводить UX исследования",
+      "author": {
+        "name": "Мария Сидорова",
+        "image": "images/interviews/author-2.jpg",
+        "bio": "UX Researcher в Тинькофф"
+      },
+      "meta": {
+        "publishedDate": "2025-01-08",
+        "readingTime": "20 мин",
+        "tags": ["UX", "исследования", "методология"]
+      },
+      "content": {
+        "type": "text",
+        "transcript": "Это текстовое интервью. Здесь будет полный текст беседы о UX исследованиях.",
+        "highlights": [
+          "Главные методы UX исследований",
+          "Как выбрать правильную методологию",
+          "Частые ошибки в исследованиях"
+        ]
+      },
+      "preview": {
+        "image": "images/interviews/interview-2-cover.jpg",
+        "excerpt": "Узнайте, как правильно проводить UX исследования и избегать типичных ошибок"
+      },
+      "seo": {
+        "metaTitle": "Интервью про UX исследования | ADC Media",
+        "metaDescription": "Как правильно проводить UX исследования - интервью с Марией Сидоровой",
+        "ogImage": "images/og/interview-2.jpg",
+        "keywords": ["UX исследования", "методология", "интервью"]
+      }
+    }
+  ]
+}

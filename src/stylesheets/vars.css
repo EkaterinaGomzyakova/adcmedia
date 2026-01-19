@@ -1,0 +1,13 @@
+:root {
+  --backgroundColor: #1F1F1F;
+  --dark_gray: #2D2D2D;
+  --almost_white: #FDFDFD;
+  --gray: #8E8E8E;
+  --green:#78FF3A;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --backgroundColor: white;
+  }
+} */

@@ -1,0 +1,39 @@
+.W_menuItems {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.W_allFooterInfoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.W_telegramInfoTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.W_navigationTexts {
+    display: flex;
+    width: 256px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.W_footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.W_descriptionInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+

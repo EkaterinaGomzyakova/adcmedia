@@ -1,0 +1,24 @@
+.O_mainWrapperLayout {
+    padding: 1.56vw 7.4vw 4.01vw 7.4vw;
+}
+
+.O_Menu, .O_Footer {
+    display: flex;
+    width: 85.21vw;
+    max-width: 1636px;
+    margin: 0 auto;
+}
+
+.O_Menu { 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.O_Footer {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.O_canvasCards {
+    height: 1283px;
+}
