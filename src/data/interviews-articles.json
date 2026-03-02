@@ -1,0 +1,13 @@
+{
+  "articles": [
+    {
+      "slug": "example-article",
+      "seo": {
+        "metaTitle": "Пример статьи | ADC Media",
+        "metaDescription": "Пример статьи для интервью",
+        "ogImage": "images/og/example-article.jpg",
+        "keywords": ["статья", "пример"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tags": [
+    {
+      "id": "corporation",
+      "name": "Корпорация"
+    },
+    {
+      "id": "agency",
+      "name": "Агентство"
+    },
+    {
+      "id": "startup",
+      "name": "Стартап"
+    },
+    {
+      "id": "freelance",
+      "name": "Фриланс"
+    },
+    {
+      "id": "pet-project",
+      "name": "Пет-проект"
+    },
+    {
+      "id": "teaching",
+      "name": "Преподавание"
+    },
+    {
+      "id": "product",
+      "name": "Продукт"
+    },
+    {
+      "id": "digital",
+      "name": "Диджитал"
+    },
+    {
+      "id": "networking",
+      "name": "Нетворкинг"
+    },
+    {
+      "id": "portfolio",
+      "name": "Портфолио"
+    },
+    {
+      "id": "resume",
+      "name": "Резюме"
+    },
+    {
+      "id": "interview",
+      "name": "Собеседование"
+    }
+  ]
+}
