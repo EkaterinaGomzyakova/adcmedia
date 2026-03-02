@@ -1,60 +1,44 @@
 import '../../index.css'
+import '../utils/theme.js'
+import '../utils/scroll.js'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import usefulData from '../../data/useful.json'
+import Article from '../components/article/Article.jsx'
 
-// Получить ID из hash
-function getArticleIdFromHash() {
-  const hash = window.location.hash.replace('#', '')
-  return hash || 'useful-1'
+// Получить slug из pathname
+function getArticleSlugFromPath() {
+  const pathname = window.location.pathname
+  const parts = pathname.split('/')
+  const slug = parts[parts.length - 1].replace('.html', '')
+
+  // Если это базовый путь /interviews/article.html, используем дефолтное значение
+  if (slug === 'article' || slug === 'interviews' || slug === '') {
+    return 'article-example'
+  }
+
+  return slug
 }
 
-// Обновить метаданные
-function updateMetadata(article) {
-  document.getElementById('page-title').textContent = article.seo.metaTitle
-  document
-    .getElementById('meta-description')
-    .setAttribute('content', article.seo.metaDescription)
-  document
-    .getElementById('meta-keywords')
-    .setAttribute('content', article.seo.keywords.join(', '))
+import articleExampleData from '../../data/article-example.json'
 
-  // Open Graph
-  document
-    .getElementById('og-title')
-    .setAttribute('content', article.seo.metaTitle)
-  document
-    .getElementById('og-description')
-    .setAttribute('content', article.seo.metaDescription)
-  document
-    .getElementById('og-url')
-    .setAttribute(
-      'content',
-      `https://media.adc.ac/useful/article.html#${article.slug}`
-    )
-  document
-    .getElementById('og-image')
-    .setAttribute('content', `https://media.adc.ac${article.seo.ogImage}`)
+// Маппинг slug -> данные статьи
+const articlesMap = {
+  'article-example': articleExampleData
 }
 
 function loadArticle() {
-  const articleId = getArticleIdFromHash()
-  const article = usefulData.useful.find(
-    (i) => i.id === articleId || i.slug === articleId
-  )
+  const slug = getArticleSlugFromPath()
+  const articleData = articlesMap[slug]
 
-  if (article) {
-    updateMetadata(article)
-
+  if (articleData) {
     const container = document.getElementById('article-root')
     if (container) {
       const root = createRoot(container)
-      root.render(<div>Статья</div>)
+      root.render(<Article data={articleData} />)
     }
   } else {
-    console.error('Article not found:', articleId)
+    console.error('Article not found:', slug)
   }
 }
 
 document.addEventListener('DOMContentLoaded', loadArticle)
-window.addEventListener('hashchange', loadArticle)

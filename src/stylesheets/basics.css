@@ -3,17 +3,105 @@
 }
 
 body {
-  background-color: var(--backgroundColor);
-  background-image: linear-gradient(to right, #2D2D2D 1px, transparent 1px), linear-gradient(to bottom, #2D2D2D 1px, transparent 1px);
-  background-size: 96px 96px;
-  background-position: center center;
+  font-family: 'RF Dewi';
+  display: flex;
+  padding: var(--2xl, 40px) 142px;
+  flex-direction: column;
+  gap: var(--5xl, 80px);
+  background: var(--body-text-background);
+  color: var(--dark-button-text, #fdfdfd);
+}
+
+a {
+  color: var(--dark-button-text, #fdfdfd);
 }
 
 p {
-  font-family: 'SuisseIntl';
-  color: var(--almost_white);
   font-style: normal;
   line-height: 140%;
   letter-spacing: -0.34px;
-  font-size: 17px;
+  font-size: var(--paragraph, 17px);
+}
+
+h1 {
+  font-size: var(--heading-1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  font-size: var(--heading-2, 42px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1.68px;
+}
+
+h3 {
+  font-size: var(--heading-3);
+  font-weight: 400;
+  line-height: 130%;
+}
+
+button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.display {
+  font-size: var(--display);
+  line-height: 110%;
+  font-family: 'RF Dewi';
+  font-weight: semibold;
+}
+.heading1 {
+  font-size: var(--heading-1);
+  line-height: 110%;
+  font-family: 'RF Dewi';
+  font-weight: semibold;
+}
+.heading2 {
+  font-size: var(--heading-2);
+  line-height: 110%;
+  font-family: 'RF Dewi';
+  font-weight: semibold;
+}
+.heading3 {
+  font-size: var(--heading-3);
+  line-height: 130%;
+  font-family: 'RF Dewi';
+  font-weight: semibold;
+}
+.paragraphLarge {
+  font-size: var(--paragraph-large);
+  line-height: 145%;
+  font-family: 'RF Dewi';
+  font-weight: regular;
+}
+.paragraph {
+  font-size: var(--paragraph);
+  line-height: 140%;
+  font-family: 'RF Dewi';
+  font-weight: regular;
+}
+.tags {
+  font-size: var(--tags);
+  line-height: 100%;
+  font-family: 'Geist Mono';
+  font-weight: regular;
+}
+.button {
+  font-size: var(--button);
+  line-height: 100%;
+  font-family: 'Geist Mono';
+  font-weight: regular;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    padding: var(--2xl, 40px) 50px;
+  }
 }

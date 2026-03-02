@@ -1,28 +1,231 @@
-.M_Icons {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.52vw;
-  width: 64px;
-}
-
 .M_Menu {
   display: flex;
-  width: 394px;
-  height: 54px;
-  padding: 24px;
-  justify-content: space-between;
+  padding: var(--sm) var(--lg);
+  justify-content: center;
   align-items: center;
-  border-radius: 900px;
-  background: var(--dark_gray);
+  gap: var(--xl);
+  border-radius: 8px;
+  background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
+  backdrop-filter: blur(50px);
 }
 
-.M_telegramCard {
+.M_ButtonsNavbar {
   display: flex;
-  width: 463px;
-  height: 172px;
-  padding: 24px;
-  gap: 12px;
-  border-radius: 8px;
-  background: var(--dark_gray);
+  align-items: center;
+  gap: var(--lg, 24px);
+}
+
+.M_ParagraphTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs, 8px);
+
+  > p:nth-child(1) {
+    color: var(--medium-text, #8e8e8e);
+  }
+
+  > p:nth-child(2) {
+    color: var(--dark-button-text, #fdfdfd);
+  }
+}
+
+.M_FooterMenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm, 12px);
+}
+
+.M_FooterBottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.M_ArticleTextPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 670px;
+  gap: var(--2xl, 40px);
+  margin: 0 auto;
+}
+
+.M_TagsGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--md, 16px);
+}
+
+.M_Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--md, 16px);
+}
+
+.M_PaginationButton {
+  display: flex;
+  width: var(--3xl, 48px);
+  height: var(--3xl, 48px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: var(--cards-background, #191919);
+  color: var(--dark-button-text, #fdfdfd);
+  font-family: 'Geist Mono';
+  font-size: var(--tags, 17px);
+}
+
+.M_PaginationButton.active {
+  background: var(--dark-button-text, #fdfdfd);
+  color: var(--light-button-text, #191919);
+}
+
+.M_HeroContainer {
+  display: flex;
+  width: 258px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sm, 12px);
+}
+
+.M_ImageWithCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lg, 24px);
+  width: 946px;
+
+  > p {
+    font-family: 'Geist Mono';
+  }
+}
+
+.M_Quote {
+  display: flex;
+  width: 946px;
+  padding: var(--xl, 32px);
+  margin-top: var(--xs, 8px);
+  flex-direction: column;
+  gap: var(--4xl, 64px);
+  border-radius: 12px;
+  background: var(--cards-background, #191919);
+
+  > h3 {
+    color: var(--button-primary, #3cc68b);
+  }
+}
+
+.M_NumberQuestion {
+  display: flex;
+  width: var(--3xl, 48px);
+  height: var(--3xl, 48px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: var(--dark-button-text, #fdfdfd);
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+
+  > p {
+    font-family: 'Geist Mono';
+    color: var(--light-button-text, #191919);
+  }
+
+  > svg {
+    position: absolute;
+    display: none !important;
+  }
+}
+
+.M_NumberQuestion:hover {
+  > p {
+    display: none;
+  }
+
+  > .Q_IconDark {
+    display: block !important;
+  }
+
+  > .Q_IconLight {
+    display: block !important;
+  }
+}
+
+[data-theme='light'] .M_NumberQuestion:hover > .Q_IconDark {
+  display: none !important;
+}
+
+.M_NumberQuestion:hover > .Q_IconLight {
+  display: none !important;
+}
+
+[data-theme='light'] .M_NumberQuestion:hover > .Q_IconLight {
+  display: block !important;
+}
+
+.M_Paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg, 24px);
+}
+
+.M_DividerLine {
+  width: 946px;
+}
+
+.M_TextWithIcon {
+  display: flex;
+  align-items: center;
+  gap: var(--sm, 12px);
+
+  > p:hover {
+    color: var(--medium-text, #8e8e8e);
+  }
+}
+
+.M_MenuItem {
+  display: flex;
+  align-items: center;
+  gap: var(--lg, 24px);
+}
+
+.M_MenuItem.active {
+  gap: var(--md, 16px);
+
+  .Q_ContentMark {
+    width: 20px;
+    background: var(--dark-button-text, #fdfdfd);
+  }
+
+  > a {
+    color: var(--dark-button-text, #fdfdfd);
+  }
+}
+
+.M_AuthorInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--sm, 12px);
+}
+
+.M_UsefulMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--lg, 24px);
+  color: var(--medium-text, #8e8e8e);
+}
+
+@media screen and (max-width: 768px) {
+  .M_Menu {
+    display: none;
+  }
+
+  .M_ArticleTextPreview {
+    width: 100%;
+  }
 }

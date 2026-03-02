@@ -10,28 +10,68 @@ import ReactFlow, {
 } from 'reactflow'
 import 'reactflow/dist/style.css'
 import './O_canvasCards.css'
-
-const AIRTABLE_CONFIG = {
-  apiKey: process.env.AIRTABLE_API_KEY,
-  baseId: process.env.AIRTABLE_BASE_ID || 'appJAr9KZG9QeklE8',
-  tableName: process.env.AIRTABLE_TABLE_NAME || 'Collabs',
-  view: 'Grid%20view'
-}
+import graphData from '../../../data/graph-authors.json'
 
 const UserCardNode = ({ data }) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <div className="O_UserCard">
       <Handle
         type="target"
         position={Position.Left}
         id="target"
-        style={{ background: 'transparent' }}
+        style={{ background: 'transparent', border: 'none' }}
       />
+
+      <img
+        src={data.image}
+        alt={data.label}
+        style={{
+          width: '200px',
+          height: '200px',
+          borderRadius: '50%',
+          objectFit: 'cover',
+          flexShrink: 0
+        }}
+      />
+
+      <div
+        style={{
+          display: 'flex',
+          gap: '16px',
+          alignItems: 'flex-start',
+          width: '100%'
+        }}
+      >
+        <div
+          style={{
+            width: '16px',
+            height: '16px',
+            background: 'var(--button-primary, #3cc68b)',
+            borderRadius: '50%',
+            flexShrink: 0
+          }}
+        />
+        <p
+          style={{
+            fontFamily: 'Suisse Intl',
+            fontSize: '17px',
+            fontWeight: 400,
+            lineHeight: '1.4',
+            letterSpacing: '-0.34px',
+            color: 'var(--dark-button-text, #fdfdfd)',
+            margin: 0,
+            flex: 1
+          }}
+        >
+          {data.label}
+        </p>
+      </div>
+
       <Handle
         type="source"
         position={Position.Right}
         id="source"
-        style={{ background: 'transparent' }}
+        style={{ background: 'transparent', border: 'none' }}
       />
     </div>
   )
@@ -115,73 +155,10 @@ const O_canvasCards = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  const fetchAirtableData = async () => {
-    try {
-      setLoading(true)
-      setError(null)
-
-      const url = `https://api.airtable.com/v0/${AIRTABLE_CONFIG.baseId}/${AIRTABLE_CONFIG.tableName}?view=${AIRTABLE_CONFIG.view}`
-
-      const response = await fetch(url, {
-        headers: {
-          Authorization: `Bearer ${AIRTABLE_CONFIG.apiKey}`,
-          'Content-Type': 'application/json'
-        }
-      })
-
-      if (!response.ok) {
-        if (response.status === 403) {
-          throw new Error(
-            'Ошибка доступа 403. Создайте новый токен: https://airtable.com/create/tokens'
-          )
-        }
-        throw new Error(`Airtable API error: ${response.status}`)
-      }
-
-      const data = await response.json()
-      return data.records
-    } catch (err) {
-      setError(err.message)
-      console.error('Error fetching Airtable data:', err)
-      return []
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  const processAirtableData = (records) => {
-    const authorsMap = {}
-    const processedEdges = []
-
-    records.forEach((record) => {
-      const fields = record.fields
-
-      if (fields.Author1_ID && fields.Author1_Name) {
-        if (!authorsMap[fields.Author1_ID]) {
-          authorsMap[fields.Author1_ID] = {
-            id: fields.Author1_ID,
-            name: fields.Author1_Name,
-            image:
-              fields.Author1_Image?.[0]?.url ||
-              'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="150" height="150"%3E%3Crect fill="%23ddd" width="150" height="150"/%3E%3Ctext fill="%23999" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3E150x150%3C/text%3E%3C/svg%3E'
-          }
-        }
-      }
-
-      if (fields.Author2_ID && fields.Author2_Name) {
-        if (!authorsMap[fields.Author2_ID]) {
-          authorsMap[fields.Author2_ID] = {
-            id: fields.Author2_ID,
-            name: fields.Author2_Name,
-            image:
-              fields.Author2_Image?.[0]?.url ||
-              'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="150" height="150"%3E%3Crect fill="%23ddd" width="150" height="150"/%3E%3Ctext fill="%23999" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3E150x150%3C/text%3E%3C/svg%3E'
-          }
-        }
-      }
-    })
-
-    const authorsArray = Object.values(authorsMap).slice(0, 20)
+  const processGraphData = () => {
+    const authorsArray = graphData.authors.slice(0, 20)
+    console.log('Loaded authors:', authorsArray.length)
+    console.log('First author:', authorsArray[0])
     const pseudoHash = (s) => {
       let h = 2166136261 >>> 0
       for (let i = 0; i < s.length; i++) {
@@ -286,29 +263,19 @@ const O_canvasCards = () => {
       }
     }
 
-    const selectedAuthorIds = new Set(authorsArray.map((a) => String(a.id)))
-
-    records.forEach((record, index) => {
-      const fields = record.fields
-      if (fields.Author1_ID && fields.Author2_ID) {
-        // Проверяем, что оба автора есть в нашем списке из 10 (сравниваем как строки)
-        if (
-          selectedAuthorIds.has(String(fields.Author1_ID)) &&
-          selectedAuthorIds.has(String(fields.Author2_ID))
-        ) {
-          const labelText =
-            fields.Author1_Name && fields.Author2_Name
-              ? `${fields.Author1_Name} → ${fields.Author2_Name}`
-              : `${fields.Author1_ID} → ${fields.Author2_ID}`
-
+    // Create edges based on connections
+    const processedEdges = []
+    authorsArray.forEach((author) => {
+      if (author.connections && Array.isArray(author.connections)) {
+        author.connections.forEach((targetId) => {
           processedEdges.push({
-            id: `e${index}-${fields.Author1_ID}-${fields.Author2_ID}`,
-            source: String(fields.Author1_ID),
-            target: String(fields.Author2_ID),
+            id: `${author.id}-${targetId}`,
+            source: String(author.id),
+            target: String(targetId),
             type: 'curvy',
             animated: false
           })
-        }
+        })
       }
     })
 
@@ -321,18 +288,24 @@ const O_canvasCards = () => {
       return copy
     })
 
-    setNodes(processedNodes)
-    setEdges(sanitizedEdges)
+    return { nodes: processedNodes, edges: sanitizedEdges }
   }
 
   useEffect(() => {
-    fetchAirtableData().then((records) => {
-      if (records.length > 0) {
-        processAirtableData(records)
-      } else {
-        console.warn('No records received from Airtable')
-      }
-    })
+    try {
+      setLoading(true)
+      setError(null)
+
+      const { nodes: processedNodes, edges: processedEdges } =
+        processGraphData()
+      setNodes(processedNodes)
+      setEdges(processedEdges)
+    } catch (err) {
+      setError(err.message)
+      console.error('Error processing graph data:', err)
+    } finally {
+      setLoading(false)
+    }
   }, [])
 
   if (error) {

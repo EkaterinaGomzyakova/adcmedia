@@ -1,13 +1,123 @@
 :root {
-  --backgroundColor: #1F1F1F;
-  --dark_gray: #2D2D2D;
-  --almost_white: #FDFDFD;
-  --gray: #8E8E8E;
-  --green:#78FF3A;
+  --button-primary: #3cc68b;
+  --light-button-text: #191919;
+  --dark-button-text: #fdfdfd;
+  --medium-text: #8e8e8e;
+  --menu-transparent: rgba(34, 34, 34, 0.4);
+  --cards-background: #191919;
+  --body-text-background: #121212;
+
+  /* Value */
+  --zero: 0px;
+  --xxs: 4px;
+  --xs: 8px;
+  --sm: 12px;
+  --md: 16px;
+  --lg: 24px;
+  --xl: 32px;
+  --2xl: 40px;
+  --3xl: 48px;
+  --4xl: 64px;
+  --5xl: 80px;
+  --6xl: 96px;
+  --7xl: 128px;
+  --8xl: 160px;
+
+  /* large-desktop */
+  --image-article-width: 808px;
+  --image-article-height: 500px;
+  --footer-column-width: 256px;
+  --footer-telegram-card-width: 463px;
+  --display: 180px;
+  --heading-1: 64px;
+  --heading-2: 42px;
+  --heading-3: 32px;
+  --paragraph-large: 24px;
+  --paragraph: 17px;
+  --tags: 17px;
+  --button: 14px;
+
+  @media screen and (max-width: 1440px) {
+    --image-article-width: 728px;
+    --image-article-height: 450px;
+    --footer-column-width: 252px;
+    --footer-telegram-card-width: 456px;
+    --display: 180px;
+    --heading-1: 64px;
+    --heading-2: 42px;
+    --heading-3: 32px;
+    --paragraph-large: 24px;
+    --paragraph: 17px;
+    --tags: 17px;
+    --button: 14px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    --image-article-width: 568px;
+    --image-article-height: 352px;
+    --footer-column-width: 198px;
+    --footer-telegram-card-width: 420px;
+    --display: 140px;
+    --heading-1: 54px;
+    --heading-2: 36px;
+    --heading-3: 28px;
+    --paragraph-large: 22px;
+    --paragraph: 16px;
+    --tags: 16px;
+    --button: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    --image-article-width: 698px;
+    --image-article-height: 432px;
+    --footer-column-width: 194px;
+    --footer-telegram-card-width: 698px;
+    --display: 140px;
+    --heading-1: 54px;
+    --heading-2: 36px;
+    --heading-3: 28px;
+    --paragraph-large: 22px;
+    --paragraph: 16px;
+    --tags: 16px;
+    --button: 14px;
+  }
+
+  @media screen and (max-width: 440px) {
+    --image-article-width: 400px;
+    --image-article-height: 248px;
+    --footer-column-width: 200px;
+    --footer-telegram-card-width: 400px;
+    --display: 96px;
+    --heading-1: 32px;
+    --heading-2: 24px;
+    --heading-3: 18px;
+    --paragraph-large: 15px;
+    --paragraph: 15px;
+    --tags: 15px;
+    --button: 14px;
+  }
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --backgroundColor: white;
+/* Light theme */
+[data-theme='light'] {
+  --button-primary: #3cc68b;
+  --light-button-text: #fdfdfd;
+  --dark-button-text: #191919;
+  --medium-text: #8e8e8e;
+  --menu-transparent: rgba(253, 253, 253, 0.6);
+  --cards-background: #fdfdfd;
+  --body-text-background: #f1eff1;
+}
+
+/* Auto-detect system theme preference */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --button-primary: #3cc68b;
+    --light-button-text: #fdfdfd;
+    --dark-button-text: #191919;
+    --medium-text: #8e8e8e;
+    --menu-transparent: rgba(253, 253, 253, 0.6);
+    --cards-background: #fdfdfd;
+    --body-text-background: #f1eff1;
   }
-} */
+}

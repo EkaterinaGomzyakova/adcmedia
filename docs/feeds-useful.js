@@ -16646,17 +16646,859 @@ if (true) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(540);
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(338);
 
+;// ./src/javascript/utils/theme.js
+// Theme toggle functionality
+var THEME_KEY = 'adc-media-theme';
+var THEMES = {
+  DARK: 'dark',
+  LIGHT: 'light'
+};
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var container = document.getElementById('useful-feed-root');
-  if (container) {
-    var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);
-    root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u041F\u043E\u043B\u0435\u0437\u043D\u043E\u0441\u0442\u0438"));
+// Get saved theme from localStorage or system preference
+function getSavedTheme() {
+  var savedTheme = localStorage.getItem(THEME_KEY);
+  if (savedTheme) {
+    return savedTheme;
   }
-});
+
+  // Check system preference
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    return THEMES.LIGHT;
+  }
+  return THEMES.DARK;
+}
+
+// Apply theme to document
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem(THEME_KEY, theme);
+}
+
+// Toggle between themes
+function toggleTheme() {
+  var currentTheme = document.documentElement.getAttribute('data-theme') || THEMES.DARK;
+  var newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
+  applyTheme(newTheme);
+  return newTheme;
+}
+
+// Initialize theme on page load
+function initTheme() {
+  var theme = getSavedTheme();
+  applyTheme(theme);
+}
+
+// Initialize theme toggle button
+function initThemeToggle() {
+  var themeToggleButton = document.getElementById('theme-toggle');
+  if (themeToggleButton) {
+    themeToggleButton.addEventListener('click', function () {
+      toggleTheme();
+    });
+  }
+}
+
+// Auto-initialize theme when DOM is loaded
+if (typeof document !== 'undefined') {
+  // Apply theme immediately to prevent flash
+  initTheme();
+
+  // Initialize toggle button when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
+}
+;// ./src/javascript/utils/scroll.js
+function initScrollToTop() {
+  var scrollButton = document.getElementById('scroll-to-top');
+  if (scrollButton) {
+    scrollButton.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+}
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollToTop);
+  } else {
+    initScrollToTop();
+  }
+}
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(540);
+// EXTERNAL MODULE: ./node_modules/react-dom/client.js
+var client = __webpack_require__(338);
+;// ./src/javascript/components/article/UsefulHero.jsx
+
+var UsefulHero = function UsefulHero(_ref) {
+  var hero = _ref.hero;
+  var title = hero.title,
+    author = hero.author,
+    meta = hero.meta,
+    images = hero.images;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "SO_UsefulHero"
+  }, images && images.cover1 && /*#__PURE__*/react.createElement("img", {
+    src: images.cover1,
+    alt: title,
+    className: "Q_UsefulBanner"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "O_UsefulHeadingContent"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "M_AuthorInfo"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: author.avatar,
+    alt: author.name,
+    className: "Q_HeroImage"
+  }), /*#__PURE__*/react.createElement("p", null, author.name)), /*#__PURE__*/react.createElement("h1", null, title), /*#__PURE__*/react.createElement("div", {
+    className: "M_UsefulMeta"
+  }, meta.date && /*#__PURE__*/react.createElement("div", {
+    className: "A_MetaItem"
+  }, /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, /*#__PURE__*/react.createElement("g", {
+    "clip-path": "url(#clip0_2027_490)"
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7Z",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M16 3V7",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M8 3V7",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M4 11H20",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M11 15H12",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  }), /*#__PURE__*/react.createElement("path", {
+    d: "M12 15V18",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+  })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+    id: "clip0_2027_490"
+  }, /*#__PURE__*/react.createElement("rect", {
+    width: "24",
+    height: "24",
+    fill: "white"
+  })))), /*#__PURE__*/react.createElement("span", null, meta.date)), meta.channel && /*#__PURE__*/react.createElement("div", {
+    className: "A_MetaItem"
+  }, /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M16.1164 9.29518C16.6684 8.74318 17.2164 7.45518 14.9164 9.01918C12.7678 10.4979 10.6047 11.9553 8.42736 13.3912C8.0958 13.5411 7.73735 13.6225 7.37356 13.6304C7.00976 13.6383 6.64812 13.5726 6.31036 13.4372C4.93036 13.0232 3.31936 12.4712 3.31936 12.4712C3.31936 12.4712 2.21936 11.7802 4.10236 11.0442C4.10236 11.0442 12.0634 7.77718 14.8244 6.62618C15.8824 6.16618 19.4714 4.69418 19.4714 4.69418C19.4714 4.69418 21.1284 4.04918 20.9904 5.61418C20.9444 6.25818 20.5764 8.51418 20.2084 10.9522C19.6554 14.4032 19.0574 18.1772 19.0574 18.1772C19.0574 18.1772 18.9654 19.2352 18.1834 19.4192C17.3462 19.405 16.5374 19.1138 15.8834 18.5912C15.6994 18.4532 12.4324 16.3822 11.2354 15.3702C11.1136 15.2877 11.0147 15.1758 10.9478 15.0448C10.8809 14.9138 10.8483 14.768 10.8528 14.621C10.8574 14.474 10.8991 14.3306 10.9741 14.204C11.049 14.0775 11.1547 13.9719 11.2814 13.8972C12.9231 12.3951 14.5351 10.8608 16.1164 9.29518Z",
+    stroke: "#8E8E8E",
+    "stroke-width": "1.5"
+  })), /*#__PURE__*/react.createElement("span", null, meta.channel)))));
+};
+/* harmony default export */ const article_UsefulHero = (UsefulHero);
+;// ./src/javascript/components/article/ArticleNavigation.jsx
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+var ArticleNavigation = function ArticleNavigation(_ref) {
+  var _sections$;
+  var content = _ref.content;
+  var sections = content.filter(function (block) {
+    return block.type === 'section';
+  });
+  var _useState = useState(((_sections$ = sections[0]) === null || _sections$ === void 0 ? void 0 : _sections$.id) || null),
+    _useState2 = _slicedToArray(_useState, 2),
+    activeSection = _useState2[0],
+    setActiveSection = _useState2[1];
+  var isClickScrolling = useRef(false);
+  var scrollTimeout = useRef(null);
+  useEffect(function () {
+    var observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+    var observerCallback = function observerCallback(entries) {
+      if (isClickScrolling.current) return;
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+    var observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach(function (section) {
+      if (section.id) {
+        var element = document.getElementById(section.id);
+        if (element) {
+          observer.observe(element);
+        }
+      }
+    });
+    return function () {
+      return observer.disconnect();
+    };
+  }, [sections]);
+  var handleClick = function handleClick(e, sectionId) {
+    e.preventDefault();
+    var element = document.getElementById(sectionId);
+    if (element) {
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+      isClickScrolling.current = true;
+      setActiveSection(sectionId);
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      scrollTimeout.current = setTimeout(function () {
+        isClickScrolling.current = false;
+      }, 1500);
+    }
+  };
+  return /*#__PURE__*/React.createElement("nav", {
+    className: "W_MenuContainer"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "M_TextWithIcon"
+  }, /*#__PURE__*/React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_2027_7562)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M10 6H20",
+    stroke: "#8E8E8E",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M4 12H20",
+    stroke: "#8E8E8E",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M7 12H20",
+    stroke: "#8E8E8E",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M4 18H14",
+    stroke: "#8E8E8E",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_2027_7562"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: "24",
+    height: "24",
+    fill: "white"
+  })))), /*#__PURE__*/React.createElement("p", {
+    className: "A_Text"
+  }, "\u0412 \u044D\u0442\u043E\u0439 \u0438\u0441\u0442\u043E\u0440\u0438\u0438")), /*#__PURE__*/React.createElement("div", {
+    className: "\u0421_MenuItemsContainer"
+  }, sections.map(function (section, index) {
+    return /*#__PURE__*/React.createElement("div", {
+      key: section.id || index,
+      className: "M_MenuItem ".concat(activeSection === section.id ? 'active' : '')
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "Q_ContentMark"
+    }), /*#__PURE__*/React.createElement("a", {
+      href: "#".concat(section.id),
+      className: "A_Text",
+      onClick: function onClick(e) {
+        return handleClick(e, section.id);
+      }
+    }, section.title));
+  })));
+};
+/* harmony default export */ const article_ArticleNavigation = ((/* unused pure expression or super */ null && (ArticleNavigation)));
+;// ./src/javascript/components/article/ArticleImage.jsx
+
+var ArticleImage = function ArticleImage(_ref) {
+  var image = _ref.image,
+    caption = _ref.caption;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "M_ImageWithCaption"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_ImageArticle"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: image,
+    alt: caption
+  })), caption && /*#__PURE__*/react.createElement("p", {
+    className: "A_Text"
+  }, caption));
+};
+/* harmony default export */ const article_ArticleImage = (ArticleImage);
+;// ./src/javascript/components/article/ArticleQuote.jsx
+
+var ArticleQuote = function ArticleQuote(_ref) {
+  var text = _ref.text;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "M_Quote"
+  }, /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "49",
+    height: "46",
+    viewBox: "0 0 49 46",
+    fill: "none"
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M18.72 8.28C14.76 9 11.88 11.88 10.26 17.1C9.36 19.62 9 21.96 9 24.48V25.2C9 25.38 9 25.92 9.18 26.64H18.72V45.72H0V28.08C0 19.44 1.8 12.78 5.22 8.1C8.64 3.42 13.14 0.720001 18.72 0V8.28ZM48.42 8.28C45.18 8.82 42.66 10.62 41.04 13.68C39.42 16.74 38.52 20.34 38.52 24.48V25.38C38.52 25.74 38.7 26.1 38.7 26.64H48.42V45.72H29.52V28.08C29.52 21.24 30.96 14.94 34.02 9.36C36.9 3.96 41.76 0.720001 48.42 0V8.28Z",
+    fill: "#3CC68B"
+  })), /*#__PURE__*/react.createElement("h3", null, text));
+};
+/* harmony default export */ const article_ArticleQuote = (ArticleQuote);
+;// ./src/javascript/components/article/ArticleSection.jsx
+
+var ArticleSection = function ArticleSection(_ref) {
+  var id = _ref.id,
+    title = _ref.title;
+  return /*#__PURE__*/react.createElement("div", {
+    id: id,
+    className: "M_DividerLine",
+    "data-section-title": title
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_Line"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "A_Divider"
+  }, title));
+};
+/* harmony default export */ const article_ArticleSection = (ArticleSection);
+;// ./src/javascript/components/article/ArticleButton.jsx
+
+var ArticleButton = function ArticleButton(_ref) {
+  var text = _ref.text,
+    url = _ref.url;
+  return /*#__PURE__*/react.createElement("a", {
+    href: url,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "A_ButtonAction"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_Dot"
+  }), /*#__PURE__*/react.createElement("span", null, text));
+};
+/* harmony default export */ const article_ArticleButton = (ArticleButton);
+;// ./src/javascript/components/article/UsefulArticle.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+
+
+
+var UsefulArticle = function UsefulArticle(_ref) {
+  var data = _ref.data;
+  var hero = data.hero,
+    content = data.content;
+  (0,react.useEffect)(function () {
+    var hash = window.location.hash;
+    if (hash) {
+      setTimeout(function () {
+        var element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    }
+  }, []);
+  var sectionIndex = 0;
+  var contentWithIds = content.map(function (block) {
+    if (block.type === 'section' && !block.id) {
+      sectionIndex++;
+      return _objectSpread(_objectSpread({}, block), {}, {
+        id: "section-".concat(sectionIndex)
+      });
+    }
+    return block;
+  });
+  var groupedContent = [];
+  var headingCounter = 0;
+  var i = 0;
+  while (i < contentWithIds.length) {
+    var block = contentWithIds[i];
+    if (block.type === 'section') {
+      var answerBlock = {
+        type: 'answerBlock',
+        section: block,
+        divider: null,
+        blocks: []
+      };
+      i++;
+      if (i < contentWithIds.length && contentWithIds[i].type === 'divider') {
+        answerBlock.divider = contentWithIds[i];
+        i++;
+      }
+      while (i < contentWithIds.length && contentWithIds[i].type !== 'section' && contentWithIds[i].type !== 'heading') {
+        answerBlock.blocks.push(contentWithIds[i]);
+        i++;
+      }
+      if (i < contentWithIds.length && contentWithIds[i].type === 'heading') {
+        headingCounter++;
+        var headingGroup = {
+          type: 'headingGroup',
+          number: headingCounter,
+          heading: contentWithIds[i],
+          blocks: []
+        };
+        i++;
+        while (i < contentWithIds.length && (contentWithIds[i].type === 'text' || contentWithIds[i].type === 'quote')) {
+          headingGroup.blocks.push(contentWithIds[i]);
+          i++;
+        }
+        answerBlock.blocks.push(headingGroup);
+        while (i < contentWithIds.length && contentWithIds[i].type !== 'section' && contentWithIds[i].type !== 'heading') {
+          answerBlock.blocks.push(contentWithIds[i]);
+          i++;
+        }
+      }
+      groupedContent.push(answerBlock);
+      while (i < contentWithIds.length && contentWithIds[i].type === 'heading') {
+        var nextAnswerBlock = {
+          type: 'answerBlock',
+          section: null,
+          divider: null,
+          blocks: []
+        };
+        headingCounter++;
+        var _headingGroup = {
+          type: 'headingGroup',
+          number: headingCounter,
+          heading: contentWithIds[i],
+          blocks: []
+        };
+        i++;
+        while (i < contentWithIds.length && (contentWithIds[i].type === 'text' || contentWithIds[i].type === 'quote')) {
+          _headingGroup.blocks.push(contentWithIds[i]);
+          i++;
+        }
+        nextAnswerBlock.blocks.push(_headingGroup);
+        while (i < contentWithIds.length && contentWithIds[i].type !== 'section' && contentWithIds[i].type !== 'heading') {
+          nextAnswerBlock.blocks.push(contentWithIds[i]);
+          i++;
+        }
+        groupedContent.push(nextAnswerBlock);
+      }
+    } else if (block.type === 'heading') {
+      headingCounter++;
+      var group = {
+        type: 'headingGroup',
+        number: headingCounter,
+        heading: block,
+        blocks: []
+      };
+      i++;
+      while (i < contentWithIds.length && (contentWithIds[i].type === 'text' || contentWithIds[i].type === 'quote')) {
+        group.blocks.push(contentWithIds[i]);
+        i++;
+      }
+      groupedContent.push(group);
+    } else {
+      groupedContent.push(block);
+      i++;
+    }
+  }
+  var handleCopyHeadingLink = function handleCopyHeadingLink(headingNumber) {
+    var url = "".concat(window.location.origin).concat(window.location.pathname, "#heading-").concat(headingNumber);
+    navigator.clipboard.writeText(url).then(function () {
+      console.log('Ссылка на раздел скопирована:', url);
+    })["catch"](function (err) {
+      console.error('Ошибка копирования:', err);
+    });
+  };
+  var renderBlock = function renderBlock(block, index) {
+    if (block.type === 'answerBlock') {
+      return /*#__PURE__*/react.createElement("div", {
+        key: index,
+        className: "O_AnswerBlockArticle"
+      }, block.section && /*#__PURE__*/react.createElement(article_ArticleSection, {
+        id: block.section.id,
+        title: block.section.title
+      }), block.divider && /*#__PURE__*/react.createElement("div", {
+        className: "M_DividerLine"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "Q_Line"
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "A_Divider"
+      }, /*#__PURE__*/react.createElement("p", {
+        className: "A_Text"
+      }, block.divider.title))), block.blocks.map(function (innerBlock, innerIndex) {
+        if (innerBlock.type === 'headingGroup') {
+          return /*#__PURE__*/react.createElement("div", {
+            key: innerIndex,
+            className: "W_TextBlockArticle",
+            id: "heading-".concat(innerBlock.number)
+          }, /*#__PURE__*/react.createElement("div", {
+            className: "M_NumberQuestion",
+            onClick: function onClick() {
+              return handleCopyHeadingLink(innerBlock.number);
+            }
+          }, /*#__PURE__*/react.createElement("p", null, String(innerBlock.number).padStart(2, '0')), /*#__PURE__*/react.createElement("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "24",
+            height: "24",
+            viewBox: "0 0 24 24",
+            fill: "none",
+            className: "Q_IconDark"
+          }, /*#__PURE__*/react.createElement("g", {
+            clipPath: "url(#clip0_2009_7549)"
+          }, /*#__PURE__*/react.createElement("path", {
+            d: "M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.46997L11.75 5.17997",
+            stroke: "#191919",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+          }), /*#__PURE__*/react.createElement("path", {
+            d: "M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00768C9.63819 8.95646 8.92037 9.05967 8.24861 9.31023C7.57685 9.5608 6.96685 9.95303 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.6661 2.05659 16.9771C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3962 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82",
+            stroke: "#191919",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+          })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+            id: "clip0_2009_7549"
+          }, /*#__PURE__*/react.createElement("rect", {
+            width: "24",
+            height: "24",
+            fill: "white"
+          })))), /*#__PURE__*/react.createElement("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "24",
+            height: "24",
+            viewBox: "0 0 24 24",
+            fill: "none",
+            className: "Q_IconLight"
+          }, /*#__PURE__*/react.createElement("g", {
+            clipPath: "url(#clip0_2009_7550)"
+          }, /*#__PURE__*/react.createElement("path", {
+            d: "M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.46997L11.75 5.17997",
+            stroke: "#FDFDFD",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+          }), /*#__PURE__*/react.createElement("path", {
+            d: "M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00768C9.63819 8.95646 8.92037 9.05967 8.24861 9.31023C7.57685 9.5608 6.96685 9.95303 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.6661 2.05659 16.9771C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3962 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82",
+            stroke: "#FDFDFD",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+          })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+            id: "clip0_2009_7550"
+          }, /*#__PURE__*/react.createElement("rect", {
+            width: "24",
+            height: "24",
+            fill: "white"
+          }))))), /*#__PURE__*/react.createElement("div", {
+            className: "M_Paragraph"
+          }, /*#__PURE__*/react.createElement("h2", null, innerBlock.heading.text), innerBlock.blocks.map(function (item, itemIndex) {
+            if (item.type === 'text') {
+              return /*#__PURE__*/react.createElement("p", {
+                key: itemIndex,
+                className: "paragraphLarge"
+              }, item.content);
+            } else if (item.type === 'quote') {
+              return /*#__PURE__*/react.createElement(article_ArticleQuote, {
+                key: itemIndex,
+                text: item.text
+              });
+            }
+            return null;
+          })));
+        }
+        switch (innerBlock.type) {
+          case 'text':
+            return /*#__PURE__*/react.createElement("div", {
+              key: innerIndex,
+              className: "M_Paragraph"
+            }, /*#__PURE__*/react.createElement("p", {
+              className: "paragraphLarge"
+            }, innerBlock.content));
+          case 'image':
+            return /*#__PURE__*/react.createElement(article_ArticleImage, {
+              key: innerIndex,
+              image: innerBlock.image,
+              caption: innerBlock.caption
+            });
+          case 'quote':
+            return /*#__PURE__*/react.createElement(article_ArticleQuote, {
+              key: innerIndex,
+              text: innerBlock.text
+            });
+          case 'button':
+            return /*#__PURE__*/react.createElement(article_ArticleButton, {
+              key: innerIndex,
+              text: innerBlock.text,
+              url: innerBlock.url
+            });
+          default:
+            return null;
+        }
+      }));
+    }
+    if (block.type === 'headingGroup') {
+      return /*#__PURE__*/react.createElement("div", {
+        key: index,
+        className: "W_TextBlockArticle",
+        id: "heading-".concat(block.number)
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "M_NumberQuestion",
+        onClick: function onClick() {
+          return handleCopyHeadingLink(block.number);
+        }
+      }, /*#__PURE__*/react.createElement("p", null, String(block.number).padStart(2, '0')), /*#__PURE__*/react.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        className: "Q_IconDark"
+      }, /*#__PURE__*/react.createElement("g", {
+        clipPath: "url(#clip0_2009_7549)"
+      }, /*#__PURE__*/react.createElement("path", {
+        d: "M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.46997L11.75 5.17997",
+        stroke: "#191919",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }), /*#__PURE__*/react.createElement("path", {
+        d: "M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00768C9.63819 8.95646 8.92037 9.05967 8.24861 9.31023C7.57685 9.5608 6.96685 9.95303 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.6661 2.05659 16.9771C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3962 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82",
+        stroke: "#191919",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+        id: "clip0_2009_7549"
+      }, /*#__PURE__*/react.createElement("rect", {
+        width: "24",
+        height: "24",
+        fill: "white"
+      })))), /*#__PURE__*/react.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        className: "Q_IconLight"
+      }, /*#__PURE__*/react.createElement("g", {
+        clipPath: "url(#clip0_2009_7550)"
+      }, /*#__PURE__*/react.createElement("path", {
+        d: "M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.46997L11.75 5.17997",
+        stroke: "#FDFDFD",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }), /*#__PURE__*/react.createElement("path", {
+        d: "M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00768C9.63819 8.95646 8.92037 9.05967 8.24861 9.31023C7.57685 9.5608 6.96685 9.95303 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.6661 2.05659 16.9771C2.06798 18.288 2.59382 19.5421 3.52086 20.4691C4.4479 21.3962 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82",
+        stroke: "#FDFDFD",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      })), /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("clipPath", {
+        id: "clip0_2009_7550"
+      }, /*#__PURE__*/react.createElement("rect", {
+        width: "24",
+        height: "24",
+        fill: "white"
+      }))))), /*#__PURE__*/react.createElement("div", {
+        className: "M_Paragraph"
+      }, /*#__PURE__*/react.createElement("h2", null, block.heading.text), block.blocks.map(function (item, itemIndex) {
+        if (item.type === 'text') {
+          return /*#__PURE__*/react.createElement("p", {
+            key: itemIndex,
+            className: "paragraphLarge"
+          }, item.content);
+        } else if (item.type === 'quote') {
+          return /*#__PURE__*/react.createElement(article_ArticleQuote, {
+            key: itemIndex,
+            text: item.text
+          });
+        }
+        return null;
+      })));
+    }
+    switch (block.type) {
+      case 'text':
+        return /*#__PURE__*/react.createElement("div", {
+          key: index,
+          className: "M_Paragraph"
+        }, /*#__PURE__*/react.createElement("p", {
+          className: "paragraphLarge"
+        }, block.content));
+      case 'image':
+        return /*#__PURE__*/react.createElement(article_ArticleImage, {
+          key: index,
+          image: block.image,
+          caption: block.caption
+        });
+      case 'quote':
+        return /*#__PURE__*/react.createElement(article_ArticleQuote, {
+          key: index,
+          text: block.text
+        });
+      case 'button':
+        return /*#__PURE__*/react.createElement(article_ArticleButton, {
+          key: index,
+          text: block.text,
+          url: block.url
+        });
+      case 'divider':
+        return /*#__PURE__*/react.createElement("div", {
+          key: index,
+          className: "M_DividerLine"
+        }, /*#__PURE__*/react.createElement("div", {
+          className: "Q_Line"
+        }), /*#__PURE__*/react.createElement("div", {
+          className: "A_Divider"
+        }, /*#__PURE__*/react.createElement("p", {
+          className: "A_Text"
+        }, block.title)));
+      default:
+        return null;
+    }
+  };
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(article_UsefulHero, {
+    hero: hero
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "T_ArticleBody"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "SO_ArticleContent"
+  }, groupedContent.map(function (block, index) {
+    return renderBlock(block, index);
+  }))));
+};
+/* harmony default export */ const article_UsefulArticle = (UsefulArticle);
+;// ./src/data/useful-design-drills-workshop.json
+const useful_design_drills_workshop_namespaceObject = /*#__PURE__*/JSON.parse('{"slug":"design-drills-workshop","hero":{"title":"Воркшоп – развитие креативности от Ddrills","author":{"name":"Рома Кужель","avatar":"/images/useful/author-roma.png"},"meta":{"date":"12 апреля","channel":"Материалы — в канале DDRILLS"},"images":{"cover1":"/images/useful/useful-article1.png"}},"content":[{"type":"heading","content":"О проекте Design Drills "},{"type":"text","content":"Design Drills — это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Design Drills, здесь вы сможете оттачивать дизайн-скилы в игровом формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."},{"type":"heading","content":"Задание"},{"type":"text","content":"Мы продолжаем двигаться по устоявшимся паттернам и стремимся их переосмыслить."},{"type":"text","content":"В этой тренировке нужно перепридумать хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."},{"type":"text","content":"Что если изобрести их иначе? Например можно воспринять их буквально и изобразить папочки, а может перенести в мобильный формат и показывать вложенность за счёт объёма и цвета."},{"type":"heading","content":"Результат"},{"type":"text","content":"Ну и самое первое что пришло в голову — это матрёшка, потому что она идеально показывает вложенность)"},{"type":"text","content":"В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"},{"type":"image","image":"/images/useful/useful-article2.png","caption":"Больше референсов — в канале DDRILLS"},{"type":"button","text":"Отправить работу","url":"https://t.me/ddrillss"}],"seo":{"metaTitle":"Воркшоп – развитие креативности от Ddrills | ADC Media","metaDescription":"Прокачка дизайн-скиллов через простые упражнения","ogImage":"/images/og/design-drills.jpg","keywords":["Design Drills","воркшоп","креативность","дизайн"]}}');
+;// ./src/javascript/entry-points/useful.jsx
+function useful_typeof(o) { "@babel/helpers - typeof"; return useful_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, useful_typeof(o); }
+function useful_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function useful_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? useful_ownKeys(Object(t), !0).forEach(function (r) { useful_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : useful_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function useful_defineProperty(e, r, t) { return (r = useful_toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function useful_toPropertyKey(t) { var i = useful_toPrimitive(t, "string"); return "symbol" == useful_typeof(i) ? i : i + ""; }
+function useful_toPrimitive(t, r) { if ("object" != useful_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != useful_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+
+
+
+
+// Получить slug из pathname
+function getArticleSlugFromPath() {
+  var pathname = window.location.pathname;
+  var parts = pathname.split('/');
+  // Получаем последний сегмент пути, например "design-drills-workshop" из "/useful/design-drills-workshop"
+  var slug = parts[parts.length - 1].replace('.html', '');
+
+  // Если это базовый путь /useful/article.html, используем дефолтное значение
+  if (slug === 'article' || slug === 'useful' || slug === '') {
+    return 'design-drills-workshop';
+  }
+  return slug;
+}
+
+// Обновить метаданные страницы
+function updateMetadata(article) {
+  // Title
+  document.getElementById('page-title').textContent = article.seo.metaTitle;
+
+  // Meta tags
+  document.getElementById('meta-description').setAttribute('content', article.seo.metaDescription);
+  document.getElementById('meta-keywords').setAttribute('content', article.seo.keywords.join(', '));
+
+  // Open Graph
+  document.getElementById('og-title').setAttribute('content', article.seo.metaTitle);
+  document.getElementById('og-description').setAttribute('content', article.seo.metaDescription);
+  document.getElementById('og-url').setAttribute('content', "https://media.adc.ac/useful/".concat(article.slug, ".html"));
+  document.getElementById('og-image').setAttribute('content', "https://media.adc.ac".concat(article.seo.ogImage));
+}
+
+// Адаптировать данные из useful.json под формат Article
+function adaptUsefulToArticle(article) {
+  // Нормализуем content - меняем heading.content на heading.text
+  var normalizedContent = article.content.map(function (block) {
+    if (block.type === 'heading' && block.content) {
+      return useful_objectSpread(useful_objectSpread({}, block), {}, {
+        text: block.content
+      });
+    }
+    return block;
+  });
+  return {
+    hero: article.hero,
+    content: normalizedContent
+  };
+}
+
+// Маппинг slug -> данные статьи
+var articlesMap = {
+  'design-drills-workshop': useful_design_drills_workshop_namespaceObject
+};
+function loadArticle() {
+  var slug = getArticleSlugFromPath();
+  var article = articlesMap[slug];
+  if (article) {
+    updateMetadata(article);
+    var articleData = adaptUsefulToArticle(article);
+    var container = document.getElementById('article-root');
+    if (container) {
+      var root = (0,client.createRoot)(container);
+      root.render(/*#__PURE__*/react.createElement(article_UsefulArticle, {
+        data: articleData
+      }));
+    }
+  } else {
+    console.error('Article not found:', slug);
+  }
+}
+document.addEventListener('DOMContentLoaded', loadArticle);
 /******/ })()
 ;

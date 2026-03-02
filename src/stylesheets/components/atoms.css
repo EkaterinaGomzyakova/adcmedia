@@ -1,63 +1,218 @@
-.A_Icon {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 46.88vw;
-    background: var(--dark_gray);
+.A_Logo {
+  width: 8.33vw;
 }
 
-.A_mainItemMenu {
-    color: var(--almost_white);
+.A_Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--zero, 0);
+  color: var(--medium-text, #8e8e8e);
+  font-size: var(--paragraph, 17px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.68px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--dark-button-text, #fdfdfd);
+  }
 }
 
-.A_secondItemMenu {
-    color: var(--gray)
+.A_ButtonCircle {
+  display: flex;
+  width: var(--3xl, 48px);
+  height: var(--3xl, 48px);
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--xs, 8px);
+  background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
 }
 
-.A_telegramIcon {
-    display: flex;
-    width: 54px;
-    height: 54px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 900px;
-    background: var(--green);
-    flex-shrink: 0;
+.A_ButtonCircle--green {
+  background: var(--button-primary, #3cc68b);
 }
 
 .A_greyText {
-    color: var(--gray);
+  color: var(--medium-text, #8e8e8e);
 }
 
-.A_navigationLink {
-    font-family: "Suisse Intl";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.34px;
-    color: #FFF;
+.A_Tag {
+  display: flex;
+  padding: var(--sm, 12px) var(--md, 16px) var(--sm, 12px) var(--sm, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--xs, 8px);
+  border-radius: var(--xs, 8px);
+  background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
+  color: var(--dark-button-text, #fdfdfd);
+  font-size: var(--button, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  > div {
+    width: 8px;
+    height: 8px;
+  }
 }
 
-.A_buttonTop {
-    padding: 15px;
-    border-radius: 100%;
-    background: var(--almost_white);
-    flex-shrink: 0;
+.A_Tag.active {
+  background: var(--button-primary, #3cc68b);
+  color: var(--light-button-text, #191919);
 }
 
-.A_descriptionDote {
-    width: 16px;
-    height: 16px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    border: 1px solid var(--green);
-    background: transparent;
-    transition: background 0.3s ease;
+.A_Tag.active > div {
+  background: var(--light-button-text, #191919);
 }
 
-.A_descriptionDote--filled {
-    background: var(--green);
+.A_ResetButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--xs, 8px);
+  border-radius: var(--xs, 8px);
+  background: transparent;
+  border: none;
+  color: var(--dark-button-text, #fdfdfd);
+  font-size: var(--button, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  cursor: pointer;
+  font-family: 'Geist Mono';
+}
+
+.A_ArticleTitle,
+.A_TagText {
+  text-align: center;
+}
+
+.A_Time {
+  display: flex;
+  align-items: center;
+  gap: var(--xs, 8px);
+  color: var(--medium-text, #8e8e8e);
+  font-family: 'Geist Mono';
+  font-size: var(--button, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.A_TagMini {
+  padding: 0;
+  font-family: 'Geist Mono';
+  background-color: transparent;
+}
+
+.A_LogoPC {
+  display: block;
+}
+
+.A_LogoLight {
+  display: none;
+}
+
+[data-theme='light'] .A_LogoDark {
+  display: none;
+}
+
+[data-theme='light'] .A_LogoLight {
+  display: block;
+}
+
+.A_LogoMobile {
+  display: none;
+}
+
+.A_TextArticle {
+  font-size: var(--lg, 24px);
+  text-align: center;
+}
+
+.A_Divider {
+  display: flex;
+  width: fit-content;
+  padding: var(--sm, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--xs, 8px);
+  border-radius: var(--zero, 0);
+  background: var(--cards-background, #191919);
+  font-family: 'Geist Mono';
+  font-size: var(--button, 14px);
+}
+
+.A_MetaItem {
+  display: flex;
+  align-items: center;
+  gap: var(--xs, 8px);
+}
+
+.A_ButtonAction {
+  display: flex;
+  width: 946px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--xs, 8px);
+  background: var(--button-primary, #3cc68b);
+  color: #191919;
+  font-family: 'Geist Mono';
+  font-size: 14px;
+}
+
+.A_ButtonCircleMenu {
+  display: none;
+}
+
+[data-theme='light'] .A_LogoLight.A_LogoMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .A_Text {
+    font-size: var(--paragraph, 16px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .A_Logo {
+    width: 96px;
+  }
+
+  .A_LogoMobile {
+    display: block;
+  }
+
+  .A_LogoLight {
+    display: none;
+  }
+
+  [data-theme='light'] .A_LogoDark .A_LogoMobile {
+    display: none !important;
+  }
+
+  [data-theme='light'] .A_LogoLight.A_LogoMobile {
+    display: block;
+  }
+
+  .A_LogoPC {
+    display: none !important;
+  }
+
+  .A_ButtonCircleMenu {
+    display: flex;
+  }
+
+  #theme-toggle {
+    display: none;
+  }
 }

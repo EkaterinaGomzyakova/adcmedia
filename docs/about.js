@@ -16646,16 +16646,105 @@ if (true) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(540);
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(338);
+
+;// ./src/javascript/utils/theme.js
+// Theme toggle functionality
+var THEME_KEY = 'adc-media-theme';
+var THEMES = {
+  DARK: 'dark',
+  LIGHT: 'light'
+};
+
+// Get saved theme from localStorage or system preference
+function getSavedTheme() {
+  var savedTheme = localStorage.getItem(THEME_KEY);
+  if (savedTheme) {
+    return savedTheme;
+  }
+
+  // Check system preference
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    return THEMES.LIGHT;
+  }
+  return THEMES.DARK;
+}
+
+// Apply theme to document
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem(THEME_KEY, theme);
+}
+
+// Toggle between themes
+function toggleTheme() {
+  var currentTheme = document.documentElement.getAttribute('data-theme') || THEMES.DARK;
+  var newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
+  applyTheme(newTheme);
+  return newTheme;
+}
+
+// Initialize theme on page load
+function initTheme() {
+  var theme = getSavedTheme();
+  applyTheme(theme);
+}
+
+// Initialize theme toggle button
+function initThemeToggle() {
+  var themeToggleButton = document.getElementById('theme-toggle');
+  if (themeToggleButton) {
+    themeToggleButton.addEventListener('click', function () {
+      toggleTheme();
+    });
+  }
+}
+
+// Auto-initialize theme when DOM is loaded
+if (typeof document !== 'undefined') {
+  // Apply theme immediately to prevent flash
+  initTheme();
+
+  // Initialize toggle button when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
+}
+;// ./src/javascript/utils/scroll.js
+function initScrollToTop() {
+  var scrollButton = document.getElementById('scroll-to-top');
+  if (scrollButton) {
+    scrollButton.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+}
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollToTop);
+  } else {
+    initScrollToTop();
+  }
+}
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(540);
+// EXTERNAL MODULE: ./node_modules/react-dom/client.js
+var client = __webpack_require__(338);
+;// ./src/javascript/entry-points/about.jsx
+
+
 
 
 
 document.addEventListener('DOMContentLoaded', function () {
   var container = document.getElementById('about-root');
   if (container) {
-    var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);
-    root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u041E \u043D\u0430\u0441"));
+    var root = (0,client.createRoot)(container);
+    root.render(/*#__PURE__*/react.createElement("div", null, "\u041E \u043D\u0430\u0441"));
   }
 });
 /******/ })()

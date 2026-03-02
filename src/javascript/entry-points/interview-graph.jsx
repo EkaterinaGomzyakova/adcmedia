@@ -1,4 +1,6 @@
 import '../../index.css'
+import '../utils/theme.js'
+import '../utils/scroll.js'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import O_canvasCards from '../components/O_canvasCards/O_canvasCards.jsx'

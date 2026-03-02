@@ -1,30 +1,75 @@
-<header class="O_Menu">
+<header class="Navbar">
   <a href="/index.html">
     <img
-      src="images/Q_Logo.svg"
-      alt="ADC Media
-     Логотип"
+      src="/images/A_Logo.svg"
+      alt="ADC Media Логотип"
+      class="A_Logo A_LogoDark A_LogoPC"
+    />
+    <img
+      src="/images/A_LogoMobile.svg"
+      alt="ADC Media Логотип"
+      class="A_Logo A_LogoDark A_LogoMobile"
+    />
+
+    <img
+      src="/images/A_LogoLight.svg"
+      alt="ADC Media Логотип"
+      class="A_Logo A_LogoLight A_LogoPC"
+    />
+    <img
+      src="/images/A_LogoMobileLight.svg"
+      alt="ADC Media Логотип"
+      class="A_Logo A_LogoLight A_LogoMobile"
     />
   </a>
 
   <nav class="M_Menu">
-    <div class="W_menuItems">
-      <a href="/feeds/interviews.html" class="A_menuItem">Интервью</a>
-      <a href="/feeds/useful.html" class="A_menuItem">Полезности</a>
-      <a href="/about.html" class="A_menuItem">О нас</a>
-    </div>
+    <a href="/feeds/interviews.html" class="A_Text">Интервью</a>
+    <div class="Q_Dot"></div>
+    <a href="/interview/graph.html" class="A_Text">Связи</a>
+    <div class="Q_Dot"></div>
+    <a href="/feeds/useful.html" class="A_Text">Полезные материалы</a>
+    <div class="Q_Dot"></div>
+    <a href="/about.html" class="A_Text">О нас</a>
   </nav>
 
-  <div class="M_Icons">
-    <button class="A_Icon A_Search">
-      <img class="Q_iconImage" src="images/search.svg" alt="Кнопка поиска" />
-    </button>
-    <a href="https://t.me/adcmedia" target="_blank" class="A_Icon A_Telegram">
+  <div class="M_ButtonsNavbar">
+    <button id="theme-toggle">
       <img
-        class="Q_iconImage"
-        src="images/telegram.svg"
-        alt="Перейти в телеграм канал"
+        class="Q_Icon Q_IconDark"
+        src="/images/Q_IconTheme.svg"
+        alt="Кнопка смены темы"
       />
-    </a>
+      <img
+        class="Q_Icon Q_IconLight"
+        src="/images/Q_IconThemeLight.svg"
+        alt="Кнопка смены темы"
+      />
+    </button>
+    <button class="A_ButtonCircle">
+      <img
+        class="Q_Icon Q_IconDark"
+        src="/images/search.svg"
+        alt="Кнопка поиска"
+      />
+      <img
+        class="Q_Icon Q_IconLight"
+        src="/images/searchLight.svg"
+        alt="Кнопка поиска"
+      />
+    </button>
+
+    <button class="A_ButtonCircle A_ButtonCircleMenu">
+      <img
+        class="Q_Icon Q_IconDark"
+        src="/images/Q_IconMenu.svg"
+        alt="Кнопка меню"
+      />
+      <img
+        class="Q_Icon Q_IconLight"
+        src="/images/Q_IconMenuLight.svg"
+        alt="Кнопка меню"
+      />
+    </button>
   </div>
 </header>

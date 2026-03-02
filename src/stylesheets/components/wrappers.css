@@ -1,39 +1,45 @@
-.W_menuItems {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.W_Telegram {
+  display: flex;
+  width: var(--footer-telegram-card-width, 463px);
+  padding: var(--lg, 24px) var(--lg, 24px) 44px var(--lg, 24px);
+  align-items: flex-start;
+  gap: var(--md, 16px);
+  border-radius: var(--xs, 8px);
+  background: var(--cards-background, #191919);
 }
 
-.W_allFooterInfoSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
+.W_FooterColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md, 16px);
 }
 
-.W_telegramInfoTexts {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.W_ContentHeaderArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--xl, 32px);
+  align-self: stretch;
+  text-align: center;
 }
 
-.W_navigationTexts {
-    display: flex;
-    width: 256px;
-    flex-direction: column;
-    gap: 16px;
+.W_TextBlockArticle {
+  display: flex;
+  gap: 20px;
 }
 
-.W_footerBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.W_MenuContainer {
+  position: sticky;
+  top: var(--xl, 32px);
+  align-self: flex-start;
+  display: flex;
+  width: 256px;
+  flex-direction: column;
+  gap: var(--xl, 32px);
 }
 
-.W_descriptionInfo {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
+@media screen and (max-width: 1024px) {
+  .W_Telegram {
     width: 100%;
+  }
 }
-

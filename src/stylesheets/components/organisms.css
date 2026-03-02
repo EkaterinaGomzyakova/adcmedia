@@ -1,24 +1,104 @@
+.O_FooterTop {
+  display: flex;
+  width: 100%;
+  height: 172px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.O_HeadingWithTags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--2xl, 40px);
+}
+
+.O_ArticlePreview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--3xl);
+
+  > img {
+    width: var(--image-article-width, 808px);
+    height: var(--image-article-height, 500px);
+  }
+}
+
+.M_ArticleImageLight {
+  display: none;
+}
+
+[data-theme='light'] .M_ArticleImageDark {
+  display: none;
+}
+
+[data-theme='light'] .M_ArticleImageLight {
+  display: block;
+}
+
+.O_ArticlePreview--reverse {
+  flex-direction: row-reverse;
+}
+
 .O_mainWrapperLayout {
-    padding: 1.56vw 7.4vw 4.01vw 7.4vw;
+  width: 100%;
 }
 
-.O_Menu, .O_Footer {
-    display: flex;
-    width: 85.21vw;
-    max-width: 1636px;
-    margin: 0 auto;
+.O_HeadingTextArticle {
+  display: flex;
+  width: 670px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--4xl, 64px);
 }
 
-.O_Menu { 
-    align-items: center;
-    justify-content: space-between;
+.O_AnswerBlockArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--xl, 32px);
 }
 
-.O_Footer {
-    flex-direction: column;
-    gap: 64px;
+.O_UsefulHeadingContent {
+  display: flex;
+  width: 946px;
+  flex-direction: column;
+  gap: var(--md, 16px);
+  margin-left: var(--4xl, 64px);
 }
 
-.O_canvasCards {
-    height: 1283px;
+.O_UserCard {
+  display: flex;
+  width: fit-content;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--gray, #8e8e8e);
+  background: var(--dark_gray, #2d2d2d);
+}
+
+@media screen and (max-width: 1280px) {
+  .O_ArticlePreview {
+    flex-direction: column-reverse;
+    gap: var(--3xl, 48px);
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .O_FooterTop {
+    height: auto;
+    gap: var(--2xl);
+
+    > a {
+      width: 100%;
+    }
+  }
 }

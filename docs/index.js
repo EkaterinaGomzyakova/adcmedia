@@ -16645,50 +16645,109 @@ if (true) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = "/aKm/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 
+;// ./src/javascript/utils/theme.js
+// Theme toggle functionality
+var THEME_KEY = 'adc-media-theme';
+var THEMES = {
+  DARK: 'dark',
+  LIGHT: 'light'
+};
+
+// Get saved theme from localStorage or system preference
+function getSavedTheme() {
+  var savedTheme = localStorage.getItem(THEME_KEY);
+  if (savedTheme) {
+    return savedTheme;
+  }
+
+  // Check system preference
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    return THEMES.LIGHT;
+  }
+  return THEMES.DARK;
+}
+
+// Apply theme to document
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem(THEME_KEY, theme);
+}
+
+// Toggle between themes
+function toggleTheme() {
+  var currentTheme = document.documentElement.getAttribute('data-theme') || THEMES.DARK;
+  var newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
+  applyTheme(newTheme);
+  return newTheme;
+}
+
+// Initialize theme on page load
+function initTheme() {
+  var theme = getSavedTheme();
+  applyTheme(theme);
+}
+
+// Initialize theme toggle button
+function initThemeToggle() {
+  var themeToggleButton = document.getElementById('theme-toggle');
+  if (themeToggleButton) {
+    themeToggleButton.addEventListener('click', function () {
+      toggleTheme();
+    });
+  }
+}
+
+// Auto-initialize theme when DOM is loaded
+if (typeof document !== 'undefined') {
+  // Apply theme immediately to prevent flash
+  initTheme();
+
+  // Initialize toggle button when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
+}
+;// ./src/javascript/utils/scroll.js
+function initScrollToTop() {
+  var scrollButton = document.getElementById('scroll-to-top');
+  if (scrollButton) {
+    scrollButton.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+}
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollToTop);
+  } else {
+    initScrollToTop();
+  }
+}
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
-;// ./src/images/Q_Logo.svg
-const Q_Logo_namespaceObject = __webpack_require__.p + "images/Q_Logo.svg";
+;// ./src/images/A_Logo.svg
+const A_Logo_namespaceObject = __webpack_require__.p + "images/A_Logo.svg";
+;// ./src/images/A_LogoLight.svg
+const A_LogoLight_namespaceObject = __webpack_require__.p + "images/A_LogoLight.svg";
+;// ./src/images/A_LogoMobile.svg
+const A_LogoMobile_namespaceObject = __webpack_require__.p + "images/A_LogoMobile.svg";
+;// ./src/images/A_LogoMobileLight.svg
+const A_LogoMobileLight_namespaceObject = __webpack_require__.p + "images/A_LogoMobileLight.svg";
 ;// ./src/images/arrow-right.svg
 const arrow_right_namespaceObject = __webpack_require__.p + "images/arrow-right.svg";
 ;// ./src/images/chevron-right.svg
@@ -16701,12 +16760,20 @@ const telegram_namespaceObject = __webpack_require__.p + "images/telegram.svg";
 const telegramDark_namespaceObject = __webpack_require__.p + "images/telegramDark.svg";
 ;// ./src/images/arrow-top.svg
 const arrow_top_namespaceObject = __webpack_require__.p + "images/arrow-top.svg";
+;// ./src/images/Q_IconTheme.svg
+const Q_IconTheme_namespaceObject = __webpack_require__.p + "images/Q_IconTheme.svg";
 ;// ./src/javascript/entry-points/index.js
 
 
 
 
+
+
 // Импорт изображений для webpack
+
+
+
+
 
 
 

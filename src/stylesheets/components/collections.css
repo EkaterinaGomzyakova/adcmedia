@@ -1,5 +1,32 @@
-.C_navigationLinks {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.C_Tags {
+  display: flex;
+  gap: 12px var(--sm, 12px);
+  flex-wrap: wrap;
+}
+
+.C_Interviews {
+  margin-top: var(--5xl, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--5xl, 80px);
+}
+
+.C_InterviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--5xl, 80px);
+}
+
+.C_InterviewsList .no-results {
+  text-align: center;
+  color: var(--medium-text, #8e8e8e);
+  font-size: var(--paragraph-large, 24px);
+  padding: var(--5xl, 80px) 0;
+}
+
+.С_MenuItemsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--md, 16px);
 }

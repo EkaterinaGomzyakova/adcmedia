@@ -89,6 +89,99 @@
       }
     },
     {
+      "id": "useful-3",
+      "slug": "design-drills-workshop",
+      "type": "article",
+      "title": "Воркшоп – развитие креативности от Ddrills",
+      "description": "Прокачка дизайн-скиллов через простые упражнения",
+      "author": {
+        "name": "Рома Кужель",
+        "image": "images/useful/author-roma.jpg"
+      },
+      "meta": {
+        "publishedDate": "12 апреля",
+        "readingTime": "8 мин",
+        "tags": ["Материалы"],
+        "channel": "в канале DDRILLS"
+      },
+      "hero": {
+        "title": "Воркшоп – развитие креативности от Ddrills",
+        "author": {
+          "name": "Рома Кужель",
+          "avatar": "images/useful/author-roma.jpg"
+        },
+        "meta": {
+          "date": "12 апреля",
+          "tag": "Материалы",
+          "channel": "в канале DDRILLS"
+        },
+        "images": {
+          "cover1": "images/useful/design-drills-banner.jpg"
+        }
+      },
+      "content": [
+        {
+          "type": "section",
+          "id": "about-project",
+          "title": "О проекте Design Drills"
+        },
+        {
+          "type": "text",
+          "content": "Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."
+        },
+        {
+          "type": "section",
+          "id": "task",
+          "title": "Задание"
+        },
+        {
+          "type": "text",
+          "content": "Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."
+        },
+        {
+          "type": "text",
+          "content": "В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."
+        },
+        {
+          "type": "text",
+          "content": "Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."
+        },
+        {
+          "type": "section",
+          "id": "result",
+          "title": "Результат"
+        },
+        {
+          "type": "text",
+          "content": "Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"
+        },
+        {
+          "type": "text",
+          "content": "В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"
+        },
+        {
+          "type": "image",
+          "image": "images/useful/result-1.jpg",
+          "caption": "Больше примеров – в канале DDRILLS"
+        },
+        {
+          "type": "image",
+          "image": "images/useful/result-2.jpg",
+          "caption": ""
+        }
+      ],
+      "preview": {
+        "image": "images/useful/design-drills-preview.jpg",
+        "excerpt": "Прокачка дизайн-скиллов через простые упражнения каждый день"
+      },
+      "seo": {
+        "metaTitle": "Воркшоп – развитие креативности от Ddrills | ADC Media",
+        "metaDescription": "Прокачка дизайн-скиллов через простые упражнения",
+        "ogImage": "images/og/design-drills.jpg",
+        "keywords": ["Design Drills", "воркшоп", "креативность", "дизайн"]
+      }
+    },
+    {
       "id": "useful-graph",
       "slug": "graph",
       "type": "graph",

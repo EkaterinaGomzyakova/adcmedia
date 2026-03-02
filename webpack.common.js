@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 
 const webpack = require('webpack')
@@ -11,20 +12,22 @@ module.exports = {
   entry: {
     index: './src/javascript/entry-points/index.js',
 
-    'feeds-interviews': './src/javascript/entry-points/interviews.jsx',
+    tags: './src/javascript/entry-points/tags.jsx',
     'feeds-useful': './src/javascript/entry-points/useful.jsx',
 
     'interview-single': './src/javascript/entry-points/interview.jsx',
     'interview-graph': './src/javascript/entry-points/interview-graph.jsx',
+    'interviews-article': './src/javascript/entry-points/article.jsx',
 
-    'useful-article': './src/javascript/entry-points/article.jsx',
+    'useful-article': './src/javascript/entry-points/useful.jsx',
     'useful-graph': './src/javascript/entry-points/useful-graph.jsx',
 
     about: './src/javascript/entry-points/about.jsx'
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'docs'),
+    publicPath: '/aKm/'
     // clean: true
   },
   module: {
@@ -100,7 +103,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/feeds-interviews.html',
       filename: './feeds/interviews.html',
-      chunks: ['feeds-interviews']
+      chunks: ['tags']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -123,6 +126,13 @@ module.exports = {
       template: './src/pages/interview-graph.html',
       filename: './interview/graph.html',
       chunks: ['interview-graph']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article.html',
+      chunks: ['interviews-article']
     }),
 
     new HtmlWebpackPlugin({
@@ -168,7 +178,18 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
-    ])
+    ]),
+
+    // Copy images
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/images',
+          to: 'images',
+          noErrorOnMissing: true
+        }
+      ]
+    })
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
