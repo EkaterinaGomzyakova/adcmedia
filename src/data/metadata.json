@@ -4,13 +4,13 @@
     "shortName": "ADC Media",
     "description": "Платформа с интервью и полезными материалами для дизайнеров и медиа специалистов",
     "url": "https://media.adc.ac/",
-    "defaultOgImage": "/aKm/images/og/default.jpg",
+    "defaultOgImage": "/adcmedia/images/og/default.jpg",
     "twitterHandle": "@adcmedia",
     "locale": "ru_RU"
   },
   "organization": {
     "name": "HSE ADC",
-    "logo": "/aKm/images/A_Logo.svg"
+    "logo": "/adcmedia/images/A_Logo.svg"
   },
   "contacts": {
     "telegram": "https://t.me/adcmedia",

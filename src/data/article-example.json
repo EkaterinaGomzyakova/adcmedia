@@ -6,11 +6,11 @@
     "tags": ["Продукт", "Корпорация", "Преподавание"],
     "author": {
       "name": "Матвеем Васильевым",
-      "avatar": "/aKm/images/interviews/interviewAuthor1.png"
+      "avatar": "/adcmedia/images/interviews/interviewAuthor1.png"
     },
     "images": {
-      "cover1": "/aKm/images/interviews/cover1-article1.png",
-      "cover2": "/aKm/images/interviews/cover2-article1.png"
+      "cover1": "/adcmedia/images/interviews/cover1-article1.png",
+      "cover2": "/adcmedia/images/interviews/cover2-article1.png"
     },
     "description": "Матвей рассказывает об опыте работы дизайн-лидом, о преподавании технологий в Школе дизайна, а ещё о важности связей в дизайн-индустрии"
   },
@@ -35,7 +35,7 @@
     },
     {
       "type": "image",
-      "image": "/aKm/images/interviews/article-1-image-1.png",
+      "image": "/adcmedia/images/interviews/article-1-image-1.png",
       "caption": "ADC Offer x HSE Creative Hub"
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "type": "image",
-      "image": "/aKm/images/interviews/article-1-image-2.png",
+      "image": "/adcmedia/images/interviews/article-1-image-2.png",
       "caption": "Презентация ADC Offer"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "type": "image",
-      "image": "/aKm/images/interviews/article-1-image-3.png",
+      "image": "/adcmedia/images/interviews/article-1-image-3.png",
       "caption": "Интерфейс платформы ADC"
     },
     {
@@ -146,7 +146,7 @@
     },
     {
       "type": "image",
-      "image": "/aKm/images/interviews/article-1-image-4.png",
+      "image": "/adcmedia/images/interviews/article-1-image-4.png",
       "caption": "Интерфейс платформы ADC"
     },
     {
@@ -211,7 +211,7 @@
     },
     {
       "type": "image",
-      "image": "/aKm/images/interviews/article-1-image-5.png",
+      "image": "/adcmedia/images/interviews/article-1-image-5.png",
       "caption": "Интерфейс платформы ADC"
     },
     {

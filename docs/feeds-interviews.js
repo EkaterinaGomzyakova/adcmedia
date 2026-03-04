@@ -2501,7 +2501,7 @@ function registerSimpleEvent(domEventName, reactName) {
   topLevelEventsToReactNames.set(domEventName, reactName);
   registerTwoPhaseEvent(reactName, [domEventName]);
 }
-var CapturedStacks = new WeakMap();
+var CapturedStacks = new Weadcmediaap();
 function createCapturedValueAtFiber(value, source) {
   if ("object" === typeof value && null !== value) {
     var existing = CapturedStacks.get(value);
@@ -10417,7 +10417,7 @@ var DefaultAsyncDispatcher = {
       return cacheForType;
     }
   },
-  PossiblyWeakMap = "function" === typeof WeakMap ? WeakMap : Map,
+  PossiblyWeadcmediaap = "function" === typeof Weadcmediaap ? Weadcmediaap : Map,
   executionContext = 0,
   workInProgressRoot = null,
   workInProgress = null,
@@ -11606,7 +11606,7 @@ function captureCommitPhaseError(sourceFiber, nearestMountedAncestor, error) {
 function attachPingListener(root, wakeable, lanes) {
   var pingCache = root.pingCache;
   if (null === pingCache) {
-    pingCache = root.pingCache = new PossiblyWeakMap();
+    pingCache = root.pingCache = new PossiblyWeadcmediaap();
     var threadIDs = new Set();
     pingCache.set(wakeable, threadIDs);
   } else

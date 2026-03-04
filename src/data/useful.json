@@ -8,7 +8,7 @@
       "description": "Понимание роли и задач Design Operations в современных командах",
       "author": {
         "name": "Анна Иванова",
-        "image": "/aKm/images/useful/author-1.jpg"
+        "image": "/adcmedia/images/useful/author-1.jpg"
       },
       "meta": {
         "publishedDate": "15 февраля",
@@ -20,7 +20,7 @@
         "title": "Воркшоп – развитие креативности от Ddrills",
         "author": {
           "name": "Рома Кужель",
-          "avatar": "/aKm/images/useful/author-roma.jpg"
+          "avatar": "/adcmedia/images/useful/author-roma.jpg"
         },
         "meta": {
           "date": "12 апреля",
@@ -28,7 +28,7 @@
           "channel": "в канале DDRILLS"
         },
         "images": {
-          "cover1": "/aKm/images/useful/design-drills-banner.png"
+          "cover1": "/adcmedia/images/useful/design-drills-banner.png"
         }
       },
       "content": [
@@ -73,24 +73,24 @@
         },
         {
           "type": "image",
-          "image": "/aKm/images/useful/result-1.jpg",
+          "image": "/adcmedia/images/useful/result-1.jpg",
           "caption": "Больше примеров – в канале DDRILLS"
         },
         {
           "type": "image",
-          "image": "/aKm/images/useful/result-2.jpg",
+          "image": "/adcmedia/images/useful/result-2.jpg",
           "caption": ""
         }
       ],
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner.png",
-        "imageLight": "/aKm/images/useful/design-drills-bannerLight.png",
+        "image": "/adcmedia/images/useful/design-drills-banner.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-bannerLight.png",
         "excerpt": "Понимание роли и задач Design Operations в современных командах"
       },
       "seo": {
         "metaTitle": "Что такое Design Operations? | ADC Media",
         "metaDescription": "Понимание роли и задач Design Operations",
-        "ogImage": "/aKm/images/og/desops.jpg",
+        "ogImage": "/adcmedia/images/og/desops.jpg",
         "keywords": ["Design Operations", "DesOps", "команда", "процессы"]
       }
     },
@@ -102,7 +102,7 @@
       "description": "Прокачка дизайн-скиллов через простые упражнения каждый день",
       "author": {
         "name": "Рома Кужель",
-        "image": "/aKm/images/useful/author-roma.jpg"
+        "image": "/adcmedia/images/useful/author-roma.jpg"
       },
       "meta": {
         "publishedDate": "12 апреля",
@@ -121,14 +121,14 @@
         }
       ],
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner2.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner2Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner2.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner2Light.png",
         "excerpt": "Прокачка дизайн-скиллов через простые упражнения каждый день"
       },
       "seo": {
         "metaTitle": "Воркшоп – развитие креативности от Ddrills | ADC Media",
         "metaDescription": "Прокачка дизайн-скиллов через простые упражнения",
-        "ogImage": "/aKm/images/og/design-drills.jpg",
+        "ogImage": "/adcmedia/images/og/design-drills.jpg",
         "keywords": ["Design Drills", "воркшоп", "креативность", "дизайн"]
       }
     },
@@ -140,7 +140,7 @@
       "description": "Развитие навыков визуального мышления для эффективной коммуникации",
       "author": {
         "name": "Петр Смирнов",
-        "image": "/aKm/images/useful/author-2.jpg"
+        "image": "/adcmedia/images/useful/author-2.jpg"
       },
       "meta": {
         "publishedDate": "20 марта",
@@ -164,14 +164,14 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner3.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner3Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner3.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner3Light.png",
         "excerpt": "Развитие навыков визуального мышления для эффективной коммуникации"
       },
       "seo": {
         "metaTitle": "Лекция «Визуальное мышление как новый soft-skill» | ADC Media",
         "metaDescription": "Развитие навыков визуального мышления",
-        "ogImage": "/aKm/images/og/visual-thinking.jpg",
+        "ogImage": "/adcmedia/images/og/visual-thinking.jpg",
         "keywords": ["визуальное мышление", "soft-skills", "лекция"]
       }
     },
@@ -183,7 +183,7 @@
       "description": "Практическое руководство по созданию масштабируемых UI-китов",
       "author": {
         "name": "Мария Петрова",
-        "image": "/aKm/images/useful/author-3.jpg"
+        "image": "/adcmedia/images/useful/author-3.jpg"
       },
       "meta": {
         "publishedDate": "5 мая",
@@ -207,14 +207,14 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner4.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner4Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner4.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner4Light.png",
         "excerpt": "Практическое руководство по созданию масштабируемых UI-китов"
       },
       "seo": {
         "metaTitle": "Воркшоп по продвинутой сборке UI-kit | ADC Media",
         "metaDescription": "Практическое руководство по созданию масштабируемых UI-китов",
-        "ogImage": "/aKm/images/og/ui-kit.jpg",
+        "ogImage": "/adcmedia/images/og/ui-kit.jpg",
         "keywords": ["UI-kit", "воркшоп", "компоненты", "дизайн-система"]
       }
     },
@@ -226,7 +226,7 @@
       "description": "Понимание роли и задач Design Operations в современных командах",
       "author": {
         "name": "Анна Иванова",
-        "image": "/aKm/images/useful/author-1.jpg"
+        "image": "/adcmedia/images/useful/author-1.jpg"
       },
       "meta": {
         "publishedDate": "15 февраля",
@@ -238,7 +238,7 @@
         "title": "Воркшоп – развитие креативности от Ddrills",
         "author": {
           "name": "Рома Кужель",
-          "avatar": "/aKm/images/useful/author-roma.jpg"
+          "avatar": "/adcmedia/images/useful/author-roma.jpg"
         },
         "meta": {
           "date": "12 апреля",
@@ -246,7 +246,7 @@
           "channel": "в канале DDRILLS"
         },
         "images": {
-          "cover1": "/aKm/images/useful/design-drills-banner.png"
+          "cover1": "/adcmedia/images/useful/design-drills-banner.png"
         }
       },
       "content": [
@@ -291,24 +291,24 @@
         },
         {
           "type": "image",
-          "image": "/aKm/images/useful/result-1.jpg",
+          "image": "/adcmedia/images/useful/result-1.jpg",
           "caption": "Больше примеров – в канале DDRILLS"
         },
         {
           "type": "image",
-          "image": "/aKm/images/useful/result-2.jpg",
+          "image": "/adcmedia/images/useful/result-2.jpg",
           "caption": ""
         }
       ],
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner.png",
-        "imageLight": "/aKm/images/useful/design-drills-bannerLight.png",
+        "image": "/adcmedia/images/useful/design-drills-banner.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-bannerLight.png",
         "excerpt": "Понимание роли и задач Design Operations в современных командах"
       },
       "seo": {
         "metaTitle": "Что такое Design Operations? | ADC Media",
         "metaDescription": "Понимание роли и задач Design Operations",
-        "ogImage": "/aKm/images/og/desops.jpg",
+        "ogImage": "/adcmedia/images/og/desops.jpg",
         "keywords": ["Design Operations", "DesOps", "команда", "процессы"]
       }
     },
@@ -320,7 +320,7 @@
       "description": "Прокачка дизайн-скиллов через простые упражнения каждый день",
       "author": {
         "name": "Рома Кужель",
-        "image": "/aKm/images/useful/author-roma.jpg"
+        "image": "/adcmedia/images/useful/author-roma.jpg"
       },
       "meta": {
         "publishedDate": "12 апреля",
@@ -339,14 +339,14 @@
         }
       ],
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner2.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner2Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner2.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner2Light.png",
         "excerpt": "Прокачка дизайн-скиллов через простые упражнения каждый день"
       },
       "seo": {
         "metaTitle": "Воркшоп – развитие креативности от Ddrills | ADC Media",
         "metaDescription": "Прокачка дизайн-скиллов через простые упражнения",
-        "ogImage": "/aKm/images/og/design-drills.jpg",
+        "ogImage": "/adcmedia/images/og/design-drills.jpg",
         "keywords": ["Design Drills", "воркшоп", "креативность", "дизайн"]
       }
     },
@@ -358,7 +358,7 @@
       "description": "Развитие навыков визуального мышления для эффективной коммуникации",
       "author": {
         "name": "Петр Смирнов",
-        "image": "/aKm/images/useful/author-2.jpg"
+        "image": "/adcmedia/images/useful/author-2.jpg"
       },
       "meta": {
         "publishedDate": "20 марта",
@@ -382,14 +382,14 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner3.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner3Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner3.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner3Light.png",
         "excerpt": "Развитие навыков визуального мышления для эффективной коммуникации"
       },
       "seo": {
         "metaTitle": "Лекция «Визуальное мышление как новый soft-skill» | ADC Media",
         "metaDescription": "Развитие навыков визуального мышления",
-        "ogImage": "/aKm/images/og/visual-thinking.jpg",
+        "ogImage": "/adcmedia/images/og/visual-thinking.jpg",
         "keywords": ["визуальное мышление", "soft-skills", "лекция"]
       }
     },
@@ -401,7 +401,7 @@
       "description": "Практическое руководство по созданию масштабируемых UI-китов",
       "author": {
         "name": "Мария Петрова",
-        "image": "/aKm/images/useful/author-3.jpg"
+        "image": "/adcmedia/images/useful/author-3.jpg"
       },
       "meta": {
         "publishedDate": "5 мая",
@@ -425,14 +425,14 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/useful/design-drills-banner4.png",
-        "imageLight": "/aKm/images/useful/design-drills-banner4Light.png",
+        "image": "/adcmedia/images/useful/design-drills-banner4.png",
+        "imageLight": "/adcmedia/images/useful/design-drills-banner4Light.png",
         "excerpt": "Практическое руководство по созданию масштабируемых UI-китов"
       },
       "seo": {
         "metaTitle": "Воркшоп по продвинутой сборке UI-kit | ADC Media",
         "metaDescription": "Практическое руководство по созданию масштабируемых UI-китов",
-        "ogImage": "/aKm/images/og/ui-kit.jpg",
+        "ogImage": "/adcmedia/images/og/ui-kit.jpg",
         "keywords": ["UI-kit", "воркшоп", "компоненты", "дизайн-система"]
       }
     }

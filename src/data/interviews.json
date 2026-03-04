@@ -7,7 +7,7 @@
       "description": "Разбираем ключевые тренды дизайна с экспертом",
       "author": {
         "name": "Иван Петров",
-        "image": "/aKm/images/interviews/author-1.jpg",
+        "image": "/adcmedia/images/interviews/author-1.jpg",
         "bio": "Senior Product Designer в Яндексе"
       },
       "meta": {
@@ -26,13 +26,13 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/interviews/interview-1-cover.jpg",
+        "image": "/adcmedia/images/interviews/interview-1-cover.jpg",
         "excerpt": "Обсуждаем главные тренды дизайна 2025 года и роль AI в творческом процессе"
       },
       "seo": {
         "metaTitle": "Пример интервью: Дизайн в 2025 | ADC Media",
         "metaDescription": "Разбираем ключевые тренды дизайна с экспертом Иваном Петровым",
-        "ogImage": "/aKm/images/og/interview-1.jpg",
+        "ogImage": "/adcmedia/images/og/interview-1.jpg",
         "keywords": ["дизайн", "интервью", "UX", "тренды 2025"]
       }
     },
@@ -43,7 +43,7 @@
       "description": "Как правильно проводить UX исследования",
       "author": {
         "name": "Мария Сидорова",
-        "image": "/aKm/images/interviews/author-2.jpg",
+        "image": "/adcmedia/images/interviews/author-2.jpg",
         "bio": "UX Researcher в Тинькофф"
       },
       "meta": {
@@ -61,13 +61,13 @@
         ]
       },
       "preview": {
-        "image": "/aKm/images/interviews/interview-2-cover.jpg",
+        "image": "/adcmedia/images/interviews/interview-2-cover.jpg",
         "excerpt": "Узнайте, как правильно проводить UX исследования и избегать типичных ошибок"
       },
       "seo": {
         "metaTitle": "Интервью про UX исследования | ADC Media",
         "metaDescription": "Как правильно проводить UX исследования - интервью с Марией Сидоровой",
-        "ogImage": "/aKm/images/og/interview-2.jpg",
+        "ogImage": "/adcmedia/images/og/interview-2.jpg",
         "keywords": ["UX исследования", "методология", "интервью"]
       }
     }

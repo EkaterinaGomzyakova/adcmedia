@@ -4,7 +4,7 @@ const O_UsefulCard = ({ article }) => {
   const { title, meta, preview, slug } = article
 
   return (
-    <a href={`/aKm/useful/article.html?slug=${slug}`} className="O_UsefulCard">
+    <a href={`/adcmedia/useful/article.html?slug=${slug}`} className="O_UsefulCard">
       <div className="M_UsefulImage">
         <img
           src={preview?.image}
