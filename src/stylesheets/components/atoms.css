@@ -20,6 +20,17 @@
   }
 }
 
+.A_Button {
+  display: inline-flex;
+  padding: var(--md, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--xs, 8px);
+  background: var(--button-primary, #3cc68b);
+  color: #191919;
+}
+
 .A_ButtonCircle {
   display: flex;
   width: var(--3xl, 48px);
@@ -29,6 +40,14 @@
   align-items: center;
   border-radius: var(--xs, 8px);
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
+}
+
+.A_ButtonCircle svg path {
+  stroke: #fdfdfd;
+}
+
+html[data-theme='light'] .A_ButtonCircle svg path {
+  stroke: #191919;
 }
 
 .A_ButtonCircle--green {
@@ -56,7 +75,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  > div {
+  .Q_Dot {
     width: 8px;
     height: 8px;
   }
@@ -181,6 +200,47 @@
   .A_Text {
     font-size: var(--paragraph, 16px);
   }
+}
+
+.A_SearchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark-button-text, #fdfdfd);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 41.6px */
+  letter-spacing: -1.28px;
+}
+
+.A_SearchInput::placeholder {
+  color: rgba(253, 253, 253, 0.3);
+}
+
+html[data-theme='light'] .A_SearchInput {
+  color: var(--light-button-text, #191919);
+}
+
+html[data-theme='light'] .A_SearchInput::placeholder {
+  color: rgba(25, 25, 25, 0.3);
+}
+
+.A_SearchCount {
+  color: var(--medium-text, #8e8e8e);
+  font-family: 'Geist Mono';
+  font-size: var(--button, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.A_NoResults {
+  text-align: center;
+  color: var(--medium-text, #8e8e8e);
+  font-size: var(--paragraph-large, 24px);
+  padding: var(--5xl, 80px) 0;
 }
 
 @media screen and (max-width: 768px) {

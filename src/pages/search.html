@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск | ADC Media</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Поиск по интервью и полезным материалам"
+    />
+    <meta name="keywords" content="поиск, интервью, материалы" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Поиск | ADC Media" />
+    <meta property="og:url" content="https://media.adc.ac/search" />
+
+    <analytics></analytics>
+  </head>
+
+  <body class="S_SearchPage">
+    <main-menu></main-menu>
+
+    <main class="O_mainWrapperLayout">
+      <div class="SO_SearchContainer">
+        <div class="W_SearchTop">
+          <div class="M_SearchBox">
+            <input
+              type="text"
+              placeholder="Искать..."
+              class="A_SearchInput"
+              id="search-input"
+            />
+            <button class="A_ButtonCircle" id="close-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2001_18635)">
+                  <path
+                    d="M18 6L6 18"
+                    stroke="#FDFDFD"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 6L18 18"
+                    stroke="#FDFDFD"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2001_18635">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="SO_SearchResults" id="search-results"></div>
+      </div>
+    </main>
+
+    <footer-custom></footer-custom>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "tags": [
+    {
+      "id": "workshop",
+      "name": "Воркшоп"
+    },
+    {
+      "id": "lecture",
+      "name": "Лекция"
+    },
+    {
+      "id": "product",
+      "name": "Продукт"
+    },
+    {
+      "id": "digital",
+      "name": "Диджитал"
+    },
+    {
+      "id": "portfolio",
+      "name": "Портфолио"
+    },
+    {
+      "id": "resume",
+      "name": "Резюме"
+    },
+    {
+      "id": "interview",
+      "name": "Собеседование"
+    }
+  ]
+}

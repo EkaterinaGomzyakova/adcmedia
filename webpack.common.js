@@ -13,7 +13,7 @@ module.exports = {
     index: './src/javascript/entry-points/index.js',
 
     tags: './src/javascript/entry-points/tags.jsx',
-    'feeds-useful': './src/javascript/entry-points/useful.jsx',
+    'feeds-useful': './src/javascript/entry-points/feeds-useful.jsx',
 
     'interview-single': './src/javascript/entry-points/interview.jsx',
     'interview-graph': './src/javascript/entry-points/interview-graph.jsx',
@@ -22,12 +22,13 @@ module.exports = {
     'useful-article': './src/javascript/entry-points/useful.jsx',
     'useful-graph': './src/javascript/entry-points/useful-graph.jsx',
 
-    about: './src/javascript/entry-points/about.jsx'
+    about: './src/javascript/entry-points/about.jsx',
+    '404': './src/javascript/entry-points/404.js'
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/aKm/'
+    publicPath: '/'
     // clean: true
   },
   module: {
@@ -62,7 +63,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|mp4|webm)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]'
@@ -158,6 +159,14 @@ module.exports = {
       chunks: ['about']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/404.html',
+      filename: './404.html',
+      chunks: ['404']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
@@ -177,6 +186,12 @@ module.exports = {
         location: 'footer-custom',
         template_filename: '*',
         priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/search-modal.html'),
+        location: 'body',
+        template_filename: '*',
+        priority: 'low'
       }
     ]),
 

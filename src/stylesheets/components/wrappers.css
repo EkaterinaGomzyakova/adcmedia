@@ -38,6 +38,145 @@
   gap: var(--xl, 32px);
 }
 
+.W_BannerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 95px;
+  margin-top: 221px;
+  width: 416px;
+  text-align: center;
+  z-index: 3;
+}
+
+.W_textsAbout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  > p {
+    font-family: 'Geist Mono';
+  }
+}
+
+.W_AboutCenter {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  > img {
+    position: relative;
+    z-index: 3;
+  }
+
+  > h1 {
+    position: absolute;
+    font-size: 54px;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    width: 402px;
+  }
+
+  & > img:nth-child(3) {
+    display: none;
+  }
+
+  & > img:nth-child(2) {
+    display: block;
+  }
+
+  [data-theme='light'] & > img:nth-child(2) {
+    display: none;
+  }
+
+  [data-theme='light'] & > img:nth-child(3) {
+    display: block;
+  }
+}
+
+.W_mainContainer {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 302px;
+
+  > h1 {
+    position: relative;
+    z-index: 3;
+    width: 742px;
+    text-align: center;
+  }
+
+  > img {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    box-shadow: 0 0 80px 20px rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+
+    &:nth-child(3) {
+      top: 20px;
+      left: 65px;
+    }
+    &:nth-child(4) {
+      top: 336.76px;
+      left: 113px;
+    }
+    &:nth-child(5) {
+      top: 426px;
+      left: 419px;
+    }
+    &:nth-child(6) {
+      top: 261px;
+      left: 578px;
+    }
+    &:nth-child(7) {
+      top: 323px;
+      right: 553px;
+    }
+    &:nth-child(8) {
+      top: 245px;
+      right: 282px;
+    }
+    &:nth-child(9) {
+      top: 375px;
+      right: 68px;
+    }
+    &:nth-child(10) {
+      top: 46px;
+      right: 70px;
+    }
+  }
+
+  .Q_Line {
+    position: absolute;
+    background: var(--medium-text, #8e8e8e);
+  }
+}
+
+.W_infoMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  z-index: 3;
+}
+
+.W_SearchResultsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--5xl, 80px);
+}
+
 @media screen and (max-width: 1024px) {
   .W_Telegram {
     width: 100%;

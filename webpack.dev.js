@@ -11,7 +11,8 @@ module.exports = merge(common, {
       rewrites: [
         { from: /^\/interviews\/.*\.html$/, to: '/interviews/article.html' },
         { from: /^\/interview\/.*\.html$/, to: '/interview/single.html' },
-        { from: /^\/useful\/.*\.html$/, to: '/useful/article.html' }
+        { from: /^\/useful\/.*\.html$/, to: '/useful/article.html' },
+        { from: /./, to: '/404.html' }
       ]
     }
   },

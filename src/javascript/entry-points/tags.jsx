@@ -1,6 +1,8 @@
 import '../../index.css'
 import '../utils/theme.js'
 import '../utils/scroll.js'
+import '../utils/navigation.js'
+import '../utils/search-modal.js'
 import React, { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createPortal } from 'react-dom'

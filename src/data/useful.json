@@ -2,107 +2,19 @@
   "useful": [
     {
       "id": "useful-1",
-      "slug": "ux-research-guide",
+      "slug": "design-operations",
       "type": "article",
-      "title": "Как провести UX исследование",
-      "description": "Пошаговое руководство по проведению качественного UX исследования",
+      "title": "Что такое Design Operations?",
+      "description": "Понимание роли и задач Design Operations в современных командах",
       "author": {
         "name": "Анна Иванова",
         "image": "images/useful/author-1.jpg"
       },
       "meta": {
-        "publishedDate": "2025-01-05",
-        "readingTime": "10 мин",
-        "tags": ["UX", "исследования", "методология", "гайд"]
-      },
-      "content": {
-        "sections": [
-          {
-            "heading": "Введение",
-            "text": "UX исследования — это основа хорошего дизайна. В этом руководстве мы разберем, как правильно подготовиться и провести исследование."
-          },
-          {
-            "heading": "Шаг 1: Планирование",
-            "text": "Определите цели исследования, выберите методологию и составьте план."
-          },
-          {
-            "heading": "Шаг 2: Проведение",
-            "text": "Соберите данные, используя выбранные методы: интервью, опросы, тестирование."
-          },
-          {
-            "heading": "Шаг 3: Анализ",
-            "text": "Проанализируйте собранные данные и сформулируйте выводы."
-          }
-        ]
-      },
-      "preview": {
-        "image": "images/useful/useful-1-cover.jpg",
-        "excerpt": "Подробный гайд по проведению UX исследований от А до Я"
-      },
-      "seo": {
-        "metaTitle": "Как провести UX исследование | ADC Media",
-        "metaDescription": "Пошаговое руководство по проведению качественного UX исследования",
-        "ogImage": "images/og/useful-1.jpg",
-        "keywords": ["UX исследование", "методология", "гайд", "руководство"]
-      }
-    },
-    {
-      "id": "useful-2",
-      "slug": "design-systems-basics",
-      "type": "article",
-      "title": "Основы дизайн-систем",
-      "description": "Что такое дизайн-система и как её создать",
-      "author": {
-        "name": "Петр Смирнов",
-        "image": "images/useful/author-2.jpg"
-      },
-      "meta": {
-        "publishedDate": "2025-01-03",
+        "publishedDate": "15 февраля",
         "readingTime": "12 мин",
-        "tags": ["дизайн-системы", "UI", "компоненты"]
-      },
-      "content": {
-        "sections": [
-          {
-            "heading": "Что такое дизайн-система",
-            "text": "Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."
-          },
-          {
-            "heading": "Зачем нужна дизайн-система",
-            "text": "Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."
-          },
-          {
-            "heading": "Как создать дизайн-систему",
-            "text": "Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."
-          }
-        ]
-      },
-      "preview": {
-        "image": "images/useful/useful-2-cover.jpg",
-        "excerpt": "Узнайте, что такое дизайн-система и как начать её создание"
-      },
-      "seo": {
-        "metaTitle": "Основы дизайн-систем | ADC Media",
-        "metaDescription": "Что такое дизайн-система и как её создать - подробное руководство",
-        "ogImage": "images/og/useful-2.jpg",
-        "keywords": ["дизайн-система", "UI компоненты", "гайд"]
-      }
-    },
-    {
-      "id": "useful-3",
-      "slug": "design-drills-workshop",
-      "type": "article",
-      "title": "Воркшоп – развитие креативности от Ddrills",
-      "description": "Прокачка дизайн-скиллов через простые упражнения",
-      "author": {
-        "name": "Рома Кужель",
-        "image": "images/useful/author-roma.jpg"
-      },
-      "meta": {
-        "publishedDate": "12 апреля",
-        "readingTime": "8 мин",
-        "tags": ["Материалы"],
-        "channel": "в канале DDRILLS"
+        "tags": ["Лекция", "Продукт"],
+        "channel": ""
       },
       "hero": {
         "title": "Воркшоп – развитие креативности от Ddrills",
@@ -112,11 +24,11 @@
         },
         "meta": {
           "date": "12 апреля",
-          "tag": "Материалы",
+          "tag": "Воркшоп",
           "channel": "в канале DDRILLS"
         },
         "images": {
-          "cover1": "images/useful/design-drills-banner.jpg"
+          "cover1": "images/useful/design-drills-banner.png"
         }
       },
       "content": [
@@ -171,7 +83,46 @@
         }
       ],
       "preview": {
-        "image": "images/useful/design-drills-preview.jpg",
+        "image": "images/useful/design-drills-banner.png",
+        "imageLight": "images/useful/design-drills-bannerLight.png",
+        "excerpt": "Понимание роли и задач Design Operations в современных командах"
+      },
+      "seo": {
+        "metaTitle": "Что такое Design Operations? | ADC Media",
+        "metaDescription": "Понимание роли и задач Design Operations",
+        "ogImage": "images/og/desops.jpg",
+        "keywords": ["Design Operations", "DesOps", "команда", "процессы"]
+      }
+    },
+    {
+      "id": "useful-2",
+      "slug": "design-drills-workshop",
+      "type": "article",
+      "title": "Воркшоп – развитие креативности от Ddrills",
+      "description": "Прокачка дизайн-скиллов через простые упражнения каждый день",
+      "author": {
+        "name": "Рома Кужель",
+        "image": "images/useful/author-roma.jpg"
+      },
+      "meta": {
+        "publishedDate": "12 апреля",
+        "readingTime": "8 мин",
+        "tags": ["Воркшоп", "Диджитал"]
+      },
+      "content": [
+        {
+          "type": "section",
+          "id": "about-project",
+          "title": "О проекте Design Drills"
+        },
+        {
+          "type": "text",
+          "content": "Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."
+        }
+      ],
+      "preview": {
+        "image": "images/useful/design-drills-banner2.png",
+        "imageLight": "images/useful/design-drills-banner2Light.png",
         "excerpt": "Прокачка дизайн-скиллов через простые упражнения каждый день"
       },
       "seo": {
@@ -182,15 +133,307 @@
       }
     },
     {
-      "id": "useful-graph",
-      "slug": "graph",
-      "type": "graph",
-      "title": "Граф полезностей",
-      "description": "Интерактивная визуализация связей между материалами",
+      "id": "useful-3",
+      "slug": "visual-thinking-lecture",
+      "type": "article",
+      "title": "Лекция «Визуальное мышление как новый soft-skill»",
+      "description": "Развитие навыков визуального мышления для эффективной коммуникации",
+      "author": {
+        "name": "Петр Смирнов",
+        "image": "images/useful/author-2.jpg"
+      },
+      "meta": {
+        "publishedDate": "20 марта",
+        "readingTime": "15 мин",
+        "tags": ["Лекция", "Диджитал"]
+      },
+      "content": {
+        "sections": [
+          {
+            "heading": "Что такое дизайн-система",
+            "text": "Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."
+          },
+          {
+            "heading": "Зачем нужна дизайн-система",
+            "text": "Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."
+          },
+          {
+            "heading": "Как создать дизайн-систему",
+            "text": "Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."
+          }
+        ]
+      },
+      "preview": {
+        "image": "images/useful/design-drills-banner3.png",
+        "imageLight": "images/useful/design-drills-banner3Light.png",
+        "excerpt": "Развитие навыков визуального мышления для эффективной коммуникации"
+      },
       "seo": {
-        "metaTitle": "Граф полезностей | ADC Media",
-        "metaDescription": "Интерактивная визуализация связей между полезными материалами",
-        "ogImage": "images/og/useful-graph.jpg"
+        "metaTitle": "Лекция «Визуальное мышление как новый soft-skill» | ADC Media",
+        "metaDescription": "Развитие навыков визуального мышления",
+        "ogImage": "images/og/visual-thinking.jpg",
+        "keywords": ["визуальное мышление", "soft-skills", "лекция"]
+      }
+    },
+    {
+      "id": "useful-4",
+      "slug": "ui-kit-workshop",
+      "type": "article",
+      "title": "Воркшоп по продвинутой сборке UI-kit",
+      "description": "Практическое руководство по созданию масштабируемых UI-китов",
+      "author": {
+        "name": "Мария Петрова",
+        "image": "images/useful/author-3.jpg"
+      },
+      "meta": {
+        "publishedDate": "5 мая",
+        "readingTime": "18 мин",
+        "tags": ["Воркшоп", "Диджитал"]
+      },
+      "content": {
+        "sections": [
+          {
+            "heading": "Введение",
+            "text": "Научитесь создавать профессиональные UI-киты для своих проектов."
+          },
+          {
+            "heading": "Структура UI-kit",
+            "text": "Разберем компоненты, стили и правила их использования."
+          },
+          {
+            "heading": "Масштабирование",
+            "text": "Как сделать UI-kit гибким и удобным для команды."
+          }
+        ]
+      },
+      "preview": {
+        "image": "images/useful/design-drills-banner4.png",
+        "imageLight": "images/useful/design-drills-banner4Light.png",
+        "excerpt": "Практическое руководство по созданию масштабируемых UI-китов"
+      },
+      "seo": {
+        "metaTitle": "Воркшоп по продвинутой сборке UI-kit | ADC Media",
+        "metaDescription": "Практическое руководство по созданию масштабируемых UI-китов",
+        "ogImage": "images/og/ui-kit.jpg",
+        "keywords": ["UI-kit", "воркшоп", "компоненты", "дизайн-система"]
+      }
+    },
+    {
+      "id": "useful-6",
+      "slug": "design-operations",
+      "type": "article",
+      "title": "Что такое Design Operations?",
+      "description": "Понимание роли и задач Design Operations в современных командах",
+      "author": {
+        "name": "Анна Иванова",
+        "image": "images/useful/author-1.jpg"
+      },
+      "meta": {
+        "publishedDate": "15 февраля",
+        "readingTime": "12 мин",
+        "tags": ["Лекция", "Продукт"],
+        "channel": ""
+      },
+      "hero": {
+        "title": "Воркшоп – развитие креативности от Ddrills",
+        "author": {
+          "name": "Рома Кужель",
+          "avatar": "images/useful/author-roma.jpg"
+        },
+        "meta": {
+          "date": "12 апреля",
+          "tag": "Воркшоп",
+          "channel": "в канале DDRILLS"
+        },
+        "images": {
+          "cover1": "images/useful/design-drills-banner.png"
+        }
+      },
+      "content": [
+        {
+          "type": "section",
+          "id": "about-project",
+          "title": "О проекте Design Drills"
+        },
+        {
+          "type": "text",
+          "content": "Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."
+        },
+        {
+          "type": "section",
+          "id": "task",
+          "title": "Задание"
+        },
+        {
+          "type": "text",
+          "content": "Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."
+        },
+        {
+          "type": "text",
+          "content": "В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."
+        },
+        {
+          "type": "text",
+          "content": "Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."
+        },
+        {
+          "type": "section",
+          "id": "result",
+          "title": "Результат"
+        },
+        {
+          "type": "text",
+          "content": "Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"
+        },
+        {
+          "type": "text",
+          "content": "В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"
+        },
+        {
+          "type": "image",
+          "image": "images/useful/result-1.jpg",
+          "caption": "Больше примеров – в канале DDRILLS"
+        },
+        {
+          "type": "image",
+          "image": "images/useful/result-2.jpg",
+          "caption": ""
+        }
+      ],
+      "preview": {
+        "image": "images/useful/design-drills-banner.png",
+        "imageLight": "images/useful/design-drills-bannerLight.png",
+        "excerpt": "Понимание роли и задач Design Operations в современных командах"
+      },
+      "seo": {
+        "metaTitle": "Что такое Design Operations? | ADC Media",
+        "metaDescription": "Понимание роли и задач Design Operations",
+        "ogImage": "images/og/desops.jpg",
+        "keywords": ["Design Operations", "DesOps", "команда", "процессы"]
+      }
+    },
+    {
+      "id": "useful-7",
+      "slug": "design-drills-workshop",
+      "type": "article",
+      "title": "Воркшоп – развитие креативности от Ddrills",
+      "description": "Прокачка дизайн-скиллов через простые упражнения каждый день",
+      "author": {
+        "name": "Рома Кужель",
+        "image": "images/useful/author-roma.jpg"
+      },
+      "meta": {
+        "publishedDate": "12 апреля",
+        "readingTime": "8 мин",
+        "tags": ["Воркшоп", "Диджитал"]
+      },
+      "content": [
+        {
+          "type": "section",
+          "id": "about-project",
+          "title": "О проекте Design Drills"
+        },
+        {
+          "type": "text",
+          "content": "Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."
+        }
+      ],
+      "preview": {
+        "image": "images/useful/design-drills-banner2.png",
+        "imageLight": "images/useful/design-drills-banner2Light.png",
+        "excerpt": "Прокачка дизайн-скиллов через простые упражнения каждый день"
+      },
+      "seo": {
+        "metaTitle": "Воркшоп – развитие креативности от Ddrills | ADC Media",
+        "metaDescription": "Прокачка дизайн-скиллов через простые упражнения",
+        "ogImage": "images/og/design-drills.jpg",
+        "keywords": ["Design Drills", "воркшоп", "креативность", "дизайн"]
+      }
+    },
+    {
+      "id": "useful-8",
+      "slug": "visual-thinking-lecture",
+      "type": "article",
+      "title": "Лекция «Визуальное мышление как новый soft-skill»",
+      "description": "Развитие навыков визуального мышления для эффективной коммуникации",
+      "author": {
+        "name": "Петр Смирнов",
+        "image": "images/useful/author-2.jpg"
+      },
+      "meta": {
+        "publishedDate": "20 марта",
+        "readingTime": "15 мин",
+        "tags": ["Лекция", "Диджитал"]
+      },
+      "content": {
+        "sections": [
+          {
+            "heading": "Что такое дизайн-система",
+            "text": "Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."
+          },
+          {
+            "heading": "Зачем нужна дизайн-система",
+            "text": "Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."
+          },
+          {
+            "heading": "Как создать дизайн-систему",
+            "text": "Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."
+          }
+        ]
+      },
+      "preview": {
+        "image": "images/useful/design-drills-banner3.png",
+        "imageLight": "images/useful/design-drills-banner3Light.png",
+        "excerpt": "Развитие навыков визуального мышления для эффективной коммуникации"
+      },
+      "seo": {
+        "metaTitle": "Лекция «Визуальное мышление как новый soft-skill» | ADC Media",
+        "metaDescription": "Развитие навыков визуального мышления",
+        "ogImage": "images/og/visual-thinking.jpg",
+        "keywords": ["визуальное мышление", "soft-skills", "лекция"]
+      }
+    },
+    {
+      "id": "useful-9",
+      "slug": "ui-kit-workshop",
+      "type": "article",
+      "title": "Воркшоп по продвинутой сборке UI-kit",
+      "description": "Практическое руководство по созданию масштабируемых UI-китов",
+      "author": {
+        "name": "Мария Петрова",
+        "image": "images/useful/author-3.jpg"
+      },
+      "meta": {
+        "publishedDate": "5 мая",
+        "readingTime": "18 мин",
+        "tags": ["Воркшоп", "Диджитал"]
+      },
+      "content": {
+        "sections": [
+          {
+            "heading": "Введение",
+            "text": "Научитесь создавать профессиональные UI-киты для своих проектов."
+          },
+          {
+            "heading": "Структура UI-kit",
+            "text": "Разберем компоненты, стили и правила их использования."
+          },
+          {
+            "heading": "Масштабирование",
+            "text": "Как сделать UI-kit гибким и удобным для команды."
+          }
+        ]
+      },
+      "preview": {
+        "image": "images/useful/design-drills-banner4.png",
+        "imageLight": "images/useful/design-drills-banner4Light.png",
+        "excerpt": "Практическое руководство по созданию масштабируемых UI-китов"
+      },
+      "seo": {
+        "metaTitle": "Воркшоп по продвинутой сборке UI-kit | ADC Media",
+        "metaDescription": "Практическое руководство по созданию масштабируемых UI-китов",
+        "ogImage": "images/og/ui-kit.jpg",
+        "keywords": ["UI-kit", "воркшоп", "компоненты", "дизайн-система"]
       }
     }
   ]
