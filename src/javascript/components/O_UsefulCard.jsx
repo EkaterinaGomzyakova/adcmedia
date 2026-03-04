@@ -4,15 +4,15 @@ const O_UsefulCard = ({ article }) => {
   const { title, meta, preview, slug } = article
 
   return (
-    <a href={`/useful/article.html?slug=${slug}`} className="O_UsefulCard">
+    <a href={`/aKm/useful/article.html?slug=${slug}`} className="O_UsefulCard">
       <div className="M_UsefulImage">
         <img
-          src={`/${preview?.image}`}
+          src={preview?.image}
           alt={title}
           className="M_UsefulImageDark"
         />
         <img
-          src={`/${preview?.imageLight}`}
+          src={preview?.imageLight}
           alt={title}
           className="M_UsefulImageLight"
         />

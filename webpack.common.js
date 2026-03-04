@@ -28,7 +28,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/'
+    publicPath: '/aKm/'
     // clean: true
   },
   module: {
