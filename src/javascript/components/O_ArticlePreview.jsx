@@ -1,12 +1,10 @@
 import React from 'react'
 
 const O_ArticlePreview = ({ interview, isReversed }) => {
-  const { tags, title, description, readTime, imageDark, imageLight } = interview
+  const { tags, title, description, readTime, imageDark, imageLight, articleSlug } = interview
 
-  return (
-    <div
-      className={`O_ArticlePreview ${isReversed ? 'O_ArticlePreview--reverse' : ''}`}
-    >
+  const content = (
+    <>
       <div className="M_ArticleTextPreview">
         <div className="M_TagsGroup">
           {tags.map((tag, index) => (
@@ -56,6 +54,25 @@ const O_ArticlePreview = ({ interview, isReversed }) => {
         alt={'Картинка статьи ' + title}
         className="M_ArticleImage M_ArticleImageLight"
       />
+    </>
+  )
+
+  if (articleSlug) {
+    return (
+      <a
+        href={`/adcmedia/interviews/${articleSlug}.html`}
+        className={`O_ArticlePreview ${isReversed ? 'O_ArticlePreview--reverse' : ''}`}
+      >
+        {content}
+      </a>
+    )
+  }
+
+  return (
+    <div
+      className={`O_ArticlePreview O_ArticlePreview--no-link ${isReversed ? 'O_ArticlePreview--reverse' : ''}`}
+    >
+      {content}
     </div>
   )
 }

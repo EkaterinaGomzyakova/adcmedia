@@ -23,7 +23,7 @@ module.exports = {
     'useful-graph': './src/javascript/entry-points/useful-graph.jsx',
 
     about: './src/javascript/entry-points/about.jsx',
-    '404': './src/javascript/entry-points/404.js'
+    404: './src/javascript/entry-points/404.js'
   },
   output: {
     filename: '[name].js',
@@ -133,6 +133,27 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/interviews-article.html',
       filename: './interviews/article.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article1.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article2.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article3.html',
       chunks: ['interviews-article']
     }),
 

@@ -15,17 +15,21 @@ function getArticleSlugFromPath() {
 
   // Если это базовый путь /interviews/article.html, используем дефолтное значение
   if (slug === 'article' || slug === 'interviews' || slug === '') {
-    return 'article-example'
+    return 'article1'
   }
 
   return slug
 }
 
-import articleExampleData from '../../data/article-example.json'
+import article1Data from '../../data/articles/article1.json'
+import article2Data from '../../data/articles/article2.json'
+import article3Data from '../../data/articles/article3.json'
 
 // Маппинг slug -> данные статьи
 const articlesMap = {
-  'article-example': articleExampleData
+  article1: article1Data,
+  article2: article2Data,
+  article3: article3Data
 }
 
 function loadArticle() {

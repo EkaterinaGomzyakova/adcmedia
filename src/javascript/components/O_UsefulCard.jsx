@@ -1,10 +1,10 @@
 import React from 'react'
 
 const O_UsefulCard = ({ article }) => {
-  const { title, meta, preview, slug } = article
+  const { title, meta, preview, articleSlug } = article
 
-  return (
-    <a href={`/adcmedia/useful/article.html?slug=${slug}`} className="O_UsefulCard">
+  const content = (
+    <>
       <div className="M_UsefulImage">
         <img
           src={preview?.image}
@@ -32,7 +32,21 @@ const O_UsefulCard = ({ article }) => {
           ))}
         </div>
       </div>
-    </a>
+    </>
+  )
+
+  if (articleSlug) {
+    return (
+      <a href={`/adcmedia/useful/article.html`} className="O_UsefulCard">
+        {content}
+      </a>
+    )
+  }
+
+  return (
+    <div className="O_UsefulCard O_UsefulCard--no-link">
+      {content}
+    </div>
   )
 }
 
