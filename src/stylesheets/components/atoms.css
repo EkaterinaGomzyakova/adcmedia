@@ -42,6 +42,10 @@
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
 }
 
+.A_ButtonCircleNone {
+  display: none;
+}
+
 .A_ButtonCircle svg path {
   stroke: #fdfdfd;
 }
@@ -274,5 +278,14 @@ html[data-theme='light'] .A_SearchInput::placeholder {
 
   #theme-toggle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .A_ButtonCircleMobile {
+    display: none;
+  }
+  .A_ButtonCircleNone {
+    display: flex;
   }
 }

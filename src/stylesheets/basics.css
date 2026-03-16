@@ -105,3 +105,13 @@ button {
     padding: var(--2xl, 40px) 50px;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: var(--2xl, 40px) 35px;
+  }
+}
+@media screen and (max-width: 560px) {
+  body {
+    padding: var(--2xl, 40px) 20px;
+  }
+}

@@ -163,3 +163,18 @@
 .C_SearchSection .C_MainPageInterviewsList {
   gap: var(--5xl, 80px);
 }
+
+@media screen and (max-width: 768px) {
+  .C_MainPageUsefulGrid {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .C_buttonsMobile {
+    display: flex;
+    margin-top: 320px;
+    gap: 24px;
+  }
+}

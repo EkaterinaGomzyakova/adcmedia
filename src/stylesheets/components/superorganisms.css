@@ -111,7 +111,7 @@
 
 .T_MainPage {
   display: flex;
-  width: 1636px;
+  width: 100%;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -149,4 +149,16 @@
   min-height: 60vh;
   gap: var(--xl, 32px);
   text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .SO_QuoteBlock {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .SO_QuoteBlock {
+    flex-direction: column;
+  }
 }

@@ -278,7 +278,7 @@
     text-align: center;
 
     font-family: 'Geist Mono';
-    font-size: var(--accent, 48px);
+    font-size: var(--heading-2, 48px);
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -292,35 +292,35 @@
     border-radius: 100%;
 
     &:nth-child(3) {
-      left: 171px;
+      left: 8.91vw;
       top: 33px;
     }
     &:nth-child(4) {
-      left: 114px;
+      left: 5.94vw;
       top: 359px;
     }
     &:nth-child(5) {
-      left: 460px;
+      left: 23.96vw;
       top: 360px;
     }
     &:nth-child(6) {
-      left: 370px;
+      left: 19.27vw;
       top: 270px;
     }
     &:nth-child(7) {
-      right: 615px;
+      right: 32.03vw;
       top: 385px;
     }
     &:nth-child(8) {
-      right: 366px;
+      right: 19.06vw;
       top: 188px;
     }
     &:nth-child(9) {
-      right: 152px;
+      right: 7.92vw;
       top: 326px;
     }
     &:nth-child(10) {
-      right: 152px;
+      right: 7.92vw;
       top: 0;
     }
 
@@ -330,6 +330,50 @@
       transform: translateX(-50%);
       box-shadow: 0 0 80px 20px rgba(255, 255, 255, 0);
       top: -71px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .O_QuoteCards {
+    width: 796px;
+    height: 469px;
+  }
+
+  .O_CommunityBlock {
+    > img {
+      &:nth-child(3) {
+        left: 3.44vw;
+        top: -47px;
+      }
+      &:nth-child(4) {
+        left: 2.31vw;
+        top: 280px;
+      }
+      &:nth-child(5) {
+        left: 14.56vw;
+        top: 355.4px;
+      }
+      &:nth-child(6) {
+        left: 14.56vw;
+        top: 266.6px;
+      }
+      &:nth-child(7) {
+        right: 30.64vw;
+        top: 388.62px;
+      }
+      &:nth-child(8) {
+        right: 13.33vw;
+        top: 196px;
+      }
+      &:nth-child(9) {
+        right: 1.74vw;
+        top: 325.35px;
+      }
+      &:nth-child(10) {
+        right: 2.34vw;
+        top: -3px;
+      }
     }
   }
 }
@@ -344,6 +388,56 @@
       height: auto;
     }
   }
+
+  .O_QuoteCards {
+    width: 716px;
+    height: 454px;
+  }
+
+  .O_QuoteCard {
+    width: 716px;
+
+    .M_Quote {
+      width: 716px;
+    }
+  }
+
+  .O_CommunityBlock {
+    > img {
+      &:nth-child(3) {
+        left: 4.78vw;
+        top: -46px;
+      }
+      &:nth-child(4) {
+        left: 1.65vw;
+        top: 158.42px;
+      }
+      &:nth-child(5) {
+        left: 13.23vw;
+        top: 380.58px;
+      }
+      &:nth-child(6) {
+        left: 10.11vw;
+        top: 236.54px;
+      }
+      &:nth-child(7) {
+        right: 27.4vw;
+        top: 420px;
+      }
+      &:nth-child(8) {
+        right: 7.92vw;
+        top: 196px;
+      }
+      &:nth-child(9) {
+        right: 0.47vw;
+        top: 325.7px;
+      }
+      &:nth-child(10) {
+        right: 1.17vw;
+        top: -3px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -353,6 +447,124 @@
 
     > a {
       width: 100%;
+    }
+  }
+
+  .O_QuoteCards {
+    width: 482px;
+    height: 550px;
+  }
+
+  .O_QuoteCard {
+    width: 482px;
+
+    .M_Quote {
+      width: 482px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .O_UsefulCard {
+    width: 100%;
+  }
+
+  .O_CommunityBlock {
+    > img {
+      &:nth-child(3) {
+        left: 1.1vw;
+        top: -74.5px;
+      }
+      &:nth-child(4) {
+        left: -0.74vw;
+        top: 134.42px;
+      }
+      &:nth-child(5) {
+        left: 17.26vw;
+        top: 380px;
+      }
+      &:nth-child(6) {
+        left: 1.95vw;
+        top: 309px;
+      }
+      &:nth-child(7) {
+        right: 30.7vw;
+        top: 389px;
+      }
+      &:nth-child(8) {
+        right: 15.53vw;
+        top: 372.16px;
+      }
+      &:nth-child(9) {
+        right: -0.33vw;
+        top: 319px;
+      }
+      &:nth-child(10) {
+        right: 16.67vw;
+        top: -74px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .O_TopicsBlock {
+    > h2 {
+      width: 160px;
+    }
+  }
+
+  .O_CommunityBlock {
+    height: 352px;
+
+    > img {
+      width: 63px;
+
+      &:nth-child(3) {
+        left: 1.1vw;
+        top: -74.5px;
+      }
+      &:nth-child(4) {
+        left: -10.74vw;
+        top: 90.42px;
+      }
+      &:nth-child(5) {
+        left: 42.26vw;
+        top: 270px;
+      }
+      &:nth-child(6) {
+        left: 7.95vw;
+        top: 239px;
+      }
+      &:nth-child(7) {
+        right: -3.3vw;
+        top: 237px;
+      }
+      &:nth-child(8) {
+        right: -1.47vw;
+        top: -87.84px;
+      }
+      &:nth-child(9) {
+        right: -6.33vw;
+        top: 105px;
+      }
+      &:nth-child(10) {
+        right: 16.67vw;
+        top: -74px;
+      }
+    }
+  }
+
+  .O_QuoteCards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .O_QuoteCard {
+    width: 390px;
+
+    .M_Quote {
+      width: 390px;
     }
   }
 }
