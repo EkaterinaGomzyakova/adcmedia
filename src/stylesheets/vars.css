@@ -24,77 +24,78 @@
   --8xl: 160px;
 
   /* large-desktop */
-  --image-article-width: 808px;
-  --image-article-height: 500px;
-  --footer-column-width: 256px;
-  --footer-telegram-card-width: 463px;
-  --display: 180px;
-  --heading-1: 64px;
-  --heading-2: 42px;
-  --heading-3: 32px;
-  --paragraph-large: 24px;
-  --paragraph: 17px;
-  --tags: 17px;
-  --button: 14px;
+  --image-article-width: 42.08vw;
+  --image-article-height: 26.04vw;
+  --footer-column-width: 13.33vw;
+  --footer-telegram-card-width: 24.11vw;
+  --display: 9.38vw;
+  --heading-1: 3.33vw;
+  --heading-2: 2.19vw;
+  --heading-3: 1.67vw;
+  --paragraph-large: 1.25vw;
+  --paragraph: 0.89vw;
+  --tags: 0.89vw;
+  --button: 0.73vw;
 
   @media screen and (max-width: 1440px) {
-    --image-article-width: 728px;
-    --image-article-height: 450px;
-    --footer-column-width: 252px;
-    --footer-telegram-card-width: 456px;
-    --display: 180px;
-    --heading-1: 64px;
-    --heading-2: 42px;
-    --heading-3: 32px;
-    --paragraph-large: 24px;
-    --paragraph: 17px;
-    --tags: 17px;
-    --button: 14px;
+    --image-article-width: 50.56vw;
+    --image-article-height: 31.25vw;
+    --footer-column-width: 17.5vw;
+    --footer-telegram-card-width: 31.67vw;
+    --display: 12.5vw;
+    --heading-1: 4.44vw;
+    --heading-2: 2.92vw;
+    --heading-3: 2.22vw;
+    --paragraph-large: 1.67vw;
+    --paragraph: 1.18vw;
+    --tags: 1.18vw;
+    --button: 0.97vw;
   }
 
   @media screen and (max-width: 1280px) {
-    --image-article-width: 568px;
-    --image-article-height: 352px;
-    --footer-column-width: 198px;
-    --footer-telegram-card-width: 420px;
-    --display: 140px;
-    --heading-1: 54px;
-    --heading-2: 36px;
-    --heading-3: 28px;
-    --paragraph-large: 22px;
-    --paragraph: 16px;
-    --tags: 16px;
-    --button: 14px;
+    --image-article-width: 44.38vw;
+    --image-article-height: 27.5vw;
+    --footer-column-width: 15.47vw;
+    --footer-telegram-card-width: 32.81vw;
+    --display: 10.94vw;
+    --heading-1: 4.22vw;
+    --heading-2: 2.81vw;
+    --heading-3: 2.19vw;
+    --paragraph-large: 1.72vw;
+    --paragraph: 1.25vw;
+    --tags: 1.25vw;
+    --button: 1.09vw;
   }
 
   @media screen and (max-width: 768px) {
-    --image-article-width: 698px;
-    --image-article-height: 432px;
-    --footer-column-width: 194px;
-    --footer-telegram-card-width: 698px;
-    --display: 140px;
-    --heading-1: 54px;
-    --heading-2: 36px;
-    --heading-3: 28px;
-    --paragraph-large: 22px;
-    --paragraph: 16px;
-    --tags: 16px;
-    --button: 14px;
+    /* tablet */
+    --image-article-width: 90.89vw;
+    --image-article-height: 56.25vw;
+    --footer-column-width: 25.26vw;
+    --footer-telegram-card-width: 90.89vw;
+    --display: 18.23vw;
+    --heading-1: 7.03vw;
+    --heading-2: 4.69vw;
+    --heading-3: 3.65vw;
+    --paragraph-large: 2.86vw;
+    --paragraph: 2.08vw;
+    --tags: 2.08vw;
+    --button: 1.82vw;
   }
 
   @media screen and (max-width: 440px) {
-    --image-article-width: 400px;
-    --image-article-height: 248px;
-    --footer-column-width: 200px;
-    --footer-telegram-card-width: 400px;
-    --display: 96px;
-    --heading-1: 32px;
-    --heading-2: 24px;
-    --heading-3: 18px;
-    --paragraph-large: 15px;
-    --paragraph: 15px;
-    --tags: 15px;
-    --button: 14px;
+    --image-article-width: 90.91vw;
+    --image-article-height: 56.36vw;
+    --footer-column-width: 45.45vw;
+    --footer-telegram-card-width: 90.91vw;
+    --display: 21.82vw;
+    --heading-1: 7.27vw;
+    --heading-2: 5.45vw;
+    --heading-3: 4.09vw;
+    --paragraph-large: 3.41vw;
+    --paragraph: 3.41vw;
+    --tags: 3.41vw;
+    --button: 3.18vw;
   }
 }
 

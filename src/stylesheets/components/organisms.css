@@ -1,7 +1,7 @@
 .O_FooterTop {
   display: flex;
   width: 100%;
-  height: 172px;
+  height: 8.96vw;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--2xl, 40px);
+  gap: var(--2xl, 2.08vw);
 }
 
 .O_ArticlePreview {
@@ -20,8 +20,8 @@
   gap: var(--3xl);
 
   > img {
-    width: var(--image-article-width, 808px);
-    height: var(--image-article-height, 500px);
+    width: var(--image-article-width, 42.08vw);
+    height: var(--image-article-height, 26.04vw);
   }
 }
 
@@ -48,49 +48,49 @@
 }
 
 .O_mainPageWrapperLayout {
-  gap: var(--7xl, 128px);
+  gap: var(--7xl, 6.67vw);
 }
 
 .O_HeadingTextArticle {
   display: flex;
-  width: 670px;
+  width: 34.9vw;
   flex-direction: column;
   align-items: center;
-  gap: var(--4xl, 64px);
+  gap: var(--4xl, 3.33vw);
 }
 
 .O_AnswerBlockArticle {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
 }
 
 .O_UsefulHeadingContent {
   display: flex;
-  width: 946px;
+  width: 49.27vw;
   flex-direction: column;
-  gap: var(--md, 16px);
-  margin-left: var(--4xl, 64px);
+  gap: var(--md, 0.83vw);
+  margin-left: var(--4xl, 3.33vw);
 }
 
 .O_UserCard {
   display: flex;
   width: fit-content;
-  padding: 24px;
+  padding: 1.25vw;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  border-radius: 8px;
-  border: 1px solid var(--gray, #8e8e8e);
+  gap: 2.08vw;
+  border-radius: 0.42vw;
+  border: 0.05vw solid var(--gray, #8e8e8e);
   background: var(--dark_gray, #2d2d2d);
 }
 
 .O_UsefulCard {
   display: flex;
-  width: calc(100% / 2 - 10px);
+  width: calc(100% / 2 - 0.52vw);
   flex-direction: column;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
   text-decoration: none;
   color: inherit;
 }
@@ -105,8 +105,8 @@
 
 .M_UsefulImage {
   width: 100%;
-  height: 347px;
-  border-radius: var(--sm, 12px);
+  height: 18.07vw;
+  border-radius: var(--sm, 0.63vw);
   overflow: hidden;
   background: var(--cards-background, #191919);
 }
@@ -134,8 +134,8 @@
   position: relative;
   margin-top: var(--5xl);
   width: 100%;
-  height: 580px;
-  border-radius: var(--sm, 12px);
+  height: 30.21vw;
+  border-radius: var(--sm, 0.63vw);
   background: var(--cards-background, #191919);
   display: flex;
   justify-content: center;
@@ -143,14 +143,14 @@
 
 .O_QuoteCards {
   position: relative;
-  width: 808px;
-  height: 524.22px;
+  width: 42.08vw;
+  height: 27.3vw;
 
   > .O_QuoteCard {
     position: absolute;
-    border: 1px solid var(--medium_gray, #383838);
-    box-shadow: 1px 1px 8px 0 rgba(255, 255, 255, 0.1);
-    border-radius: var(--sm, 12px);
+    border: 0.05vw solid var(--medium_gray, #383838);
+    box-shadow: 0.05vw 0.05vw 0.42vw 0 rgba(255, 255, 255, 0.1);
+    border-radius: var(--sm, 0.63vw);
 
     &:nth-child(2) {
       transform: rotate(-4deg);
@@ -164,16 +164,16 @@
 .O_WordsContainerAbout {
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 30.21vw;
   display: flex;
   align-items: center;
 }
 
 .O_connectionViewAbout {
-  margin-top: 61px;
+  margin-top: 3.18vw;
   display: flex;
   flex-direction: column;
-  gap: var(--4xl, 64px);
+  gap: var(--4xl, 3.33vw);
   align-items: center;
 }
 
@@ -181,9 +181,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1462px;
-  padding: 48px 0 37px 0;
-  border-radius: 8px;
+  width: 76.15vw;
+  padding: 2.5vw 0 1.93vw 0;
+  border-radius: 0.42vw;
   background: var(--cards-background, #191919);
 
   > img:nth-child(2) {
@@ -200,20 +200,20 @@
 }
 
 .O_QuoteCard {
-  width: 808px;
+  width: 42.08vw;
 
   .M_Quote {
     margin: 0;
-    width: 808px;
-    gap: var(--lg, 32px);
-    padding: var(--3xl, 48px);
+    width: 42.08vw;
+    gap: var(--lg, 1.67vw);
+    padding: var(--3xl, 2.5vw);
 
     > div:nth-child(1) {
       display: flex;
       flex-direction: column;
-      gap: var(--4xl, 32px);
+      gap: var(--4xl, 1.67vw);
       > p {
-        font-size: var(--paragraph-large, 24px);
+        font-size: var(--paragraph-large, 1.25vw);
       }
     }
   }
@@ -221,9 +221,9 @@
 
 .O_TopicsBlock {
   position: relative;
-  height: 580px;
+  height: 540px;
   width: 100%;
-  border-radius: var(--sm, 12px);
+  border-radius: var(--sm, 0.63vw);
   background: var(--cards-background, #191919);
   overflow: hidden;
   display: flex;
@@ -233,7 +233,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 64px;
+    top: 32px;
   }
 }
 
@@ -241,17 +241,17 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 105px;
+  bottom: 5.47vw;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 309px;
+  width: 16.09vw;
   text-align: center;
 
   > h1 {
     color: var(--light-button-text, #191919);
-    font-size: 180px;
-    letter-spacing: -7.2px;
+    font-size: 9.38vw;
+    letter-spacing: -0.38vw;
   }
 
   > p {
@@ -259,65 +259,65 @@
   }
 
   > a {
-    margin-top: 18px;
+    margin-top: 0.94vw;
   }
 }
 
 .O_CommunityBlock {
   position: relative;
   width: 100%;
-  height: 532px;
+  height: 27.71vw;
 
-  margin-top: 71px;
+  margin-top: 3.7vw;
 
   display: flex;
   justify-content: center;
 
   > h2 {
-    width: 995px;
+    width: 51.82vw;
     text-align: center;
 
     font-family: 'Geist Mono';
-    font-size: var(--heading-2, 48px);
+    font-size: var(--heading-2, 2.5vw);
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    letter-spacing: -1.92px;
+    letter-spacing: -0.1vw;
   }
 
   > img {
     position: absolute;
-    width: 63.158px;
-    box-shadow: 0 0 80px 20px rgba(255, 255, 255, 0.1);
+    width: 3.29vw;
+    box-shadow: 0 0 4.17vw 1.04vw rgba(255, 255, 255, 0.1);
     border-radius: 100%;
 
     &:nth-child(3) {
       left: 8.91vw;
-      top: 33px;
+      top: 1.72vw;
     }
     &:nth-child(4) {
       left: 5.94vw;
-      top: 359px;
+      top: 18.7vw;
     }
     &:nth-child(5) {
       left: 23.96vw;
-      top: 360px;
+      top: 18.75vw;
     }
     &:nth-child(6) {
       left: 19.27vw;
-      top: 270px;
+      top: 14.06vw;
     }
     &:nth-child(7) {
       right: 32.03vw;
-      top: 385px;
+      top: 20.05vw;
     }
     &:nth-child(8) {
       right: 19.06vw;
-      top: 188px;
+      top: 9.79vw;
     }
     &:nth-child(9) {
       right: 7.92vw;
-      top: 326px;
+      top: 16.98vw;
     }
     &:nth-child(10) {
       right: 7.92vw;
@@ -325,54 +325,54 @@
     }
 
     &:nth-child(11) {
-      width: 36px;
+      width: 1.88vw;
       left: 50%;
       transform: translateX(-50%);
-      box-shadow: 0 0 80px 20px rgba(255, 255, 255, 0);
-      top: -71px;
+      box-shadow: 0 0 4.17vw 1.04vw rgba(255, 255, 255, 0);
+      top: -3.7vw;
     }
   }
 }
 
 @media screen and (max-width: 1440px) {
   .O_QuoteCards {
-    width: 796px;
-    height: 469px;
+    width: 55.28vw;
+    height: 32.57vw;
   }
 
   .O_CommunityBlock {
     > img {
       &:nth-child(3) {
         left: 3.44vw;
-        top: -47px;
+        top: -3.26vw;
       }
       &:nth-child(4) {
         left: 2.31vw;
-        top: 280px;
+        top: 19.44vw;
       }
       &:nth-child(5) {
         left: 14.56vw;
-        top: 355.4px;
+        top: 24.68vw;
       }
       &:nth-child(6) {
         left: 14.56vw;
-        top: 266.6px;
+        top: 18.51vw;
       }
       &:nth-child(7) {
         right: 30.64vw;
-        top: 388.62px;
+        top: 26.99vw;
       }
       &:nth-child(8) {
         right: 13.33vw;
-        top: 196px;
+        top: 13.61vw;
       }
       &:nth-child(9) {
         right: 1.74vw;
-        top: 325.35px;
+        top: 22.59vw;
       }
       &:nth-child(10) {
         right: 2.34vw;
-        top: -3px;
+        top: -0.21vw;
       }
     }
   }
@@ -381,7 +381,7 @@
 @media screen and (max-width: 1280px) {
   .O_ArticlePreview {
     flex-direction: column-reverse;
-    gap: var(--3xl, 48px);
+    gap: var(--3xl, 3.75vw);
 
     > img {
       width: 100%;
@@ -390,15 +390,15 @@
   }
 
   .O_QuoteCards {
-    width: 716px;
-    height: 454px;
+    width: 55.94vw;
+    height: 35.47vw;
   }
 
   .O_QuoteCard {
-    width: 716px;
+    width: 55.94vw;
 
     .M_Quote {
-      width: 716px;
+      width: 55.94vw;
     }
   }
 
@@ -406,35 +406,35 @@
     > img {
       &:nth-child(3) {
         left: 4.78vw;
-        top: -46px;
+        top: -3.59vw;
       }
       &:nth-child(4) {
         left: 1.65vw;
-        top: 158.42px;
+        top: 12.38vw;
       }
       &:nth-child(5) {
         left: 13.23vw;
-        top: 380.58px;
+        top: 29.73vw;
       }
       &:nth-child(6) {
         left: 10.11vw;
-        top: 236.54px;
+        top: 18.48vw;
       }
       &:nth-child(7) {
         right: 27.4vw;
-        top: 420px;
+        top: 32.81vw;
       }
       &:nth-child(8) {
         right: 7.92vw;
-        top: 196px;
+        top: 15.31vw;
       }
       &:nth-child(9) {
         right: 0.47vw;
-        top: 325.7px;
+        top: 25.45vw;
       }
       &:nth-child(10) {
         right: 1.17vw;
-        top: -3px;
+        top: -0.23vw;
       }
     }
   }
@@ -451,15 +451,15 @@
   }
 
   .O_QuoteCards {
-    width: 482px;
-    height: 550px;
+    width: 47.07vw;
+    height: 53.71vw;
   }
 
   .O_QuoteCard {
-    width: 482px;
+    width: 47.07vw;
 
     .M_Quote {
-      width: 482px;
+      width: 47.07vw;
     }
   }
 }
@@ -473,35 +473,35 @@
     > img {
       &:nth-child(3) {
         left: 1.1vw;
-        top: -74.5px;
+        top: -9.7vw;
       }
       &:nth-child(4) {
         left: -0.74vw;
-        top: 134.42px;
+        top: 17.5vw;
       }
       &:nth-child(5) {
         left: 17.26vw;
-        top: 380px;
+        top: 49.48vw;
       }
       &:nth-child(6) {
         left: 1.95vw;
-        top: 309px;
+        top: 40.23vw;
       }
       &:nth-child(7) {
         right: 30.7vw;
-        top: 389px;
+        top: 50.65vw;
       }
       &:nth-child(8) {
         right: 15.53vw;
-        top: 372.16px;
+        top: 48.46vw;
       }
       &:nth-child(9) {
         right: -0.33vw;
-        top: 319px;
+        top: 41.54vw;
       }
       &:nth-child(10) {
         right: 16.67vw;
-        top: -74px;
+        top: -9.64vw;
       }
     }
   }
@@ -510,47 +510,47 @@
 @media screen and (max-width: 440px) {
   .O_TopicsBlock {
     > h2 {
-      width: 160px;
+      width: 40.36vw;
     }
   }
 
   .O_CommunityBlock {
-    height: 352px;
+    height: 80vw;
 
     > img {
-      width: 63px;
+      width: 14.32vw;
 
       &:nth-child(3) {
         left: 1.1vw;
-        top: -74.5px;
+        top: -16.93vw;
       }
       &:nth-child(4) {
         left: -10.74vw;
-        top: 90.42px;
+        top: 20.55vw;
       }
       &:nth-child(5) {
         left: 42.26vw;
-        top: 270px;
+        top: 61.36vw;
       }
       &:nth-child(6) {
         left: 7.95vw;
-        top: 239px;
+        top: 54.32vw;
       }
       &:nth-child(7) {
         right: -3.3vw;
-        top: 237px;
+        top: 53.86vw;
       }
       &:nth-child(8) {
         right: -1.47vw;
-        top: -87.84px;
+        top: -19.96vw;
       }
       &:nth-child(9) {
         right: -6.33vw;
-        top: 105px;
+        top: 23.86vw;
       }
       &:nth-child(10) {
         right: 16.67vw;
-        top: -74px;
+        top: -16.82vw;
       }
     }
   }
@@ -561,10 +561,10 @@
   }
 
   .O_QuoteCard {
-    width: 390px;
+    width: 88.64vw;
 
     .M_Quote {
-      width: 390px;
+      width: 88.64vw;
     }
   }
 }

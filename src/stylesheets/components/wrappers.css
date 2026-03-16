@@ -1,50 +1,50 @@
 .W_Telegram {
   display: flex;
-  width: var(--footer-telegram-card-width, 463px);
-  padding: var(--lg, 24px) var(--lg, 24px) 44px var(--lg, 24px);
+  width: var(--footer-telegram-card-width, 24.11vw);
+  padding: var(--lg, 1.25vw) var(--lg, 1.25vw) 2.29vw var(--lg, 1.25vw);
   align-items: flex-start;
-  gap: var(--md, 16px);
-  border-radius: var(--xs, 8px);
+  gap: var(--md, 0.83vw);
+  border-radius: var(--xs, 0.42vw);
   background: var(--cards-background, #191919);
 }
 
 .W_FooterColumn {
   display: flex;
   flex-direction: column;
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 }
 
 .W_ContentHeaderArticle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
   align-self: stretch;
   text-align: center;
 }
 
 .W_TextBlockArticle {
   display: flex;
-  gap: 20px;
+  gap: 1.04vw;
 }
 
 .W_MenuContainer {
   position: sticky;
-  top: var(--xl, 32px);
+  top: var(--xl, 1.67vw);
   align-self: flex-start;
   display: flex;
-  width: 256px;
+  width: 13.33vw;
   flex-direction: column;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
 }
 
 .W_BannerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 95px;
-  margin-top: 221px;
-  width: 416px;
+  gap: 4.95vw;
+  margin-top: 11.51vw;
+  width: 21.67vw;
   text-align: center;
   z-index: 3;
 }
@@ -62,7 +62,7 @@
 
 .W_AboutCenter {
   position: absolute;
-  top: 50px;
+  top: 2.6vw;
   left: 50%;
   transform: translateX(-50%);
 
@@ -73,13 +73,13 @@
 
   > h1 {
     position: absolute;
-    font-size: 54px;
+    font-size: 2.81vw;
     z-index: 4;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
-    width: 402px;
+    width: 20.94vw;
   }
 
   & > img:nth-child(3) {
@@ -101,57 +101,57 @@
 
 .W_mainContainer {
   position: relative;
-  margin-top: 60px;
-  margin-bottom: 77px;
+  margin-top: 3.13vw;
+  margin-bottom: 4.01vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 302px;
+  gap: 15.73vw;
 
   > h1 {
     position: relative;
     z-index: 3;
-    width: 742px;
+    width: 50.65vw;
     text-align: center;
   }
 
   > img {
     position: absolute;
     z-index: 2;
-    width: 150px;
-    box-shadow: 0 0 80px 20px rgba(255, 255, 255, 0.3);
+    width: 7.81vw;
+    box-shadow: 0 0 4.17vw 1.04vw rgba(255, 255, 255, 0.3);
     border-radius: 100%;
 
     &:nth-child(3) {
-      top: 20px;
+      top: 1.04vw;
       left: 3.39vw;
     }
     &:nth-child(4) {
-      top: 336.76px;
+      top: 17.54vw;
       left: 5.89vw;
     }
     &:nth-child(5) {
-      top: 426px;
+      top: 22.19vw;
       left: 21.82vw;
     }
     &:nth-child(6) {
-      top: 261px;
+      top: 13.59vw;
       left: 30.1vw;
     }
     &:nth-child(7) {
-      top: 323px;
+      top: 16.82vw;
       right: 28.8vw;
     }
     &:nth-child(8) {
-      top: 245px;
+      top: 12.76vw;
       right: 14.69vw;
     }
     &:nth-child(9) {
-      top: 375px;
+      top: 19.53vw;
       right: 3.54vw;
     }
     &:nth-child(10) {
-      top: 46px;
+      top: 2.4vw;
       right: 3.65vw;
     }
   }
@@ -166,7 +166,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 1.67vw;
   position: relative;
   z-index: 3;
 }
@@ -174,45 +174,45 @@
 .W_SearchResultsWrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--5xl, 80px);
+  gap: var(--5xl, 4.17vw);
 }
 
 @media screen and (max-width: 1440px) {
   .W_mainContainer {
-    margin-top: 64px;
-    margin-bottom: 48px;
+    margin-top: 4.44vw;
+    margin-bottom: 3.33vw;
 
     > img {
       &:nth-child(3) {
-        top: 103px;
+        top: 7.15vw;
         left: 1.39vw;
       }
       &:nth-child(4) {
-        top: 331.5px;
+        top: 23.02vw;
         left: 3.61vw;
       }
       &:nth-child(5) {
-        top: 316px;
+        top: 21.94vw;
         left: 22.71vw;
       }
       &:nth-child(6) {
-        top: 221px;
+        top: 15.35vw;
         left: 37.19vw;
       }
       &:nth-child(7) {
-        top: 283px;
+        top: 19.65vw;
         right: 30.97vw;
       }
       &:nth-child(8) {
-        top: 211px;
+        top: 14.65vw;
         right: 12.99vw;
       }
       &:nth-child(9) {
-        top: 351.5px;
+        top: 24.41vw;
         right: 1.47vw;
       }
       &:nth-child(10) {
-        top: 27px;
+        top: 1.88vw;
         right: 1.17vw;
       }
     }
@@ -221,43 +221,47 @@
 
 @media screen and (max-width: 1280px) {
   .W_mainContainer {
-    margin-top: 40px;
-    margin-bottom: 16px;
-    gap: 377px;
+    margin-top: 3.13vw;
+    margin-bottom: 1.25vw;
+    gap: 29.45vw;
+
+    > h1 {
+      width: 80.65vw;
+    }
 
     > img {
-      width: 120px;
+      width: 9.38vw;
 
       &:nth-child(3) {
-        top: 139px;
+        top: 10.86vw;
         left: 1.56vw;
       }
       &:nth-child(4) {
-        top: 354px;
+        top: 27.66vw;
         left: 2.73vw;
       }
       &:nth-child(5) {
-        top: 354px;
+        top: 27.66vw;
         left: 24.45vw;
       }
       &:nth-child(6) {
-        top: 240px;
+        top: 18.75vw;
         left: 40.7vw;
       }
       &:nth-child(7) {
-        top: 321px;
+        top: 25.08vw;
         right: 24.22vw;
       }
       &:nth-child(8) {
-        top: 246px;
+        top: 19.22vw;
         right: 7.42vw;
       }
       &:nth-child(9) {
-        top: 409px;
+        top: 31.95vw;
         right: 6.25vw;
       }
       &:nth-child(10) {
-        top: 65px;
+        top: 5.08vw;
         right: 1.56vw;
       }
     }
@@ -273,42 +277,42 @@
 @media screen and (max-width: 768px) {
   .W_mainContainer {
     margin-top: 0;
-    margin-bottom: 16px;
-    gap: 399px;
+    margin-bottom: 2.08vw;
+    gap: 51.95vw;
 
     > img {
-      width: 100px;
+      width: 13.02vw;
 
       &:nth-child(3) {
-        top: 207.4px;
+        top: 27.01vw;
         left: 1.82vw;
       }
       &:nth-child(4) {
-        top: 391px;
+        top: 50.91vw;
         left: 8.14vw;
       }
       &:nth-child(5) {
-        top: 391px;
+        top: 50.91vw;
         left: 28.39vw;
       }
       &:nth-child(6) {
-        top: 291px;
+        top: 37.89vw;
         left: 39.06vw;
       }
       &:nth-child(7) {
-        top: 346px;
+        top: 45.05vw;
         right: 18.66vw;
       }
       &:nth-child(8) {
-        top: 291px;
+        top: 37.89vw;
         right: 2.21vw;
       }
       &:nth-child(9) {
-        top: 466px;
+        top: 60.68vw;
         right: 0.34vw;
       }
       &:nth-child(10) {
-        top: 172px;
+        top: 22.4vw;
         right: -1vw;
       }
     }
@@ -318,48 +322,53 @@
 @media screen and (max-width: 440px) {
   .W_mainContainer {
     margin-top: 0;
-    margin-bottom: 16px;
-    gap: 360px;
+    margin-bottom: 3.64vw;
+    gap: 81.82vw;
 
     > h1 {
-      width: 460px;
+      width: 104.55vw;
     }
 
     > img {
-      width: 80px;
+      width: 18.18vw;
 
       &:nth-child(3) {
-        top: 115px;
+        top: 26.14vw;
         left: -16.55vw;
       }
       &:nth-child(4) {
-        top: 328px;
+        top: 74.55vw;
         left: 0.55vw;
       }
       &:nth-child(5) {
-        top: 251px;
+        top: 57.05vw;
         left: 30.09vw;
       }
       &:nth-child(6) {
-        top: 155px;
+        top: 35.23vw;
         left: 10.59vw;
       }
       &:nth-child(7) {
-        top: 351px;
+        top: 79.77vw;
         right: 19.55vw;
       }
       &:nth-child(8) {
-        top: 121px;
+        top: 27.5vw;
         right: 14.55vw;
       }
       &:nth-child(9) {
-        top: 235px;
+        top: 53.41vw;
         right: 1.32vw;
       }
       &:nth-child(10) {
-        top: 125px;
+        top: 28.41vw;
         right: -16vw;
       }
     }
+  }
+
+  .W_infoMain {
+    width: 100%;
+    gap: 7.27vw;
   }
 }

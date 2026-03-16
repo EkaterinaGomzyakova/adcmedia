@@ -3,18 +3,18 @@
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--4xl, 64px);
+  gap: var(--4xl, 3.33vw);
 }
 
 .SO_HeadingArticle {
   display: flex;
-  width: var(--image-article-width, 808px);
-  padding: var(--4xl, 64px) 69px;
+  width: var(--image-article-width, 42.08vw);
+  padding: var(--4xl, 3.33vw) 3.59vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--6xl, 96px);
-  border-radius: 320px;
+  gap: var(--6xl, 5vw);
+  border-radius: 16.67vw;
   margin: 0 auto;
   background: var(--cards-background, #191919);
   z-index: 3;
@@ -26,23 +26,23 @@
 
   > img:nth-child(2) {
     top: 50%;
-    left: 11px;
+    left: 0.57vw;
     transform: translate(0, -50%);
   }
 
   > img:nth-child(3) {
-    top: 157px;
-    right: 17px;
+    top: 8.18vw;
+    right: 0.89vw;
   }
 }
 
 .SO_ArticleContent {
   display: flex;
-  width: 1014px;
+  width: 52.81vw;
   margin: 0 auto;
   flex-direction: column;
   align-items: flex-end;
-  gap: var(--4xl, 64px);
+  gap: var(--4xl, 3.33vw);
   flex-shrink: 0;
 }
 
@@ -54,46 +54,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
 }
 
 .SO_Banner {
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 30.21vw;
   display: flex;
   align-items: center;
 }
 
 .SO_UsefulMaterialContent {
   display: flex;
-  width: 1014px;
+  width: 52.81vw;
   flex-direction: column;
   align-items: center;
-  gap: var(--4xl, 64px);
-  margin: 32px auto 0 auto;
+  gap: var(--4xl, 3.33vw);
+  margin: 1.67vw auto 0 auto;
 }
 
 .SO_QuoteBlock {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 524px;
-  gap: 20px;
+  height: 27.29vw;
+  gap: 1.04vw;
 }
 
 .T_InterviewBlockMainPage,
 .T_UsefulBlockMainPage {
   display: flex;
   flex-direction: column;
-  gap: var(--3xl, 48px);
+  gap: var(--3xl, 2.5vw);
 }
 
 .T_ArticleBody {
-  margin-top: var(--5xl, 80px);
+  margin-top: var(--5xl, 4.17vw);
   display: flex;
-  width: 1636px;
-  gap: 20px;
+  width: 85.21vw;
+  gap: 1.04vw;
   align-items: flex-start;
 }
 
@@ -115,7 +115,7 @@
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
-  gap: var(--7xl, 128px);
+  gap: var(--7xl, 6.67vw);
 }
 
 .S_404Page {
@@ -126,10 +126,10 @@
 
 .Q_404Background {
   position: fixed;
-  top: -550px;
+  top: -28.65vw;
   left: 0;
   width: 100%;
-  height: calc(100% + 550px);
+  height: calc(100% + 28.65vw);
   object-fit: cover;
   z-index: 0;
 }
@@ -147,13 +147,13 @@
   align-items: center;
   justify-content: center;
   min-height: 60vh;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
   text-align: center;
 }
 
 @media screen and (max-width: 1440px) {
   .SO_QuoteBlock {
-    gap: 40px;
+    gap: 2.78vw;
   }
 }
 

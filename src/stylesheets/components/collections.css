@@ -1,44 +1,44 @@
 .C_Tags {
   display: flex;
-  gap: 12px var(--sm, 12px);
+  gap: 0.63vw var(--sm, 0.63vw);
   flex-wrap: wrap;
 }
 
 .C_Interviews {
-  margin-top: var(--5xl, 80px);
+  margin-top: var(--5xl, 4.17vw);
   display: flex;
   flex-direction: column;
-  gap: var(--5xl, 80px);
+  gap: var(--5xl, 4.17vw);
 }
 
 .C_InterviewsList {
   display: flex;
   flex-direction: column;
-  gap: var(--5xl, 80px);
+  gap: var(--5xl, 4.17vw);
 }
 
 .C_InterviewsList .no-results {
   text-align: center;
   color: var(--medium-text, #8e8e8e);
-  font-size: var(--paragraph-large, 24px);
-  padding: var(--5xl, 80px) 0;
+  font-size: var(--paragraph-large, 1.25vw);
+  padding: var(--5xl, 4.17vw) 0;
 }
 
 .С_MenuItemsContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 }
 
 .C_UsefulListGrid {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 40px 20px;
+  gap: 2.08vw 1.04vw;
   align-self: stretch;
   flex-wrap: wrap;
-  margin: var(--5xl, 80px) 0;
+  margin: var(--5xl, 4.17vw) 0;
 }
 
 .C_wordsAbout {
@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--7xl, 128px);
+  gap: var(--7xl, 6.67vw);
 
   .O_ArticlePreview {
     width: 100%;
@@ -72,7 +72,7 @@
 .С_TagsMainPage {
   display: inline-flex;
   align-items: center;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
 }
 
 .C_TagsMainPage {
@@ -89,7 +89,7 @@
 
 .C_TagsMarqueeTrack {
   display: flex;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
   animation: marquee 30s linear infinite;
   width: fit-content;
 }
@@ -126,14 +126,14 @@
 
 .C_SearchModalOverlay--withContent {
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.52vw);
 }
 
 .C_SearchInputContainer {
   width: 100%;
-  min-height: 160px;
+  min-height: 8.33vw;
   background: var(--background, #0a0a0a);
-  padding: var(--3xl, 48px) 142px;
+  padding: var(--3xl, 2.5vw) 7.4vw;
   position: relative;
   overflow: hidden;
   z-index: 10000;
@@ -142,18 +142,18 @@
 .C_SearchResultsContainer {
   width: 100%;
   background: var(--background, #0a0a0a);
-  border-radius: var(--md, 16px);
-  padding: var(--3xl, 48px) 142px;
+  border-radius: var(--md, 0.83vw);
+  padding: var(--3xl, 2.5vw) 7.4vw;
   position: relative;
   z-index: 10000;
 }
 
 .C_SearchSection {
-  margin-bottom: var(--5xl, 80px);
+  margin-bottom: var(--5xl, 4.17vw);
 }
 
 .C_SearchSection h2 {
-  margin-bottom: var(--3xl, 48px);
+  margin-bottom: var(--3xl, 2.5vw);
 }
 
 .C_SearchSection .C_UsefulListGrid {
@@ -161,20 +161,20 @@
 }
 
 .C_SearchSection .C_MainPageInterviewsList {
-  gap: var(--5xl, 80px);
+  gap: var(--5xl, 4.17vw);
 }
 
 @media screen and (max-width: 768px) {
   .C_MainPageUsefulGrid {
     flex-direction: column;
-    gap: 32px;
+    gap: var(--xl);
   }
 }
 
 @media screen and (max-width: 440px) {
   .C_buttonsMobile {
     display: flex;
-    margin-top: 320px;
-    gap: 24px;
+    margin-top: 72.73vw;
+    gap: 5.45vw;
   }
 }

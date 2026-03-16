@@ -5,9 +5,9 @@
 body {
   font-family: 'RF Dewi';
   display: flex;
-  padding: var(--2xl, 40px) 142px;
+  padding: var(--2xl, 2.08vw) 7.4vw;
   flex-direction: column;
-  gap: var(--5xl, 80px);
+  gap: var(--5xl, 4.17vw);
   background: var(--body-text-background);
   color: var(--dark-button-text, #fdfdfd);
 }
@@ -19,8 +19,8 @@ a {
 p {
   font-style: normal;
   line-height: 140%;
-  letter-spacing: -0.34px;
-  font-size: var(--paragraph, 17px);
+  letter-spacing: -0.02vw;
+  font-size: var(--paragraph, 0.89vw);
 }
 
 h1 {
@@ -31,11 +31,11 @@ h1 {
 }
 
 h2 {
-  font-size: var(--heading-2, 42px);
+  font-size: var(--heading-2, 2.19vw);
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
-  letter-spacing: -1.68px;
+  letter-spacing: -0.09vw;
 }
 
 h3 {
@@ -45,7 +45,7 @@ h3 {
 }
 
 button {
-  font-size: 14px;
+  font-size: 0.73vw;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -102,16 +102,16 @@ button {
 
 @media screen and (max-width: 1440px) {
   body {
-    padding: var(--2xl, 40px) 50px;
+    padding: var(--2xl, 2.78vw) 3.47vw;
   }
 }
 @media screen and (max-width: 768px) {
   body {
-    padding: var(--2xl, 40px) 35px;
+    padding: var(--2xl, 5.21vw) 4.56vw;
   }
 }
 @media screen and (max-width: 560px) {
   body {
-    padding: var(--2xl, 40px) 20px;
+    padding: var(--2xl, 7.14vw) 3.57vw;
   }
 }

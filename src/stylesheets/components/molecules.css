@@ -6,21 +6,21 @@
   justify-content: center;
   align-items: center;
   gap: var(--xl);
-  border-radius: 8px;
+  border-radius: 0.42vw;
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(2.6vw);
 }
 
 .M_ButtonsNavbar {
   display: flex;
   align-items: center;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
 }
 
 .M_ParagraphTextGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--xs, 8px);
+  gap: var(--xs, 0.42vw);
 
   > p:nth-child(1) {
     color: var(--medium-text, #8e8e8e);
@@ -34,7 +34,7 @@
 .M_FooterMenu {
   display: flex;
   flex-direction: column;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 }
 
 .M_FooterBottom {
@@ -48,36 +48,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 670px;
-  gap: var(--2xl, 40px);
+  width: 34.9vw;
+  gap: var(--2xl, 2.08vw);
   margin: 0 auto;
 }
 
 .M_TagsGroup {
   display: flex;
   align-items: center;
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 }
 
 .M_Pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 }
 
 .M_PaginationButton {
   display: flex;
-  width: var(--3xl, 48px);
-  height: var(--3xl, 48px);
+  width: var(--3xl, 2.5vw);
+  height: var(--3xl, 2.5vw);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 1.56vw;
   background: var(--cards-background, #191919);
   color: var(--dark-button-text, #fdfdfd);
   font-family: 'Geist Mono';
-  font-size: var(--tags, 17px);
+  font-size: var(--tags, 0.89vw);
 }
 
 .M_PaginationButton.active {
@@ -87,18 +87,18 @@
 
 .M_HeroContainer {
   display: flex;
-  width: 258px;
+  width: 13.44vw;
   flex-direction: column;
   align-items: center;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 }
 
 .M_ImageWithCaption {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--lg, 24px);
-  width: 946px;
+  gap: var(--lg, 1.25vw);
+  width: 49.27vw;
 
   > p {
     font-family: 'Geist Mono';
@@ -107,12 +107,12 @@
 
 .M_Quote {
   display: flex;
-  width: 946px;
-  padding: var(--xl, 32px);
-  margin-top: var(--xs, 8px);
+  width: 49.27vw;
+  padding: var(--xl, 1.67vw);
+  margin-top: var(--xs, 0.42vw);
   flex-direction: column;
-  gap: var(--4xl, 64px);
-  border-radius: 12px;
+  gap: var(--4xl, 3.33vw);
+  border-radius: 0.63vw;
   background: var(--cards-background, #191919);
 
   > h3 {
@@ -122,8 +122,8 @@
 
 .M_NumberQuestion {
   display: flex;
-  width: var(--3xl, 48px);
-  height: var(--3xl, 48px);
+  width: var(--3xl, 2.5vw);
+  height: var(--3xl, 2.5vw);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -173,17 +173,17 @@
 .M_Paragraph {
   display: flex;
   flex-direction: column;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
 }
 
 .M_DividerLine {
-  width: 946px;
+  width: 49.27vw;
 }
 
 .M_TextWithIcon {
   display: flex;
   align-items: center;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 
   > p:hover {
     color: var(--medium-text, #8e8e8e);
@@ -201,14 +201,14 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 .M_MenuItem {
   display: flex;
   align-items: center;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
 }
 
 .M_MenuItem.active {
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 
   .Q_ContentMark {
-    width: 20px;
+    width: 1.04vw;
     background: var(--dark-button-text, #fdfdfd);
   }
 
@@ -220,13 +220,13 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 .M_AuthorInfo {
   display: flex;
   align-items: center;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 }
 
 .M_UsefulMeta {
   display: flex;
   align-items: center;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
   color: var(--medium-text, #8e8e8e);
 }
 
@@ -234,7 +234,7 @@ html[data-theme='light'] .M_TextWithIcon svg path {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: var(--sm, 12px);
+  border-radius: var(--sm, 0.63vw);
 
   > img {
     width: 100%;
@@ -245,25 +245,25 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 .M_UsefulTextCaption {
   display: flex;
   flex-direction: column;
-  gap: var(--md, 16px);
+  gap: var(--md, 0.83vw);
 }
 
 .M_ParagraphAbout {
-  width: 946px;
+  width: 49.27vw;
 }
 
 .M_HeroContainerAbout {
   display: flex;
   align-items: center;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 }
 
 .M_AboutInfo {
   display: flex;
-  width: 1084px;
+  width: 55.46vw;
   flex-direction: column;
   align-items: center;
-  gap: var(--xl, 32px);
+  gap: var(--xl, 1.67vw);
   text-align: center;
 
   > h3 {
@@ -279,11 +279,11 @@ html[data-theme='light'] .M_TextWithIcon svg path {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--sm, 12px);
+  gap: var(--sm, 0.63vw);
 
   > img {
-    width: var(--4xl, 64px);
-    height: var(--4xl, 64px);
+    width: var(--4xl, 3.33vw);
+    height: var(--4xl, 3.33vw);
   }
 }
 
@@ -295,11 +295,11 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
 .M_TagBig {
   display: flex;
-  padding: var(--lg, 24px) var(--3xl, 48px);
+  padding: var(--lg, 1.25vw) var(--3xl, 2.5vw);
   flex-direction: column;
   align-items: flex-start;
   gap: var(--zero, 0);
-  border-radius: 900px;
+  border-radius: 46.88vw;
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
   justify-content: center;
   flex-shrink: 0;
@@ -307,16 +307,16 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
 .M_ADCInfo {
   display: flex;
-  width: 394px;
-  height: 164px;
-  padding: 48px 20px;
+  width: 20.52vw;
+  height: 8.54vw;
+  padding: 2.5vw 1.04vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  border-radius: var(--2xl, 40px);
+  gap: 1.04vw;
+  border-radius: var(--2xl, 2.08vw);
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(2.6vw);
 
   > p:nth-child(2) {
     color: var(--medium-text, #8e8e8e);
@@ -324,14 +324,14 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 }
 
 .M_ButtonBig {
-  width: 808.906px;
-  height: 198.066px;
-  border-radius: 900px;
+  width: 42.13vw;
+  height: 10.32vw;
+  border-radius: 46.88vw;
   background: #3cc68b;
-  padding: 15px;
+  padding: 0.78vw;
   overflow: hidden;
   position: absolute;
-  top: 201px;
+  top: 10.47vw;
 
   display: flex;
   align-items: center;
@@ -343,24 +343,24 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
   > h2 {
     z-index: 3;
-    margin-left: 135px;
+    margin-left: 7.03vw;
     color: var(--dark-button-text, #fdfdfd);
-    font-size: var(--heading-2, 42px);
+    font-size: var(--heading-2, 2.19vw);
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    letter-spacing: -1.68px;
+    letter-spacing: -0.09vw;
   }
 
   > div {
     position: absolute;
-    top: -53px;
-    right: 34px;
-    width: 419.133px;
-    height: 419.133px;
-    border-radius: 900px;
+    top: -2.76vw;
+    right: 1.77vw;
+    width: 21.83vw;
+    height: 21.83vw;
+    border-radius: 46.88vw;
     background: #be9aff;
-    filter: blur(60px);
+    filter: blur(3.13vw);
   }
 
   img {
@@ -371,7 +371,7 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 .M_SearchBox {
   display: flex;
   align-items: center;
-  gap: var(--lg, 24px);
+  gap: var(--lg, 1.25vw);
   width: 100%;
   position: relative;
   z-index: 100;
@@ -379,28 +379,37 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
 @media screen and (max-width: 1440px) {
   .M_AboutInfo {
-    width: 932px;
+    width: 64.72vw;
+  }
+
+  .M_ADCInfo {
+    width: 26.94vw;
+    height: 160px;
   }
 }
 
 @media screen and (max-width: 1280px) {
   .M_AboutInfo {
-    width: 864px;
+    width: 67.5vw;
   }
 
   .M_ButtonBig {
-    width: 716px;
-    height: 198px;
-    padding: 14px;
-    top: 151px;
+    width: 55.94vw;
+    height: 15.47vw;
+    padding: 1.09vw;
+    top: 11.8vw;
 
     > h2 {
-      margin-left: 150px;
+      margin-left: 11.72vw;
     }
 
     > div {
-      right: -35px;
+      right: -2.73vw;
     }
+  }
+
+  .M_ADCInfo {
+    width: 32.81vw;
   }
 }
 
@@ -419,25 +428,25 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
   .M_TextWithIcon {
     gap: var(--xs);
-
-    > p {
-      font-size: 14px;
-    }
   }
 
   .M_ButtonBig {
     width: 100%;
-    height: 129px;
-    padding: 14px;
-    top: 151px;
+    height: 16.8vw;
+    padding: 1.82vw;
+    top: 19.66vw;
 
     > h2 {
-      margin-left: 97.5px;
+      margin-left: 12.7vw;
     }
 
     > div {
-      right: -35px;
+      right: -4.56vw;
     }
+  }
+
+  .M_ADCInfo {
+    width: 53.39vw;
   }
 }
 
@@ -448,21 +457,23 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
   .M_ButtonBig {
     width: 100%;
-    height: 129px;
-    padding: 10px;
-    top: 127px;
+    height: 29.32vw;
+    padding: 2.27vw;
+    top: 28.86vw;
 
     > img {
-      width: 108.8px;
+      width: 24.73vw;
       height: auto;
     }
 
     > h2 {
-      margin-left: 42.5px;
+      margin-left: 9.66vw;
     }
 
     > div {
-      right: -165.5px;
+      right: -19.61vw;
+      width: 74.47vw;
+      height: 74.47vw;
     }
   }
 }

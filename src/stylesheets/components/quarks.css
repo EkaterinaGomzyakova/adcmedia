@@ -7,7 +7,7 @@
 
 .Q_Line {
   width: 100%;
-  height: 1px;
+  height: 0.05vw;
   background: var(--dark-button-text, #fdfdfd);
 }
 
@@ -17,8 +17,8 @@
 
 .Q_HeroImage {
   border-radius: 100%;
-  width: var(--4xl, 64px);
-  height: var(--4xl, 64px);
+  width: var(--4xl, 3.33vw);
+  height: var(--4xl, 3.33vw);
 }
 
 .Q_ImageCover {
@@ -29,25 +29,25 @@
   > img {
     width: 100%;
     height: auto;
-    border-radius: var(--sm, 12px);
+    border-radius: var(--sm, 0.63vw);
   }
 }
 
 .Q_ContentMark {
-  width: 12px;
-  height: 1.5px;
+  width: 0.63vw;
+  height: 0.08vw;
   background: var(--color-medium-text, #8e8e8e);
 }
 
 .Q_UsefulBanner {
-  border-radius: var(--sm, 12px);
+  border-radius: var(--sm, 0.63vw);
 }
 
 .Q_LineArticelHero {
   position: absolute;
 
   &:nth-child(4) {
-    top: 414px;
+    top: 21.56vw;
     width: 200vw;
     left: -50%;
     z-index: -1;
@@ -55,10 +55,10 @@
 
   &:nth-child(5) {
     transform: rotate(90deg);
-    top: -77.96px;
-    width: 1px;
+    top: -4.06vw;
+    width: 0.05vw;
     left: 50%;
-    height: 500px;
+    height: 26.04vw;
     transform: translate(-50%, 0);
     z-index: -1;
   }
@@ -68,7 +68,7 @@
     top: 0;
     width: 300vw;
     left: -78%;
-    height: 1px;
+    height: 0.05vw;
     z-index: -1;
   }
 }
@@ -86,15 +86,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 327.648px;
-  height: 327.648px;
-  border-radius: 900px;
-  border-radius: 900px;
+  width: 17.07vw;
+  height: 17.07vw;
+  border-radius: 46.88vw;
+  border-radius: 46.88vw;
   background:
     linear-gradient(0deg, rgba(0, 223, 36, 0.5) 0%, rgba(0, 223, 36, 0.5) 100%),
-    lightgray -98.358px -98.358px / 160.039% 160.039% no-repeat;
-  filter: blur(60px);
-  filter: blur(60px);
+    lightgray -5.12vw -5.12vw / 160.039% 160.039% no-repeat;
+  filter: blur(3.13vw);
+  filter: blur(3.13vw);
 }
 
 .Q_SnapshotAbout {
@@ -102,12 +102,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 327.648px;
-  height: 327.648px;
+  width: 17.07vw;
+  height: 17.07vw;
   aspect-ratio: 1/1;
-  border-radius: 900px;
-  background: #b28add -98.358px -98.358px / 160.039% 160.039% no-repeat;
-  filter: blur(60px);
+  border-radius: 46.88vw;
+  background: #b28add -5.12vw -5.12vw / 160.039% 160.039% no-repeat;
+  filter: blur(3.13vw);
 }
 
 .Q_SnapshotAboutSection {
@@ -115,13 +115,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 327.648px;
-  height: 327.648px;
-  border-radius: 900px;
+  width: 17.07vw;
+  height: 17.07vw;
+  border-radius: 46.88vw;
   background:
     linear-gradient(0deg, #3cc68b 0%, #3cc68b 100%),
-    lightgray -98.358px -98.358px / 160.039% 160.039% no-repeat;
-  filter: blur(60px);
+    lightgray -5.12vw -5.12vw / 160.039% 160.039% no-repeat;
+  filter: blur(3.13vw);
 }
 
 .Q_SnapshotMain {
@@ -131,14 +131,14 @@
   transform: translate(-50%, -50%);
   width: 327.648px;
   height: 327.648px;
-  border-radius: 900px;
+  border-radius: 46.88vw;
   background: #946fd9;
   filter: blur(60px);
   z-index: 1;
 }
 
 .Q_Line1 {
-  top: 258px;
+  top: 13.44vw;
   left: -50%;
   width: 200vw;
 }
@@ -146,11 +146,11 @@
   top: -50%;
   left: 50%;
   transform: translateX(-50%);
-  height: 990px;
-  width: 1px;
+  height: 57.56vw;
+  width: 0.05vw;
 }
 .Q_Line3 {
-  top: 154px;
+  top: 8.05vw;
   transform: rotate(160deg);
   left: -50%;
   width: 200vw;
@@ -159,36 +159,45 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -485px;
-  width: 1129.893px;
-  height: 1129.893px;
-  border-radius: 1129.893px;
+  top: -25.26vw;
+  width: 58.85vw;
+  height: 58.85vw;
+  border-radius: 58.85vw;
   background: var(--button-primary, #3cc68b);
-  filter: blur(100px);
+  filter: blur(5.21vw);
 }
 
 @media screen and (max-width: 1440px) {
   .Q_Line3 {
-    top: 222px;
+    top: 10.92vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Q_Line2 {
+    height: 81.56vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .Q_Line1 {
-    top: 338px;
+    top: 44.01vw;
   }
 
   .Q_Line2 {
-    height: 1020px;
+    height: 132.81vw;
   }
 
   .Q_Line3 {
-    top: 302px;
+    top: 39.32vw;
   }
 }
 
 @media screen and (max-width: 440px) {
   .Q_Line1 {
-    top: 316px;
+    top: 41.82vw;
+  }
+  .Q_Line2 {
+    height: 217.81vw;
   }
 }
