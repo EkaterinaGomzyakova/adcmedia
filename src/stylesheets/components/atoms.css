@@ -225,7 +225,7 @@ html[data-theme='light'] .A_ButtonCircle svg path {
 }
 
 html[data-theme='light'] .A_SearchInput {
-  color: var(--light-button-text, #191919);
+  color: #191919;
 }
 
 html[data-theme='light'] .A_SearchInput::placeholder {

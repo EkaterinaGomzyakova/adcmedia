@@ -2,6 +2,7 @@
   --button-primary: #3cc68b;
   --light-button-text: #191919;
   --dark-button-text: #fdfdfd;
+  --cards-background: #191919;
   --medium-text: #8e8e8e;
   --menu-transparent: rgba(34, 34, 34, 0.4);
   --cards-background: #191919;
@@ -108,6 +109,7 @@
   --menu-transparent: rgba(253, 253, 253, 0.6);
   --cards-background: #fdfdfd;
   --body-text-background: #f1eff1;
+  --cards-background: #fdfdfd;
 }
 
 /* Auto-detect system theme preference */

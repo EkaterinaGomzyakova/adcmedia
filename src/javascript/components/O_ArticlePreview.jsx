@@ -60,7 +60,7 @@ const O_ArticlePreview = ({ interview, isReversed }) => {
   if (articleSlug) {
     return (
       <a
-        href={`/adcmedia/interviews/${articleSlug}.html`}
+        href={`/interviews/${articleSlug}.html`}
         className={`O_ArticlePreview ${isReversed ? 'O_ArticlePreview--reverse' : ''}`}
       >
         {content}

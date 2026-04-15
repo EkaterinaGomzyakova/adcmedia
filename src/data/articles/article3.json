@@ -6,11 +6,11 @@
     "tags": ["Карьера", "Образование", "Стажировка"],
     "author": {
       "name": "Ромой Кужелем",
-      "avatar": "/adcmedia/images/author7.png"
+      "avatar": "/images/author7.png"
     },
     "images": {
-      "cover1": "/adcmedia/images/interviews/cover1-article3.png",
-      "cover2": "/adcmedia/images/interviews/cover2-article3.png"
+      "cover1": "/images/interviews/cover1-article3.png",
+      "cover2": "/images/interviews/cover2-article3.png"
     },
     "description": "История о том, как университет стал трамплином в профессию: от майнора по корпоративному предпринимательству до независимого концепт-дизайнера"
   },
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "image": "/adcmedia/images/interviews/article-3-image-1.png",
+      "image": "/images/interviews/article-3-image-1.png",
       "caption": "Кейс в проекте Ddrills"
     },
     {
@@ -250,7 +250,7 @@
     },
     {
       "type": "image",
-      "image": "/adcmedia/images/interviews/article-3-image-2.png",
+      "image": "/images/interviews/article-3-image-2.png",
       "caption": "Кейс в проекте Ddrills"
     },
     {

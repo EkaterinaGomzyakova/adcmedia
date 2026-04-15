@@ -4,14 +4,14 @@
     "title": "Воркшоп – развитие креативности от Ddrills",
     "author": {
       "name": "Рома Кужель",
-      "avatar": "/adcmedia/images/useful/author-roma.png"
+      "avatar": "/images/useful/author-roma.png"
     },
     "meta": {
       "date": "12 апреля",
       "channel": "Материалы — в канале DDRILLS"
     },
     "images": {
-      "cover1": "/adcmedia/images/useful/useful-article1.png"
+      "cover1": "/images/useful/useful-article1.png"
     }
   },
   "content": [
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "image": "/adcmedia/images/useful/useful-article2.png",
+      "image": "/images/useful/useful-article2.png",
       "caption": "Больше референсов — в канале DDRILLS"
     },
     {
@@ -65,7 +65,7 @@
   "seo": {
     "metaTitle": "Воркшоп – развитие креативности от Ddrills | ADC Media",
     "metaDescription": "Прокачка дизайн-скиллов через простые упражнения",
-    "ogImage": "/adcmedia/images/og/design-drills.jpg",
+    "ogImage": "/images/og/design-drills.jpg",
     "keywords": ["Design Drills", "воркшоп", "креативность", "дизайн"]
   }
 }

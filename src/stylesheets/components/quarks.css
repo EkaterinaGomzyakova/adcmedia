@@ -55,7 +55,7 @@
 
   &:nth-child(5) {
     transform: rotate(90deg);
-    top: -4.06vw;
+    top: -8.06vw;
     width: 0.05vw;
     left: 50%;
     height: 26.04vw;
@@ -78,6 +78,14 @@
 }
 
 [data-theme='light'] .Q_IconLight {
+  display: block;
+}
+
+[data-theme='light'] .Q_InlineIcon > img.Q_IconDark {
+  display: none;
+}
+
+[data-theme='light'] .Q_InlineIcon > img.Q_IconLight {
   display: block;
 }
 
@@ -171,11 +179,23 @@
   .Q_Line3 {
     top: 10.92vw;
   }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -8.06vw;
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .Q_Line2 {
     height: 81.56vw;
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -9.06vw;
+    }
   }
 }
 
@@ -199,5 +219,45 @@
   }
   .Q_Line2 {
     height: 217.81vw;
+  }
+}
+
+.Q_InlineIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 2px;
+  cursor: default;
+
+  > img {
+    width: 1.09vw;
+    height: 1.09vw;
+  }
+
+  > img.Q_IconDark {
+    display: block;
+  }
+
+  > img.Q_IconLight {
+    display: none;
+  }
+
+  &[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cards-background, #191919);
+    color: var(--medium-text, #8e8e8e);
+    font-size: var(--button, 17px);
+    line-height: 1.4;
+    padding: 12px;
+    border-radius: var(--xs);
+    white-space: normal;
+    width: 19vw;
+    z-index: 10;
+    pointer-events: none;
   }
 }

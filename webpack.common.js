@@ -28,7 +28,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/adcmedia/'
+    publicPath: '/'
     // clean: true
   },
   module: {
@@ -154,6 +154,13 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/interviews-article.html',
       filename: './interviews/article3.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article4.html',
       chunks: ['interviews-article']
     }),
 

@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!quoteBlock) return
 
   const cards = Array.from(quoteBlock.querySelectorAll('.O_QuoteCard'))
-  const buttons = quoteBlock.querySelectorAll('.A_ButtonCircle')
-  const prevButton = buttons[0]
-  const nextButton = buttons[1]
+  const buttons = Array.from(quoteBlock.querySelectorAll('.A_ButtonCircle'))
 
   if (cards.length === 0) return
 
@@ -14,16 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateCards = () => {
     cards.forEach((card, index) => {
-      card.classList.remove('active')
+      card.classList.remove('active', 'left', 'right')
       card.style.zIndex = 1
 
       if (index === currentIndex) {
+        // Активная карточка - в центре
         card.classList.add('active')
         card.style.zIndex = 3
-      } else if (
-        index === (currentIndex + 1) % cards.length ||
-        index === (currentIndex - 1 + cards.length) % cards.length
-      ) {
+      } else if (index === (currentIndex - 1 + cards.length) % cards.length) {
+        // Предыдущая карточка - слева
+        card.classList.add('left')
+        card.style.zIndex = 2
+      } else if (index === (currentIndex - 2 + cards.length) % cards.length) {
+        // Еще одна слева
+        card.classList.add('left')
+        card.style.zIndex = 2
+      } else if (index === (currentIndex + 1) % cards.length) {
+        // Следующая карточка - справа
+        card.classList.add('right')
         card.style.zIndex = 2
       }
     })
@@ -39,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCards()
   }
 
-  if (prevButton) prevButton.addEventListener('click', goToPrev)
-  if (nextButton) nextButton.addEventListener('click', goToNext)
+  // Первые две кнопки - prev (стрелки влево), последняя - next (стрелка вправо)
+  if (buttons[0]) buttons[0].addEventListener('click', goToPrev)
+  if (buttons[1]) buttons[1].addEventListener('click', goToPrev)
+  if (buttons[2]) buttons[2].addEventListener('click', goToNext)
 
   // Initialize
   updateCards()

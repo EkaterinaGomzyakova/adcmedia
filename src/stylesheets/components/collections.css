@@ -132,7 +132,7 @@
 .C_SearchInputContainer {
   width: 100%;
   min-height: 8.33vw;
-  background: var(--background, #0a0a0a);
+  background: var(--cards-background);
   padding: var(--3xl, 2.5vw) 7.4vw;
   position: relative;
   overflow: hidden;
@@ -141,8 +141,7 @@
 
 .C_SearchResultsContainer {
   width: 100%;
-  background: var(--background, #0a0a0a);
-  border-radius: var(--md, 0.83vw);
+  background: var(--body-text-background, #0a0a0a);
   padding: var(--3xl, 2.5vw) 7.4vw;
   position: relative;
   z-index: 10000;
@@ -169,12 +168,12 @@
     flex-direction: column;
     gap: var(--xl);
   }
+
+  .C_buttonsMobile {
+    display: flex;
+    gap: 5.45vw;
+  }
 }
 
 @media screen and (max-width: 440px) {
-  .C_buttonsMobile {
-    display: flex;
-    margin-top: 72.73vw;
-    gap: 5.45vw;
-  }
 }

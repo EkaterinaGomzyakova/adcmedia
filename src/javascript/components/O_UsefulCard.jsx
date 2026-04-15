@@ -37,7 +37,7 @@ const O_UsefulCard = ({ article }) => {
 
   if (articleSlug) {
     return (
-      <a href={`/adcmedia/useful/article.html`} className="O_UsefulCard">
+      <a href={`/useful/article.html`} className="O_UsefulCard">
         {content}
       </a>
     )

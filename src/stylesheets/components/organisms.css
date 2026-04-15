@@ -266,7 +266,7 @@
 .O_CommunityBlock {
   position: relative;
   width: 100%;
-  height: 27.71vw;
+  height: 23.71vw;
 
   margin-top: 3.7vw;
 
@@ -340,41 +340,65 @@
     height: 32.57vw;
   }
 
+  .O_QuoteCard {
+    width: 55.28vw;
+
+    .M_Quote {
+      width: 55.28vw;
+    }
+  }
+
   .O_CommunityBlock {
+    height: 30.31vw;
+
+    > h2 {
+      width: 67.82vw;
+      font-size: 3.33vw;
+    }
+
     > img {
+      width: 4.39vw;
+
       &:nth-child(3) {
         left: 3.44vw;
         top: -3.26vw;
       }
       &:nth-child(4) {
-        left: 2.31vw;
+        left: 1.44vw;
         top: 19.44vw;
       }
       &:nth-child(5) {
-        left: 14.56vw;
-        top: 24.68vw;
+        left: 15.56vw;
+        top: 25.68vw;
       }
       &:nth-child(6) {
-        left: 14.56vw;
-        top: 18.51vw;
+        left: 15.56vw;
+        top: 19.51vw;
       }
       &:nth-child(7) {
-        right: 30.64vw;
+        right: 34.64vw;
         top: 26.99vw;
       }
       &:nth-child(8) {
         right: 13.33vw;
-        top: 13.61vw;
+        top: 12.61vw;
       }
       &:nth-child(9) {
         right: 1.74vw;
         top: 22.59vw;
       }
       &:nth-child(10) {
-        right: 2.34vw;
+        right: 3.34vw;
         top: -0.21vw;
       }
+      &:nth-child(11) {
+        width: 2.5vw;
+      }
     }
+  }
+
+  .O_HeadingTextArticle {
+    width: 46.53vw;
   }
 }
 
@@ -403,6 +427,13 @@
   }
 
   .O_CommunityBlock {
+    height: 34.31vw;
+
+    > h2 {
+      width: 74.82vw;
+      font-size: 3.13vw;
+    }
+
     > img {
       &:nth-child(3) {
         left: 4.78vw;
@@ -422,7 +453,7 @@
       }
       &:nth-child(7) {
         right: 27.4vw;
-        top: 32.81vw;
+        top: 29.81vw;
       }
       &:nth-child(8) {
         right: 7.92vw;
@@ -437,6 +468,11 @@
         top: -0.23vw;
       }
     }
+  }
+
+  .O_HeadingTextArticle {
+    width: 52.34vw;
+    gap: var(--2xl, 5vw);
   }
 }
 
@@ -470,14 +506,24 @@
   }
 
   .O_CommunityBlock {
+    height: 59.31vw;
+
+    > h2 {
+      font-size: 4.17vw;
+      width: 84.82vw;
+    }
+
     > img {
+      width: 8.22vw;
+      height: 8.22vw;
+
       &:nth-child(3) {
         left: 1.1vw;
         top: -9.7vw;
       }
       &:nth-child(4) {
         left: -0.74vw;
-        top: 17.5vw;
+        top: 14.5vw;
       }
       &:nth-child(5) {
         left: 17.26vw;
@@ -492,17 +538,35 @@
         top: 50.65vw;
       }
       &:nth-child(8) {
-        right: 15.53vw;
-        top: 48.46vw;
+        right: 13.53vw;
+        top: 47.46vw;
       }
       &:nth-child(9) {
-        right: -0.33vw;
-        top: 41.54vw;
+        right: 2.67vw;
+        top: 39.54vw;
       }
       &:nth-child(10) {
         right: 16.67vw;
         top: -9.64vw;
       }
+      &:nth-child(11) {
+        width: 4.69vw;
+        top: -10.7vw;
+      }
+    }
+  }
+
+  .O_QuoteCards {
+    position: relative;
+    width: 62.76vw;
+    height: 77.86vw;
+  }
+
+  .O_QuoteCard {
+    width: 62.76vw;
+
+    .M_Quote {
+      width: 62.76vw;
     }
   }
 }
@@ -515,10 +579,16 @@
   }
 
   .O_CommunityBlock {
-    height: 80vw;
+    height: 87vw;
+
+    > h2 {
+      font-size: 6.36vw;
+      width: 86.82vw;
+    }
 
     > img {
       width: 14.32vw;
+      height: auto;
 
       &:nth-child(3) {
         left: 1.1vw;
@@ -526,19 +596,19 @@
       }
       &:nth-child(4) {
         left: -10.74vw;
-        top: 20.55vw;
+        top: 29.55vw;
       }
       &:nth-child(5) {
         left: 42.26vw;
-        top: 61.36vw;
+        top: 72.36vw;
       }
       &:nth-child(6) {
         left: 7.95vw;
-        top: 54.32vw;
+        top: 68.32vw;
       }
       &:nth-child(7) {
         right: -3.3vw;
-        top: 53.86vw;
+        top: 65.86vw;
       }
       &:nth-child(8) {
         right: -1.47vw;
@@ -546,11 +616,15 @@
       }
       &:nth-child(9) {
         right: -6.33vw;
-        top: 23.86vw;
+        top: 32.86vw;
       }
       &:nth-child(10) {
         right: 16.67vw;
         top: -16.82vw;
+      }
+      &:nth-child(11) {
+        width: 8.18vw;
+        top: -19.7vw;
       }
     }
   }
@@ -558,6 +632,7 @@
   .O_QuoteCards {
     display: flex;
     justify-content: center;
+    height: 110.86vw;
   }
 
   .O_QuoteCard {

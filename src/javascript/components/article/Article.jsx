@@ -5,6 +5,29 @@ import ArticleImage from './ArticleImage.jsx'
 import ArticleQuote from './ArticleQuote.jsx'
 import ArticleSection from './ArticleSection.jsx'
 
+const renderTextContent = (item) => {
+  if (item.parts) {
+    return (
+      <>
+        {item.parts.map((part, i) => {
+          if (part.type === 'inline-svg') {
+            return (
+              <span key={i} className="Q_InlineIcon" data-tooltip={part.tooltip || null}>
+                <img src={part.src} alt={part.alt || ''} className="Q_IconDark" />
+                {part.srcLight && (
+                  <img src={part.srcLight} alt={part.alt || ''} className="Q_IconLight" />
+                )}
+              </span>
+            )
+          }
+          return <span key={i}>{part.content}</span>
+        })}
+      </>
+    )
+  }
+  return item.content
+}
+
 const Article = ({ data }) => {
   const { hero, navigation, content } = data
 
@@ -231,7 +254,7 @@ const Article = ({ data }) => {
                       if (item.type === 'text') {
                         return (
                           <p key={itemIndex} className="paragraphLarge">
-                            {item.content}
+                            {renderTextContent(item)}
                           </p>
                         )
                       } else if (item.type === 'quote') {
@@ -303,7 +326,7 @@ const Article = ({ data }) => {
               if (item.type === 'text') {
                 return (
                   <p key={itemIndex} className="paragraphLarge">
-                    {item.content}
+                    {renderTextContent(item)}
                   </p>
                 )
               } else if (item.type === 'quote') {
@@ -320,7 +343,7 @@ const Article = ({ data }) => {
       case 'text':
         return (
           <div key={index} className="M_Paragraph">
-            <p className="paragraphLarge">{block.content}</p>
+            <p className="paragraphLarge">{renderTextContent(block)}</p>
           </div>
         )
       case 'image':

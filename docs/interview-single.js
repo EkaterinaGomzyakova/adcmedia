@@ -15924,14 +15924,14 @@ ReactDOMHydrationRoot.prototype.unstable_scheduleHydration = function (target) {
 };
 var isomorphicReactPackageVersion$jscomp$inline_1840 = React.version;
 if (
-  "19.2.4" !==
+  "19.2.5" !==
   isomorphicReactPackageVersion$jscomp$inline_1840
 )
   throw Error(
     formatProdErrorMessage(
       527,
       isomorphicReactPackageVersion$jscomp$inline_1840,
-      "19.2.4"
+      "19.2.5"
     )
   );
 ReactDOMSharedInternals.findDOMNode = function (componentOrElement) {
@@ -15953,10 +15953,10 @@ ReactDOMSharedInternals.findDOMNode = function (componentOrElement) {
 };
 var internals$jscomp$inline_2347 = {
   bundleType: 0,
-  version: "19.2.4",
+  version: "19.2.5",
   rendererPackageName: "react-dom",
   currentDispatcherRef: ReactSharedInternals,
-  reconcilerVersion: "19.2.4"
+  reconcilerVersion: "19.2.5"
 };
 if ("undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__) {
   var hook$jscomp$inline_2348 = __REACT_DEVTOOLS_GLOBAL_HOOK__;
@@ -16054,7 +16054,7 @@ __webpack_unused_export__ = function (container, initialChildren, options) {
   listenToAllSupportedEvents(container);
   return new ReactDOMHydrationRoot(initialChildren);
 };
-__webpack_unused_export__ = "19.2.4";
+__webpack_unused_export__ = "19.2.5";
 
 
 /***/ },
@@ -16271,7 +16271,7 @@ exports.useFormState = function (action, initialState, permalink) {
 exports.useFormStatus = function () {
   return ReactSharedInternals.H.useHostTransitionStatus();
 };
-exports.version = "19.2.4";
+exports.version = "19.2.5";
 
 
 /***/ },
@@ -16892,7 +16892,7 @@ exports.useSyncExternalStore = function (
 exports.useTransition = function () {
   return ReactSharedInternals.H.useTransition();
 };
-exports.version = "19.2.4";
+exports.version = "19.2.5";
 
 
 /***/ },
@@ -17407,9 +17407,9 @@ var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
 ;// ./src/data/interviews-feed.json
-const interviews_feed_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"tags":["Диджитал","Корпорация"],"title":"Тренд на стремление к индивидуальности в найме — интервью с Мариной Устиновской","description":"Марина рассказывает о работе в Ozon коммуникационным дизайнером, о критериях найма в индустрии дизайна и о том, как дизайнеру начать карьеру в корпорации","readTime":"14 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-1-author.png","imageLight":"/adcmedia/images/interviews/interview-1-authorLight.png","articleSlug":"article2"},{"id":2,"tags":["Продукт","Корпорация","Пет-проект"],"title":"Стажировка, которая началась с майнора в Вышке, обучение дизайнеров и работа в зарубежных компаниях — Рома Кужель","description":"Стажировка, проект DDRILLS, тенденции в найме дизайнеров","readTime":"11 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-2-author.png","imageLight":"/adcmedia/images/interviews/interview-2-authorLight.png","articleSlug":"article3"},{"id":3,"tags":["Продукт","Корпорация","Агентство"],"title":"Андрей Котов: поиск своего стиля, нетворкинг и проактивность в поиске работы","description":"Андрей делится историей своего карьерного пути и подходом к дизайну ","readTime":"12 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-3-author.png","imageLight":"/adcmedia/images/interviews/interview-3-authorLight.png"},{"id":4,"tags":["Продукт","Преподавание","Корпорация"],"title":"Матвей Васильев: почему важны связи в индустрии?","description":"Матвей рассказывает о поиске работы через нетворкинг, специфике работы лид-дизайнером, учёбе в магистратуре и опыте преподавания","readTime":"12 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-4-author.png","imageLight":"/adcmedia/images/interviews/interview-4-authorLight.png","articleSlug":"article1"},{"id":5,"tags":["Диджитал","Преподавание","Корпорация"],"title":"Работа в зарубежном агентстве — Аня Шпак","description":"Карьерный путь, работа в международной команде и отличия менталитета","readTime":"16 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-5-author.png","imageLight":"/adcmedia/images/interviews/interview-5-authorLight.png"},{"id":6,"tags":["Продукт","Корпорация"],"title":"Варя Глушкова про работу в HR Tech, полезные навыки для дизайнера и развитие в смежных сферах","description":"Карьерный путь, особенности найма и развитие дополнительных навыков","readTime":"12 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-6-author.png","imageLight":"/adcmedia/images/interviews/interview-6-authorLight.png"},{"id":7,"tags":["Агентство","Дидижитал"],"title":"Стажировка в студии Лебедева перед первым курсом — Руслан Хайруллин","description":"Стажировка, участие в хакатоне и поступление в Школу дизайна — в интервью с Русланом","readTime":"8 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-7-author.png","imageLight":"/adcmedia/images/interviews/interview-7-authorLight.png"}]');
+const interviews_feed_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"tags":["Диджитал","Корпорация"],"title":"Тренд на стремление к индивидуальности в найме — интервью с Мариной Устиновской","description":"Марина рассказывает о работе в Ozon коммуникационным дизайнером, о критериях найма в индустрии дизайна и о том, как дизайнеру начать карьеру в корпорации","readTime":"14 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-1-author.png","imageLight":"/images/interviews/interview-1-authorLight.png","articleSlug":"article2"},{"id":2,"tags":["Продукт","Корпорация","Пет-проект"],"title":"Стажировка, которая началась с майнора в Вышке, обучение дизайнеров и работа в зарубежных компаниях — Рома Кужель","description":"Стажировка, проект DDRILLS, тенденции в найме дизайнеров","readTime":"11 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-2-author.png","imageLight":"/images/interviews/interview-2-authorLight.png","articleSlug":"article3"},{"id":3,"tags":["Продукт","Корпорация","Агентство"],"title":"Андрей Котов: поиск своего стиля, нетворкинг и проактивность в поиске работы","description":"Андрей делится историей своего карьерного пути и подходом к дизайну ","readTime":"12 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-3-author.png","imageLight":"/images/interviews/interview-3-authorLight.png"},{"id":4,"tags":["Продукт","Преподавание","Корпорация"],"title":"Матвей Васильев: почему важны связи в индустрии?","description":"Матвей рассказывает о поиске работы через нетворкинг, специфике работы лид-дизайнером, учёбе в магистратуре и опыте преподавания","readTime":"12 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-4-author.png","imageLight":"/images/interviews/interview-4-authorLight.png","articleSlug":"article1"},{"id":5,"tags":["Диджитал","Преподавание","Корпорация"],"title":"Работа в зарубежной студии и  личные проекты — Аня Шпак","description":"Карьерный путь, работа в международной команде и отличия менталитета","readTime":"16 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-5-author.png","imageLight":"/images/interviews/interview-5-authorLight.png","articleSlug":"article4"},{"id":6,"tags":["Продукт","Корпорация"],"title":"Варя Глушкова про работу в HR Tech, полезные навыки для дизайнера и развитие в смежных сферах","description":"Карьерный путь, особенности найма и развитие дополнительных навыков","readTime":"12 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-6-author.png","imageLight":"/images/interviews/interview-6-authorLight.png"},{"id":7,"tags":["Агентство","Дидижитал"],"title":"Стажировка в студии Лебедева перед первым курсом — Руслан Хайруллин","description":"Стажировка, участие в хакатоне и поступление в Школу дизайна — в интервью с Русланом","readTime":"8 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-7-author.png","imageLight":"/images/interviews/interview-7-authorLight.png"}]');
 ;// ./src/data/useful.json
-const useful_namespaceObject = /*#__PURE__*/JSON.parse('{"x":[{"id":"useful-1","slug":"design-operations","type":"article","title":"Что такое Design Operations?","description":"Понимание роли и задач Design Operations в современных командах","author":{"name":"Анна Иванова","image":"/adcmedia/images/useful/author-1.jpg"},"meta":{"publishedDate":"15 февраля","readingTime":"12 мин","tags":["Лекция","Продукт"],"channel":""},"hero":{"title":"Воркшоп – развитие креативности от Ddrills","author":{"name":"Рома Кужель","avatar":"/adcmedia/images/useful/author-roma.jpg"},"meta":{"date":"12 апреля","tag":"Воркшоп","channel":"в канале DDRILLS"},"images":{"cover1":"/adcmedia/images/useful/design-drills-banner.png"}},"content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."},{"type":"section","id":"task","title":"Задание"},{"type":"text","content":"Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."},{"type":"text","content":"В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."},{"type":"text","content":"Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."},{"type":"section","id":"result","title":"Результат"},{"type":"text","content":"Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"},{"type":"text","content":"В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"},{"type":"image","image":"/adcmedia/images/useful/result-1.jpg","caption":"Больше примеров – в канале DDRILLS"},{"type":"image","image":"/adcmedia/images/useful/result-2.jpg","caption":""}],"preview":{"image":"/adcmedia/images/useful/design-drills-banner.png","imageLight":"/adcmedia/images/useful/design-drills-bannerLight.png","excerpt":"Понимание роли и задач Design Operations в современных командах"},"seo":{"metaTitle":"Что такое Design Operations? | ADC Media","metaDescription":"Понимание роли и задач Design Operations","ogImage":"/adcmedia/images/og/desops.jpg","keywords":["Design Operations","DesOps","команда","процессы"]}},{"id":"useful-2","slug":"design-drills-workshop","type":"article","title":"Воркшоп – развитие креативности от Ddrills","description":"Прокачка дизайн-скиллов через простые упражнения каждый день","author":{"name":"Рома Кужель","image":"/adcmedia/images/useful/author-roma.jpg"},"meta":{"publishedDate":"12 апреля","readingTime":"8 мин","tags":["Воркшоп","Диджитал"]},"articleSlug":"design-drills-workshop","content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."}],"preview":{"image":"/adcmedia/images/useful/design-drills-banner2.png","imageLight":"/adcmedia/images/useful/design-drills-banner2Light.png","excerpt":"Прокачка дизайн-скиллов через простые упражнения каждый день"},"seo":{"metaTitle":"Воркшоп – развитие креативности от Ddrills | ADC Media","metaDescription":"Прокачка дизайн-скиллов через простые упражнения","ogImage":"/adcmedia/images/og/design-drills.jpg","keywords":["Design Drills","воркшоп","креативность","дизайн"]}},{"id":"useful-3","slug":"visual-thinking-lecture","type":"article","title":"Лекция «Визуальное мышление как новый soft-skill»","description":"Развитие навыков визуального мышления для эффективной коммуникации","author":{"name":"Петр Смирнов","image":"/adcmedia/images/useful/author-2.jpg"},"meta":{"publishedDate":"20 марта","readingTime":"15 мин","tags":["Лекция","Диджитал"]},"content":{"sections":[{"heading":"Что такое дизайн-система","text":"Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."},{"heading":"Зачем нужна дизайн-система","text":"Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."},{"heading":"Как создать дизайн-систему","text":"Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."}]},"preview":{"image":"/adcmedia/images/useful/design-drills-banner3.png","imageLight":"/adcmedia/images/useful/design-drills-banner3Light.png","excerpt":"Развитие навыков визуального мышления для эффективной коммуникации"},"seo":{"metaTitle":"Лекция «Визуальное мышление как новый soft-skill» | ADC Media","metaDescription":"Развитие навыков визуального мышления","ogImage":"/adcmedia/images/og/visual-thinking.jpg","keywords":["визуальное мышление","soft-skills","лекция"]}},{"id":"useful-4","slug":"ui-kit-workshop","type":"article","title":"Воркшоп по продвинутой сборке UI-kit","description":"Практическое руководство по созданию масштабируемых UI-китов","author":{"name":"Мария Петрова","image":"/adcmedia/images/useful/author-3.jpg"},"meta":{"publishedDate":"5 мая","readingTime":"18 мин","tags":["Воркшоп","Диджитал"]},"content":{"sections":[{"heading":"Введение","text":"Научитесь создавать профессиональные UI-киты для своих проектов."},{"heading":"Структура UI-kit","text":"Разберем компоненты, стили и правила их использования."},{"heading":"Масштабирование","text":"Как сделать UI-kit гибким и удобным для команды."}]},"preview":{"image":"/adcmedia/images/useful/design-drills-banner4.png","imageLight":"/adcmedia/images/useful/design-drills-banner4Light.png","excerpt":"Практическое руководство по созданию масштабируемых UI-китов"},"seo":{"metaTitle":"Воркшоп по продвинутой сборке UI-kit | ADC Media","metaDescription":"Практическое руководство по созданию масштабируемых UI-китов","ogImage":"/adcmedia/images/og/ui-kit.jpg","keywords":["UI-kit","воркшоп","компоненты","дизайн-система"]}}]}');
+const useful_namespaceObject = /*#__PURE__*/JSON.parse('{"x":[{"id":"useful-1","slug":"design-operations","type":"article","title":"Что такое Design Operations?","description":"Понимание роли и задач Design Operations в современных командах","author":{"name":"Анна Иванова","image":"/images/useful/author-1.jpg"},"meta":{"publishedDate":"15 февраля","readingTime":"12 мин","tags":["Лекция","Продукт"],"channel":""},"hero":{"title":"Воркшоп – развитие креативности от Ddrills","author":{"name":"Рома Кужель","avatar":"/images/useful/author-roma.jpg"},"meta":{"date":"12 апреля","tag":"Воркшоп","channel":"в канале DDRILLS"},"images":{"cover1":"/images/useful/design-drills-banner.png"}},"content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."},{"type":"section","id":"task","title":"Задание"},{"type":"text","content":"Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."},{"type":"text","content":"В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."},{"type":"text","content":"Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."},{"type":"section","id":"result","title":"Результат"},{"type":"text","content":"Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"},{"type":"text","content":"В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"},{"type":"image","image":"/images/useful/result-1.jpg","caption":"Больше примеров – в канале DDRILLS"},{"type":"image","image":"/images/useful/result-2.jpg","caption":""}],"preview":{"image":"/images/useful/design-drills-banner.png","imageLight":"/images/useful/design-drills-bannerLight.png","excerpt":"Понимание роли и задач Design Operations в современных командах"},"seo":{"metaTitle":"Что такое Design Operations? | ADC Media","metaDescription":"Понимание роли и задач Design Operations","ogImage":"/images/og/desops.jpg","keywords":["Design Operations","DesOps","команда","процессы"]}},{"id":"useful-2","slug":"design-drills-workshop","type":"article","title":"Воркшоп – развитие креативности от Ddrills","description":"Прокачка дизайн-скиллов через простые упражнения каждый день","author":{"name":"Рома Кужель","image":"/images/useful/author-roma.jpg"},"meta":{"publishedDate":"12 апреля","readingTime":"8 мин","tags":["Воркшоп","Диджитал"]},"articleSlug":"design-drills-workshop","content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."}],"preview":{"image":"/images/useful/design-drills-banner2.png","imageLight":"/images/useful/design-drills-banner2Light.png","excerpt":"Прокачка дизайн-скиллов через простые упражнения каждый день"},"seo":{"metaTitle":"Воркшоп – развитие креативности от Ddrills | ADC Media","metaDescription":"Прокачка дизайн-скиллов через простые упражнения","ogImage":"/images/og/design-drills.jpg","keywords":["Design Drills","воркшоп","креативность","дизайн"]}},{"id":"useful-3","slug":"visual-thinking-lecture","type":"article","title":"Лекция «Визуальное мышление как новый soft-skill»","description":"Развитие навыков визуального мышления для эффективной коммуникации","author":{"name":"Петр Смирнов","image":"/images/useful/author-2.jpg"},"meta":{"publishedDate":"20 марта","readingTime":"15 мин","tags":["Лекция","Диджитал"]},"content":{"sections":[{"heading":"Что такое дизайн-система","text":"Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."},{"heading":"Зачем нужна дизайн-система","text":"Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."},{"heading":"Как создать дизайн-систему","text":"Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."}]},"preview":{"image":"/images/useful/design-drills-banner3.png","imageLight":"/images/useful/design-drills-banner3Light.png","excerpt":"Развитие навыков визуального мышления для эффективной коммуникации"},"seo":{"metaTitle":"Лекция «Визуальное мышление как новый soft-skill» | ADC Media","metaDescription":"Развитие навыков визуального мышления","ogImage":"/images/og/visual-thinking.jpg","keywords":["визуальное мышление","soft-skills","лекция"]}},{"id":"useful-4","slug":"ui-kit-workshop","type":"article","title":"Воркшоп по продвинутой сборке UI-kit","description":"Практическое руководство по созданию масштабируемых UI-китов","author":{"name":"Мария Петрова","image":"/images/useful/author-3.jpg"},"meta":{"publishedDate":"5 мая","readingTime":"18 мин","tags":["Воркшоп","Диджитал"]},"content":{"sections":[{"heading":"Введение","text":"Научитесь создавать профессиональные UI-киты для своих проектов."},{"heading":"Структура UI-kit","text":"Разберем компоненты, стили и правила их использования."},{"heading":"Масштабирование","text":"Как сделать UI-kit гибким и удобным для команды."}]},"preview":{"image":"/images/useful/design-drills-banner4.png","imageLight":"/images/useful/design-drills-banner4Light.png","excerpt":"Практическое руководство по созданию масштабируемых UI-китов"},"seo":{"metaTitle":"Воркшоп по продвинутой сборке UI-kit | ADC Media","metaDescription":"Практическое руководство по созданию масштабируемых UI-китов","ogImage":"/images/og/ui-kit.jpg","keywords":["UI-kit","воркшоп","компоненты","дизайн-система"]}}]}');
 ;// ./src/javascript/components/O_ArticlePreview.jsx
 
 var O_ArticlePreview = function O_ArticlePreview(_ref) {
@@ -17466,7 +17466,7 @@ var O_ArticlePreview = function O_ArticlePreview(_ref) {
   }));
   if (articleSlug) {
     return /*#__PURE__*/react.createElement("a", {
-      href: "/adcmedia/interviews/".concat(articleSlug, ".html"),
+      href: "/interviews/".concat(articleSlug, ".html"),
       className: "O_ArticlePreview ".concat(isReversed ? 'O_ArticlePreview--reverse' : '')
     }, content);
   }
@@ -17510,7 +17510,7 @@ var O_UsefulCard = function O_UsefulCard(_ref) {
   }))));
   if (articleSlug) {
     return /*#__PURE__*/react.createElement("a", {
-      href: "/adcmedia/useful/article.html",
+      href: "/useful/article.html",
       className: "O_UsefulCard"
     }, content);
   }
@@ -18074,6 +18074,31 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 
 
+var renderTextContent = function renderTextContent(item) {
+  if (item.parts) {
+    return /*#__PURE__*/react.createElement(react.Fragment, null, item.parts.map(function (part, i) {
+      if (part.type === 'inline-svg') {
+        return /*#__PURE__*/react.createElement("span", {
+          key: i,
+          className: "Q_InlineIcon",
+          "data-tooltip": part.tooltip || null
+        }, /*#__PURE__*/react.createElement("img", {
+          src: part.src,
+          alt: part.alt || '',
+          className: "Q_IconDark"
+        }), part.srcLight && /*#__PURE__*/react.createElement("img", {
+          src: part.srcLight,
+          alt: part.alt || '',
+          className: "Q_IconLight"
+        }));
+      }
+      return /*#__PURE__*/react.createElement("span", {
+        key: i
+      }, part.content);
+    }));
+  }
+  return item.content;
+};
 var Article = function Article(_ref) {
   var data = _ref.data;
   var hero = data.hero,
@@ -18287,7 +18312,7 @@ var Article = function Article(_ref) {
               return /*#__PURE__*/react.createElement("p", {
                 key: itemIndex,
                 className: "paragraphLarge"
-              }, item.content);
+              }, renderTextContent(item));
             } else if (item.type === 'quote') {
               return /*#__PURE__*/react.createElement(article_ArticleQuote, {
                 key: itemIndex,
@@ -18392,7 +18417,7 @@ var Article = function Article(_ref) {
           return /*#__PURE__*/react.createElement("p", {
             key: itemIndex,
             className: "paragraphLarge"
-          }, item.content);
+          }, renderTextContent(item));
         } else if (item.type === 'quote') {
           return /*#__PURE__*/react.createElement(article_ArticleQuote, {
             key: itemIndex,
@@ -18409,7 +18434,7 @@ var Article = function Article(_ref) {
           className: "M_Paragraph"
         }, /*#__PURE__*/react.createElement("p", {
           className: "paragraphLarge"
-        }, block.content));
+        }, renderTextContent(block)));
       case 'image':
         return /*#__PURE__*/react.createElement(article_ArticleImage, {
           key: index,

@@ -15924,14 +15924,14 @@ ReactDOMHydrationRoot.prototype.unstable_scheduleHydration = function (target) {
 };
 var isomorphicReactPackageVersion$jscomp$inline_1840 = React.version;
 if (
-  "19.2.4" !==
+  "19.2.5" !==
   isomorphicReactPackageVersion$jscomp$inline_1840
 )
   throw Error(
     formatProdErrorMessage(
       527,
       isomorphicReactPackageVersion$jscomp$inline_1840,
-      "19.2.4"
+      "19.2.5"
     )
   );
 ReactDOMSharedInternals.findDOMNode = function (componentOrElement) {
@@ -15953,10 +15953,10 @@ ReactDOMSharedInternals.findDOMNode = function (componentOrElement) {
 };
 var internals$jscomp$inline_2347 = {
   bundleType: 0,
-  version: "19.2.4",
+  version: "19.2.5",
   rendererPackageName: "react-dom",
   currentDispatcherRef: ReactSharedInternals,
-  reconcilerVersion: "19.2.4"
+  reconcilerVersion: "19.2.5"
 };
 if ("undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__) {
   var hook$jscomp$inline_2348 = __REACT_DEVTOOLS_GLOBAL_HOOK__;
@@ -16054,7 +16054,7 @@ __webpack_unused_export__ = function (container, initialChildren, options) {
   listenToAllSupportedEvents(container);
   return new ReactDOMHydrationRoot(initialChildren);
 };
-__webpack_unused_export__ = "19.2.4";
+__webpack_unused_export__ = "19.2.5";
 
 
 /***/ },
@@ -16271,7 +16271,7 @@ exports.useFormState = function (action, initialState, permalink) {
 exports.useFormStatus = function () {
   return ReactSharedInternals.H.useHostTransitionStatus();
 };
-exports.version = "19.2.4";
+exports.version = "19.2.5";
 
 
 /***/ },
@@ -16892,7 +16892,7 @@ exports.useSyncExternalStore = function (
 exports.useTransition = function () {
   return ReactSharedInternals.H.useTransition();
 };
-exports.version = "19.2.4";
+exports.version = "19.2.5";
 
 
 /***/ },
@@ -17598,9 +17598,9 @@ var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
 ;// ./src/data/interviews-feed.json
-const interviews_feed_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"tags":["Диджитал","Корпорация"],"title":"Тренд на стремление к индивидуальности в найме — интервью с Мариной Устиновской","description":"Марина рассказывает о работе в Ozon коммуникационным дизайнером, о критериях найма в индустрии дизайна и о том, как дизайнеру начать карьеру в корпорации","readTime":"14 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-1-author.png","imageLight":"/adcmedia/images/interviews/interview-1-authorLight.png","articleSlug":"article2"},{"id":2,"tags":["Продукт","Корпорация","Пет-проект"],"title":"Стажировка, которая началась с майнора в Вышке, обучение дизайнеров и работа в зарубежных компаниях — Рома Кужель","description":"Стажировка, проект DDRILLS, тенденции в найме дизайнеров","readTime":"11 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-2-author.png","imageLight":"/adcmedia/images/interviews/interview-2-authorLight.png","articleSlug":"article3"},{"id":3,"tags":["Продукт","Корпорация","Агентство"],"title":"Андрей Котов: поиск своего стиля, нетворкинг и проактивность в поиске работы","description":"Андрей делится историей своего карьерного пути и подходом к дизайну ","readTime":"12 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-3-author.png","imageLight":"/adcmedia/images/interviews/interview-3-authorLight.png"},{"id":4,"tags":["Продукт","Преподавание","Корпорация"],"title":"Матвей Васильев: почему важны связи в индустрии?","description":"Матвей рассказывает о поиске работы через нетворкинг, специфике работы лид-дизайнером, учёбе в магистратуре и опыте преподавания","readTime":"12 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-4-author.png","imageLight":"/adcmedia/images/interviews/interview-4-authorLight.png","articleSlug":"article1"},{"id":5,"tags":["Диджитал","Преподавание","Корпорация"],"title":"Работа в зарубежном агентстве — Аня Шпак","description":"Карьерный путь, работа в международной команде и отличия менталитета","readTime":"16 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-5-author.png","imageLight":"/adcmedia/images/interviews/interview-5-authorLight.png"},{"id":6,"tags":["Продукт","Корпорация"],"title":"Варя Глушкова про работу в HR Tech, полезные навыки для дизайнера и развитие в смежных сферах","description":"Карьерный путь, особенности найма и развитие дополнительных навыков","readTime":"12 минут","imageCollageType":"type2","imageDark":"/adcmedia/images/interviews/interview-6-author.png","imageLight":"/adcmedia/images/interviews/interview-6-authorLight.png"},{"id":7,"tags":["Агентство","Дидижитал"],"title":"Стажировка в студии Лебедева перед первым курсом — Руслан Хайруллин","description":"Стажировка, участие в хакатоне и поступление в Школу дизайна — в интервью с Русланом","readTime":"8 минут","imageCollageType":"type1","imageDark":"/adcmedia/images/interviews/interview-7-author.png","imageLight":"/adcmedia/images/interviews/interview-7-authorLight.png"}]');
+const interviews_feed_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"tags":["Диджитал","Корпорация"],"title":"Тренд на стремление к индивидуальности в найме — интервью с Мариной Устиновской","description":"Марина рассказывает о работе в Ozon коммуникационным дизайнером, о критериях найма в индустрии дизайна и о том, как дизайнеру начать карьеру в корпорации","readTime":"14 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-1-author.png","imageLight":"/images/interviews/interview-1-authorLight.png","articleSlug":"article2"},{"id":2,"tags":["Продукт","Корпорация","Пет-проект"],"title":"Стажировка, которая началась с майнора в Вышке, обучение дизайнеров и работа в зарубежных компаниях — Рома Кужель","description":"Стажировка, проект DDRILLS, тенденции в найме дизайнеров","readTime":"11 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-2-author.png","imageLight":"/images/interviews/interview-2-authorLight.png","articleSlug":"article3"},{"id":3,"tags":["Продукт","Корпорация","Агентство"],"title":"Андрей Котов: поиск своего стиля, нетворкинг и проактивность в поиске работы","description":"Андрей делится историей своего карьерного пути и подходом к дизайну ","readTime":"12 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-3-author.png","imageLight":"/images/interviews/interview-3-authorLight.png"},{"id":4,"tags":["Продукт","Преподавание","Корпорация"],"title":"Матвей Васильев: почему важны связи в индустрии?","description":"Матвей рассказывает о поиске работы через нетворкинг, специфике работы лид-дизайнером, учёбе в магистратуре и опыте преподавания","readTime":"12 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-4-author.png","imageLight":"/images/interviews/interview-4-authorLight.png","articleSlug":"article1"},{"id":5,"tags":["Диджитал","Преподавание","Корпорация"],"title":"Работа в зарубежной студии и  личные проекты — Аня Шпак","description":"Карьерный путь, работа в международной команде и отличия менталитета","readTime":"16 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-5-author.png","imageLight":"/images/interviews/interview-5-authorLight.png","articleSlug":"article4"},{"id":6,"tags":["Продукт","Корпорация"],"title":"Варя Глушкова про работу в HR Tech, полезные навыки для дизайнера и развитие в смежных сферах","description":"Карьерный путь, особенности найма и развитие дополнительных навыков","readTime":"12 минут","imageCollageType":"type2","imageDark":"/images/interviews/interview-6-author.png","imageLight":"/images/interviews/interview-6-authorLight.png"},{"id":7,"tags":["Агентство","Дидижитал"],"title":"Стажировка в студии Лебедева перед первым курсом — Руслан Хайруллин","description":"Стажировка, участие в хакатоне и поступление в Школу дизайна — в интервью с Русланом","readTime":"8 минут","imageCollageType":"type1","imageDark":"/images/interviews/interview-7-author.png","imageLight":"/images/interviews/interview-7-authorLight.png"}]');
 ;// ./src/data/useful.json
-const useful_namespaceObject = /*#__PURE__*/JSON.parse('{"x":[{"id":"useful-1","slug":"design-operations","type":"article","title":"Что такое Design Operations?","description":"Понимание роли и задач Design Operations в современных командах","author":{"name":"Анна Иванова","image":"/adcmedia/images/useful/author-1.jpg"},"meta":{"publishedDate":"15 февраля","readingTime":"12 мин","tags":["Лекция","Продукт"],"channel":""},"hero":{"title":"Воркшоп – развитие креативности от Ddrills","author":{"name":"Рома Кужель","avatar":"/adcmedia/images/useful/author-roma.jpg"},"meta":{"date":"12 апреля","tag":"Воркшоп","channel":"в канале DDRILLS"},"images":{"cover1":"/adcmedia/images/useful/design-drills-banner.png"}},"content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."},{"type":"section","id":"task","title":"Задание"},{"type":"text","content":"Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."},{"type":"text","content":"В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."},{"type":"text","content":"Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."},{"type":"section","id":"result","title":"Результат"},{"type":"text","content":"Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"},{"type":"text","content":"В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"},{"type":"image","image":"/adcmedia/images/useful/result-1.jpg","caption":"Больше примеров – в канале DDRILLS"},{"type":"image","image":"/adcmedia/images/useful/result-2.jpg","caption":""}],"preview":{"image":"/adcmedia/images/useful/design-drills-banner.png","imageLight":"/adcmedia/images/useful/design-drills-bannerLight.png","excerpt":"Понимание роли и задач Design Operations в современных командах"},"seo":{"metaTitle":"Что такое Design Operations? | ADC Media","metaDescription":"Понимание роли и задач Design Operations","ogImage":"/adcmedia/images/og/desops.jpg","keywords":["Design Operations","DesOps","команда","процессы"]}},{"id":"useful-2","slug":"design-drills-workshop","type":"article","title":"Воркшоп – развитие креативности от Ddrills","description":"Прокачка дизайн-скиллов через простые упражнения каждый день","author":{"name":"Рома Кужель","image":"/adcmedia/images/useful/author-roma.jpg"},"meta":{"publishedDate":"12 апреля","readingTime":"8 мин","tags":["Воркшоп","Диджитал"]},"articleSlug":"design-drills-workshop","content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."}],"preview":{"image":"/adcmedia/images/useful/design-drills-banner2.png","imageLight":"/adcmedia/images/useful/design-drills-banner2Light.png","excerpt":"Прокачка дизайн-скиллов через простые упражнения каждый день"},"seo":{"metaTitle":"Воркшоп – развитие креативности от Ddrills | ADC Media","metaDescription":"Прокачка дизайн-скиллов через простые упражнения","ogImage":"/adcmedia/images/og/design-drills.jpg","keywords":["Design Drills","воркшоп","креативность","дизайн"]}},{"id":"useful-3","slug":"visual-thinking-lecture","type":"article","title":"Лекция «Визуальное мышление как новый soft-skill»","description":"Развитие навыков визуального мышления для эффективной коммуникации","author":{"name":"Петр Смирнов","image":"/adcmedia/images/useful/author-2.jpg"},"meta":{"publishedDate":"20 марта","readingTime":"15 мин","tags":["Лекция","Диджитал"]},"content":{"sections":[{"heading":"Что такое дизайн-система","text":"Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."},{"heading":"Зачем нужна дизайн-система","text":"Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."},{"heading":"Как создать дизайн-систему","text":"Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."}]},"preview":{"image":"/adcmedia/images/useful/design-drills-banner3.png","imageLight":"/adcmedia/images/useful/design-drills-banner3Light.png","excerpt":"Развитие навыков визуального мышления для эффективной коммуникации"},"seo":{"metaTitle":"Лекция «Визуальное мышление как новый soft-skill» | ADC Media","metaDescription":"Развитие навыков визуального мышления","ogImage":"/adcmedia/images/og/visual-thinking.jpg","keywords":["визуальное мышление","soft-skills","лекция"]}},{"id":"useful-4","slug":"ui-kit-workshop","type":"article","title":"Воркшоп по продвинутой сборке UI-kit","description":"Практическое руководство по созданию масштабируемых UI-китов","author":{"name":"Мария Петрова","image":"/adcmedia/images/useful/author-3.jpg"},"meta":{"publishedDate":"5 мая","readingTime":"18 мин","tags":["Воркшоп","Диджитал"]},"content":{"sections":[{"heading":"Введение","text":"Научитесь создавать профессиональные UI-киты для своих проектов."},{"heading":"Структура UI-kit","text":"Разберем компоненты, стили и правила их использования."},{"heading":"Масштабирование","text":"Как сделать UI-kit гибким и удобным для команды."}]},"preview":{"image":"/adcmedia/images/useful/design-drills-banner4.png","imageLight":"/adcmedia/images/useful/design-drills-banner4Light.png","excerpt":"Практическое руководство по созданию масштабируемых UI-китов"},"seo":{"metaTitle":"Воркшоп по продвинутой сборке UI-kit | ADC Media","metaDescription":"Практическое руководство по созданию масштабируемых UI-китов","ogImage":"/adcmedia/images/og/ui-kit.jpg","keywords":["UI-kit","воркшоп","компоненты","дизайн-система"]}}]}');
+const useful_namespaceObject = /*#__PURE__*/JSON.parse('{"x":[{"id":"useful-1","slug":"design-operations","type":"article","title":"Что такое Design Operations?","description":"Понимание роли и задач Design Operations в современных командах","author":{"name":"Анна Иванова","image":"/images/useful/author-1.jpg"},"meta":{"publishedDate":"15 февраля","readingTime":"12 мин","tags":["Лекция","Продукт"],"channel":""},"hero":{"title":"Воркшоп – развитие креативности от Ddrills","author":{"name":"Рома Кужель","avatar":"/images/useful/author-roma.jpg"},"meta":{"date":"12 апреля","tag":"Воркшоп","channel":"в канале DDRILLS"},"images":{"cover1":"/images/useful/design-drills-banner.png"}},"content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день. Добро пожаловать на тренировочную базу Daily Design Drills, здесь вы сможете отмечать дизайн-скилы в игровом-формате и в любое удобное для вас время. Каждое упражнение спроектировано в формате карточек."},{"type":"section","id":"task","title":"Задание"},{"type":"text","content":"Мы продолжаем двигаться по установившимся паттернам и стремимся их переосмыслить."},{"type":"text","content":"В этой тренировке нужно переосмыслить хлебные крошки (breadcrumps), которые обычно помогают нам не потеряться в тонне информации."},{"type":"text","content":"Что если изобрести их иначе? Например можно воспринять их буквально и изобразить печеньку, а может перенести в мобильный формат и показывать вложенность за счет объема и цвета."},{"type":"section","id":"result","title":"Результат"},{"type":"text","content":"Ну и самое первое что пришло в голову – это матрешка, потому что она идеально показывает вложенность"},{"type":"text","content":"В общем, развлекайтесь, ограничений нет, кроме здравого смысла!"},{"type":"image","image":"/images/useful/result-1.jpg","caption":"Больше примеров – в канале DDRILLS"},{"type":"image","image":"/images/useful/result-2.jpg","caption":""}],"preview":{"image":"/images/useful/design-drills-banner.png","imageLight":"/images/useful/design-drills-bannerLight.png","excerpt":"Понимание роли и задач Design Operations в современных командах"},"seo":{"metaTitle":"Что такое Design Operations? | ADC Media","metaDescription":"Понимание роли и задач Design Operations","ogImage":"/images/og/desops.jpg","keywords":["Design Operations","DesOps","команда","процессы"]}},{"id":"useful-2","slug":"design-drills-workshop","type":"article","title":"Воркшоп – развитие креативности от Ddrills","description":"Прокачка дизайн-скиллов через простые упражнения каждый день","author":{"name":"Рома Кужель","image":"/images/useful/author-roma.jpg"},"meta":{"publishedDate":"12 апреля","readingTime":"8 мин","tags":["Воркшоп","Диджитал"]},"articleSlug":"design-drills-workshop","content":[{"type":"section","id":"about-project","title":"О проекте Design Drills"},{"type":"text","content":"Design Drills – это прокачка дизайн-скиллов через простые упражнения каждый день."}],"preview":{"image":"/images/useful/design-drills-banner2.png","imageLight":"/images/useful/design-drills-banner2Light.png","excerpt":"Прокачка дизайн-скиллов через простые упражнения каждый день"},"seo":{"metaTitle":"Воркшоп – развитие креативности от Ddrills | ADC Media","metaDescription":"Прокачка дизайн-скиллов через простые упражнения","ogImage":"/images/og/design-drills.jpg","keywords":["Design Drills","воркшоп","креативность","дизайн"]}},{"id":"useful-3","slug":"visual-thinking-lecture","type":"article","title":"Лекция «Визуальное мышление как новый soft-skill»","description":"Развитие навыков визуального мышления для эффективной коммуникации","author":{"name":"Петр Смирнов","image":"/images/useful/author-2.jpg"},"meta":{"publishedDate":"20 марта","readingTime":"15 мин","tags":["Лекция","Диджитал"]},"content":{"sections":[{"heading":"Что такое дизайн-система","text":"Дизайн-система — это набор стандартов, компонентов и рекомендаций для создания единообразного интерфейса."},{"heading":"Зачем нужна дизайн-система","text":"Она ускоряет разработку, обеспечивает консистентность и упрощает поддержку продукта."},{"heading":"Как создать дизайн-систему","text":"Начните с аудита существующих компонентов, затем создайте библиотеку и документацию."}]},"preview":{"image":"/images/useful/design-drills-banner3.png","imageLight":"/images/useful/design-drills-banner3Light.png","excerpt":"Развитие навыков визуального мышления для эффективной коммуникации"},"seo":{"metaTitle":"Лекция «Визуальное мышление как новый soft-skill» | ADC Media","metaDescription":"Развитие навыков визуального мышления","ogImage":"/images/og/visual-thinking.jpg","keywords":["визуальное мышление","soft-skills","лекция"]}},{"id":"useful-4","slug":"ui-kit-workshop","type":"article","title":"Воркшоп по продвинутой сборке UI-kit","description":"Практическое руководство по созданию масштабируемых UI-китов","author":{"name":"Мария Петрова","image":"/images/useful/author-3.jpg"},"meta":{"publishedDate":"5 мая","readingTime":"18 мин","tags":["Воркшоп","Диджитал"]},"content":{"sections":[{"heading":"Введение","text":"Научитесь создавать профессиональные UI-киты для своих проектов."},{"heading":"Структура UI-kit","text":"Разберем компоненты, стили и правила их использования."},{"heading":"Масштабирование","text":"Как сделать UI-kit гибким и удобным для команды."}]},"preview":{"image":"/images/useful/design-drills-banner4.png","imageLight":"/images/useful/design-drills-banner4Light.png","excerpt":"Практическое руководство по созданию масштабируемых UI-китов"},"seo":{"metaTitle":"Воркшоп по продвинутой сборке UI-kit | ADC Media","metaDescription":"Практическое руководство по созданию масштабируемых UI-китов","ogImage":"/images/og/ui-kit.jpg","keywords":["UI-kit","воркшоп","компоненты","дизайн-система"]}}]}');
 ;// ./src/javascript/components/O_ArticlePreview.jsx
 
 var O_ArticlePreview = function O_ArticlePreview(_ref) {
@@ -17657,7 +17657,7 @@ var O_ArticlePreview = function O_ArticlePreview(_ref) {
   }));
   if (articleSlug) {
     return /*#__PURE__*/react.createElement("a", {
-      href: "/adcmedia/interviews/".concat(articleSlug, ".html"),
+      href: "/interviews/".concat(articleSlug, ".html"),
       className: "O_ArticlePreview ".concat(isReversed ? 'O_ArticlePreview--reverse' : '')
     }, content);
   }
@@ -17701,7 +17701,7 @@ var O_UsefulCard = function O_UsefulCard(_ref) {
   }))));
   if (articleSlug) {
     return /*#__PURE__*/react.createElement("a", {
-      href: "/adcmedia/useful/article.html",
+      href: "/useful/article.html",
       className: "O_UsefulCard"
     }, content);
   }
@@ -18159,6 +18159,7 @@ function set(type, name, callback) {
 /* harmony default export */ const src_dispatch = (dispatch);
 
 ;// ./node_modules/d3-selection/src/selector.js
+Object.defineProperty(selector, "name", { value: "default", configurable: true });
 function none() {}
 
 /* harmony default export */ function selector(selector) {
@@ -18168,6 +18169,7 @@ function none() {}
 }
 
 ;// ./node_modules/d3-selection/src/selection/select.js
+Object.defineProperty(selection_select, "name", { value: "default", configurable: true });
 
 
 
@@ -18198,6 +18200,7 @@ function array(x) {
 }
 
 ;// ./node_modules/d3-selection/src/selectorAll.js
+Object.defineProperty(selectorAll, "name", { value: "default", configurable: true });
 function empty() {
   return [];
 }
@@ -18209,6 +18212,7 @@ function empty() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/selectAll.js
+Object.defineProperty(selectAll, "name", { value: "default", configurable: true });
 
 
 
@@ -18236,6 +18240,7 @@ function arrayAll(select) {
 }
 
 ;// ./node_modules/d3-selection/src/matcher.js
+Object.defineProperty(matcher, "name", { value: "default", configurable: true });
 /* harmony default export */ function matcher(selector) {
   return function() {
     return this.matches(selector);
@@ -18250,6 +18255,7 @@ function childMatcher(selector) {
 
 
 ;// ./node_modules/d3-selection/src/selection/selectChild.js
+Object.defineProperty(selectChild, "name", { value: "default", configurable: true });
 
 
 var find = Array.prototype.find;
@@ -18270,6 +18276,7 @@ function childFirst() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/selectChildren.js
+Object.defineProperty(selectChildren, "name", { value: "default", configurable: true });
 
 
 var filter = Array.prototype.filter;
@@ -18290,6 +18297,7 @@ function childrenFilter(match) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/filter.js
+Object.defineProperty(selection_filter, "name", { value: "default", configurable: true });
 
 
 
@@ -18308,11 +18316,13 @@ function childrenFilter(match) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/sparse.js
+Object.defineProperty(sparse, "name", { value: "default", configurable: true });
 /* harmony default export */ function sparse(update) {
   return new Array(update.length);
 }
 
 ;// ./node_modules/d3-selection/src/selection/enter.js
+Object.defineProperty(enter, "name", { value: "default", configurable: true });
 
 
 
@@ -18337,6 +18347,7 @@ EnterNode.prototype = {
 };
 
 ;// ./node_modules/d3-selection/src/constant.js
+Object.defineProperty(constant, "name", { value: "default", configurable: true });
 /* harmony default export */ function constant(x) {
   return function() {
     return x;
@@ -18344,6 +18355,7 @@ EnterNode.prototype = {
 }
 
 ;// ./node_modules/d3-selection/src/selection/data.js
+Object.defineProperty(data, "name", { value: "default", configurable: true });
 
 
 
@@ -18474,6 +18486,7 @@ function arraylike(data) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/exit.js
+Object.defineProperty(exit, "name", { value: "default", configurable: true });
 
 
 
@@ -18482,6 +18495,7 @@ function arraylike(data) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/join.js
+Object.defineProperty(join, "name", { value: "default", configurable: true });
 /* harmony default export */ function join(onenter, onupdate, onexit) {
   var enter = this.enter(), update = this, exit = this.exit();
   if (typeof onenter === "function") {
@@ -18499,6 +18513,7 @@ function arraylike(data) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/merge.js
+Object.defineProperty(merge, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function merge(context) {
@@ -18520,6 +18535,7 @@ function arraylike(data) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/order.js
+Object.defineProperty(order, "name", { value: "default", configurable: true });
 /* harmony default export */ function order() {
 
   for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
@@ -18535,6 +18551,7 @@ function arraylike(data) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/sort.js
+Object.defineProperty(sort, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function sort(compare) {
@@ -18561,6 +18578,7 @@ function ascending(a, b) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/call.js
+Object.defineProperty(call, "name", { value: "default", configurable: true });
 /* harmony default export */ function call() {
   var callback = arguments[0];
   arguments[0] = this;
@@ -18569,11 +18587,13 @@ function ascending(a, b) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/nodes.js
+Object.defineProperty(nodes, "name", { value: "default", configurable: true });
 /* harmony default export */ function nodes() {
   return Array.from(this);
 }
 
 ;// ./node_modules/d3-selection/src/selection/node.js
+Object.defineProperty(node, "name", { value: "default", configurable: true });
 /* harmony default export */ function node() {
 
   for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
@@ -18587,6 +18607,7 @@ function ascending(a, b) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/size.js
+Object.defineProperty(size, "name", { value: "default", configurable: true });
 /* harmony default export */ function size() {
   let size = 0;
   for (const node of this) ++size; // eslint-disable-line no-unused-vars
@@ -18594,11 +18615,13 @@ function ascending(a, b) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/empty.js
+Object.defineProperty(selection_empty, "name", { value: "default", configurable: true });
 /* harmony default export */ function selection_empty() {
   return !this.node();
 }
 
 ;// ./node_modules/d3-selection/src/selection/each.js
+Object.defineProperty(each, "name", { value: "default", configurable: true });
 /* harmony default export */ function each(callback) {
 
   for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
@@ -18622,6 +18645,7 @@ var xhtml = "http://www.w3.org/1999/xhtml";
 });
 
 ;// ./node_modules/d3-selection/src/namespace.js
+Object.defineProperty(namespace, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function namespace(name) {
@@ -18631,6 +18655,7 @@ var xhtml = "http://www.w3.org/1999/xhtml";
 }
 
 ;// ./node_modules/d3-selection/src/selection/attr.js
+Object.defineProperty(attr, "name", { value: "default", configurable: true });
 
 
 function attrRemove(name) {
@@ -18690,6 +18715,7 @@ function attrFunctionNS(fullname, value) {
 }
 
 ;// ./node_modules/d3-selection/src/window.js
+Object.defineProperty(src_window, "name", { value: "default", configurable: true });
 /* harmony default export */ function src_window(node) {
   return (node.ownerDocument && node.ownerDocument.defaultView) // node is a Node
       || (node.document && node) // node is a Window
@@ -18697,6 +18723,7 @@ function attrFunctionNS(fullname, value) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/style.js
+Object.defineProperty(style, "name", { value: "default", configurable: true });
 
 
 function styleRemove(name) {
@@ -18734,6 +18761,7 @@ function styleValue(node, name) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/property.js
+Object.defineProperty(property, "name", { value: "default", configurable: true });
 function propertyRemove(name) {
   return function() {
     delete this[name];
@@ -18764,6 +18792,7 @@ function propertyFunction(name, value) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/classed.js
+Object.defineProperty(classed, "name", { value: "default", configurable: true });
 function classArray(string) {
   return string.trim().split(/^|\s+/);
 }
@@ -18841,6 +18870,7 @@ function classedFunction(names, value) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/text.js
+Object.defineProperty(selection_text, "name", { value: "default", configurable: true });
 function textRemove() {
   this.textContent = "";
 }
@@ -18868,6 +18898,7 @@ function textFunction(value) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/html.js
+Object.defineProperty(html, "name", { value: "default", configurable: true });
 function htmlRemove() {
   this.innerHTML = "";
 }
@@ -18895,6 +18926,7 @@ function htmlFunction(value) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/raise.js
+Object.defineProperty(selection_raise, "name", { value: "default", configurable: true });
 function raise() {
   if (this.nextSibling) this.parentNode.appendChild(this);
 }
@@ -18904,6 +18936,7 @@ function raise() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/lower.js
+Object.defineProperty(selection_lower, "name", { value: "default", configurable: true });
 function lower() {
   if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
 }
@@ -18913,6 +18946,7 @@ function lower() {
 }
 
 ;// ./node_modules/d3-selection/src/creator.js
+Object.defineProperty(creator, "name", { value: "default", configurable: true });
 
 
 
@@ -18940,6 +18974,7 @@ function creatorFixed(fullname) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/append.js
+Object.defineProperty(append, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function append(name) {
@@ -18950,6 +18985,7 @@ function creatorFixed(fullname) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/insert.js
+Object.defineProperty(insert, "name", { value: "default", configurable: true });
 
 
 
@@ -18966,6 +19002,7 @@ function constantNull() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/remove.js
+Object.defineProperty(selection_remove, "name", { value: "default", configurable: true });
 function remove() {
   var parent = this.parentNode;
   if (parent) parent.removeChild(this);
@@ -18976,6 +19013,7 @@ function remove() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/clone.js
+Object.defineProperty(clone, "name", { value: "default", configurable: true });
 function selection_cloneShallow() {
   var clone = this.cloneNode(false), parent = this.parentNode;
   return parent ? parent.insertBefore(clone, this.nextSibling) : clone;
@@ -18991,6 +19029,7 @@ function selection_cloneDeep() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/datum.js
+Object.defineProperty(selection_datum, "name", { value: "default", configurable: true });
 /* harmony default export */ function selection_datum(value) {
   return arguments.length
       ? this.property("__data__", value)
@@ -18998,6 +19037,7 @@ function selection_cloneDeep() {
 }
 
 ;// ./node_modules/d3-selection/src/selection/on.js
+Object.defineProperty(on, "name", { value: "default", configurable: true });
 function contextListener(listener) {
   return function(event) {
     listener.call(this, event, this.__data__);
@@ -19067,6 +19107,7 @@ function onAdd(typename, value, options) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/dispatch.js
+Object.defineProperty(selection_dispatch, "name", { value: "default", configurable: true });
 
 
 function dispatchEvent(node, type, params) {
@@ -19103,6 +19144,7 @@ function dispatchFunction(type, params) {
 }
 
 ;// ./node_modules/d3-selection/src/selection/iterator.js
+Object.defineProperty(iterator, "name", { value: "default", configurable: true });
 /* harmony default export */ function* iterator() {
   for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
     for (var group = groups[j], i = 0, n = group.length, node; i < n; ++i) {
@@ -19204,6 +19246,7 @@ Selection.prototype = selection.prototype = {
 /* harmony default export */ const src_selection = (selection);
 
 ;// ./node_modules/d3-selection/src/select.js
+Object.defineProperty(src_select, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function src_select(selector) {
@@ -19213,6 +19256,7 @@ Selection.prototype = selection.prototype = {
 }
 
 ;// ./node_modules/d3-drag/src/noevent.js
+Object.defineProperty(noevent, "name", { value: "default", configurable: true });
 // These are typically used in conjunction with noevent to ensure that we can
 // preventDefault on the event.
 const nonpassive = {passive: false};
@@ -19228,6 +19272,7 @@ function nopropagation(event) {
 }
 
 ;// ./node_modules/d3-drag/src/nodrag.js
+Object.defineProperty(nodrag, "name", { value: "default", configurable: true });
 
 
 
@@ -19331,6 +19376,7 @@ function tanh(x) {
 })(Math.SQRT2, 2, 4));
 
 ;// ./node_modules/d3-selection/src/sourceEvent.js
+Object.defineProperty(sourceEvent, "name", { value: "default", configurable: true });
 /* harmony default export */ function sourceEvent(event) {
   let sourceEvent;
   while (sourceEvent = event.sourceEvent) event = sourceEvent;
@@ -19338,6 +19384,7 @@ function tanh(x) {
 }
 
 ;// ./node_modules/d3-selection/src/pointer.js
+Object.defineProperty(pointer, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function pointer(event, node) {
@@ -19472,6 +19519,7 @@ function sleep(time) {
 }
 
 ;// ./node_modules/d3-timer/src/timeout.js
+Object.defineProperty(src_timeout, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function src_timeout(callback, delay, time) {
@@ -19485,6 +19533,7 @@ function sleep(time) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/schedule.js
+Object.defineProperty(schedule, "name", { value: "default", configurable: true });
 
 
 
@@ -19640,6 +19689,7 @@ function create(node, id, self) {
 }
 
 ;// ./node_modules/d3-transition/src/interrupt.js
+Object.defineProperty(interrupt, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function interrupt(node, name) {
@@ -19666,6 +19716,7 @@ function create(node, id, self) {
 }
 
 ;// ./node_modules/d3-transition/src/selection/interrupt.js
+Object.defineProperty(selection_interrupt, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function selection_interrupt(name) {
@@ -19675,6 +19726,7 @@ function create(node, id, self) {
 }
 
 ;// ./node_modules/d3-interpolate/src/number.js
+Object.defineProperty(number, "name", { value: "default", configurable: true });
 /* harmony default export */ function number(a, b) {
   return a = +a, b = +b, function(t) {
     return a * (1 - t) + b * t;
@@ -19682,6 +19734,7 @@ function create(node, id, self) {
 }
 
 ;// ./node_modules/d3-interpolate/src/transform/decompose.js
+Object.defineProperty(decompose, "name", { value: "default", configurable: true });
 var degrees = 180 / Math.PI;
 
 var decompose_identity = {
@@ -19795,6 +19848,7 @@ var interpolateTransformCss = interpolateTransform(parseCss, "px, ", "px)", "deg
 var interpolateTransformSvg = interpolateTransform(parseSvg, ", ", ")", ")");
 
 ;// ./node_modules/d3-transition/src/transition/tween.js
+Object.defineProperty(tween, "name", { value: "default", configurable: true });
 
 
 function tweenRemove(id, name) {
@@ -19878,6 +19932,7 @@ function tweenValue(transition, name, value) {
 }
 
 ;// ./node_modules/d3-color/src/define.js
+Object.defineProperty(src_define, "name", { value: "default", configurable: true });
 /* harmony default export */ function src_define(constructor, factory, prototype) {
   constructor.prototype = factory.prototype = prototype;
   prototype.constructor = constructor;
@@ -20288,6 +20343,7 @@ function hsl2rgb(h, m1, m2) {
 }
 
 ;// ./node_modules/d3-interpolate/src/basis.js
+Object.defineProperty(src_basis, "name", { value: "default", configurable: true });
 function basis(t1, v0, v1, v2, v3) {
   var t2 = t1 * t1, t3 = t2 * t1;
   return ((1 - 3 * t1 + 3 * t2 - t3) * v0
@@ -20309,6 +20365,7 @@ function basis(t1, v0, v1, v2, v3) {
 }
 
 ;// ./node_modules/d3-interpolate/src/basisClosed.js
+Object.defineProperty(basisClosed, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function basisClosed(values) {
@@ -20325,6 +20382,7 @@ function basis(t1, v0, v1, v2, v3) {
 
 ;// ./node_modules/d3-interpolate/src/constant.js
 /* harmony default export */ const src_constant = (x => () => x);
+(Object.getOwnPropertyDescriptor(src_constant, "name") || {}).writable || Object.defineProperty(src_constant, "name", { value: "default", configurable: true });
 
 ;// ./node_modules/d3-interpolate/src/color.js
 /* unused harmony import specifier */ var color_constant;
@@ -20416,6 +20474,7 @@ var rgbBasis = rgbSpline(src_basis);
 var rgbBasisClosed = rgbSpline(basisClosed);
 
 ;// ./node_modules/d3-interpolate/src/string.js
+Object.defineProperty(string, "name", { value: "default", configurable: true });
 
 
 var reA = /[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,
@@ -20482,6 +20541,7 @@ function one(b) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/interpolate.js
+Object.defineProperty(interpolate, "name", { value: "default", configurable: true });
 
 
 
@@ -20494,6 +20554,7 @@ function one(b) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/attr.js
+Object.defineProperty(transition_attr, "name", { value: "default", configurable: true });
 
 
 
@@ -20574,6 +20635,7 @@ function attr_attrFunctionNS(fullname, interpolate, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/attrTween.js
+Object.defineProperty(transition_attrTween, "name", { value: "default", configurable: true });
 
 
 function attrInterpolate(name, i) {
@@ -20620,6 +20682,7 @@ function attrTween(name, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/delay.js
+Object.defineProperty(delay, "name", { value: "default", configurable: true });
 
 
 function delayFunction(id, value) {
@@ -20645,6 +20708,7 @@ function delayConstant(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/duration.js
+Object.defineProperty(duration, "name", { value: "default", configurable: true });
 
 
 function durationFunction(id, value) {
@@ -20670,6 +20734,7 @@ function durationConstant(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/ease.js
+Object.defineProperty(ease, "name", { value: "default", configurable: true });
 
 
 function easeConstant(id, value) {
@@ -20688,6 +20753,7 @@ function easeConstant(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/easeVarying.js
+Object.defineProperty(transition_easeVarying, "name", { value: "default", configurable: true });
 
 
 function easeVarying(id, value) {
@@ -20704,6 +20770,7 @@ function easeVarying(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/filter.js
+Object.defineProperty(transition_filter, "name", { value: "default", configurable: true });
 
 
 
@@ -20722,6 +20789,7 @@ function easeVarying(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/merge.js
+Object.defineProperty(transition_merge, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function transition_merge(transition) {
@@ -20743,6 +20811,7 @@ function easeVarying(id, value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/on.js
+Object.defineProperty(transition_on, "name", { value: "default", configurable: true });
 
 
 function start(name) {
@@ -20777,6 +20846,7 @@ function onFunction(id, name, listener) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/remove.js
+Object.defineProperty(transition_remove, "name", { value: "default", configurable: true });
 function removeFunction(id) {
   return function() {
     var parent = this.parentNode;
@@ -20790,6 +20860,7 @@ function removeFunction(id) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/select.js
+Object.defineProperty(transition_select, "name", { value: "default", configurable: true });
 
 
 
@@ -20814,6 +20885,7 @@ function removeFunction(id) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/selectAll.js
+Object.defineProperty(transition_selectAll, "name", { value: "default", configurable: true });
 
 
 
@@ -20842,6 +20914,7 @@ function removeFunction(id) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/selection.js
+Object.defineProperty(transition_selection, "name", { value: "default", configurable: true });
 
 
 var selection_Selection = src_selection.prototype.constructor;
@@ -20851,6 +20924,7 @@ var selection_Selection = src_selection.prototype.constructor;
 }
 
 ;// ./node_modules/d3-transition/src/transition/style.js
+Object.defineProperty(transition_style, "name", { value: "default", configurable: true });
 
 
 
@@ -20933,6 +21007,7 @@ function styleMaybeRemove(id, name) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/styleTween.js
+Object.defineProperty(transition_styleTween, "name", { value: "default", configurable: true });
 function styleInterpolate(name, i, priority) {
   return function(t) {
     this.style.setProperty(name, i.call(this, t), priority);
@@ -20959,6 +21034,7 @@ function styleTween(name, value, priority) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/text.js
+Object.defineProperty(transition_text, "name", { value: "default", configurable: true });
 
 
 function text_textConstant(value) {
@@ -20981,6 +21057,7 @@ function text_textFunction(value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/textTween.js
+Object.defineProperty(transition_textTween, "name", { value: "default", configurable: true });
 function textInterpolate(i) {
   return function(t) {
     this.textContent = i.call(this, t);
@@ -21007,6 +21084,7 @@ function textTween(value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/transition.js
+Object.defineProperty(transition, "name", { value: "default", configurable: true });
 
 
 
@@ -21033,6 +21111,7 @@ function textTween(value) {
 }
 
 ;// ./node_modules/d3-transition/src/transition/end.js
+Object.defineProperty(end, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function end() {
@@ -21152,6 +21231,7 @@ function cubicInOut(t) {
 }
 
 ;// ./node_modules/d3-transition/src/selection/transition.js
+Object.defineProperty(selection_transition, "name", { value: "default", configurable: true });
 
 
 
@@ -21211,6 +21291,7 @@ src_selection.prototype.transition = selection_transition;
 
 ;// ./node_modules/d3-zoom/src/constant.js
 /* harmony default export */ const d3_zoom_src_constant = (x => () => x);
+(Object.getOwnPropertyDescriptor(d3_zoom_src_constant, "name") || {}).writable || Object.defineProperty(d3_zoom_src_constant, "name", { value: "default", configurable: true });
 
 ;// ./node_modules/d3-zoom/src/event.js
 function ZoomEvent(type, {
@@ -21282,6 +21363,7 @@ function transform(node) {
 }
 
 ;// ./node_modules/d3-zoom/src/noevent.js
+Object.defineProperty(src_noevent, "name", { value: "default", configurable: true });
 function noevent_nopropagation(event) {
   event.stopImmediatePropagation();
 }
@@ -21292,6 +21374,7 @@ function noevent_nopropagation(event) {
 }
 
 ;// ./node_modules/d3-zoom/src/zoom.js
+Object.defineProperty(zoom, "name", { value: "default", configurable: true });
 
 
 
@@ -21746,6 +21829,7 @@ function defaultConstrain(transform, extent, translateExtent) {
 
 ;// ./node_modules/d3-drag/src/constant.js
 /* harmony default export */ const d3_drag_src_constant = (x => () => x);
+(Object.getOwnPropertyDescriptor(d3_drag_src_constant, "name") || {}).writable || Object.defineProperty(d3_drag_src_constant, "name", { value: "default", configurable: true });
 
 ;// ./node_modules/d3-drag/src/event.js
 function DragEvent(type, {
@@ -21778,6 +21862,7 @@ DragEvent.prototype.on = function() {
 };
 
 ;// ./node_modules/d3-drag/src/drag.js
+Object.defineProperty(drag, "name", { value: "default", configurable: true });
 
 
 
@@ -26274,7 +26359,7 @@ var Controls$1 = (0,react.memo)(Controls);
 // extracted by mini-css-extract-plugin
 
 ;// ./src/data/graph-authors.json
-const graph_authors_namespaceObject = /*#__PURE__*/JSON.parse('{"t":[{"id":"1","name":"Руслан Хайруллин","image":"/adcmedia/images/useful/author-roma.png","connections":["2"]},{"id":"2","name":"Рома Кужель","image":"/adcmedia/images/useful/author-roma.png","connections":["4"]},{"id":"3","name":"Екатерина Гомзякова","image":"/adcmedia/images/useful/author-roma.png","connections":["1"]},{"id":"4","name":"Захар День","image":"/adcmedia/images/useful/author-roma.png","connections":["5"]},{"id":"5","name":"Анна Смирнова","image":"/adcmedia/images/useful/author-roma.png","connections":["8"]},{"id":"6","name":"Дмитрий Иванов","image":"/adcmedia/images/useful/author-roma.png","connections":["7"]},{"id":"7","name":"Мария Петрова","image":"/adcmedia/images/useful/author-roma.png","connections":["9"]},{"id":"8","name":"Алексей Козлов","image":"/adcmedia/images/useful/author-roma.png","connections":["10"]},{"id":"9","name":"Елена Волкова","image":"/adcmedia/images/useful/author-roma.png","connections":[]},{"id":"10","name":"Игорь Соколов","image":"/adcmedia/images/useful/author-roma.png","connections":["9"]},{"id":"11","name":"Ольга Новикова","image":"/adcmedia/images/useful/author-roma.png","connections":["12"]},{"id":"12","name":"Сергей Морозов","image":"/adcmedia/images/useful/author-roma.png","connections":["13"]},{"id":"13","name":"Наталья Павлова","image":"/adcmedia/images/useful/author-roma.png","connections":["14"]},{"id":"14","name":"Андрей Федоров","image":"/adcmedia/images/useful/author-roma.png","connections":["16"]},{"id":"15","name":"Татьяна Михайлова","image":"/adcmedia/images/useful/author-roma.png","connections":["11"]},{"id":"16","name":"Владимир Васильев","image":"/adcmedia/images/useful/author-roma.png","connections":["18"]},{"id":"17","name":"Юлия Кузнецова","image":"/adcmedia/images/useful/author-roma.png","connections":["15"]},{"id":"18","name":"Николай Егоров","image":"/adcmedia/images/useful/author-roma.png","connections":["20"]},{"id":"19","name":"Ирина Сидорова","image":"/adcmedia/images/useful/author-roma.png","connections":["17"]},{"id":"20","name":"Максим Григорьев","image":"/adcmedia/images/useful/author-roma.png","connections":[]}]}');
+const graph_authors_namespaceObject = /*#__PURE__*/JSON.parse('{"t":[{"id":"1","name":"Руслан Хайруллин","image":"/images/useful/author-roma.png","connections":["2"]},{"id":"2","name":"Рома Кужель","image":"/images/useful/author-roma.png","connections":["4"]},{"id":"3","name":"Екатерина Гомзякова","image":"/images/useful/author-roma.png","connections":["1"]},{"id":"4","name":"Захар День","image":"/images/useful/author-roma.png","connections":["5"]},{"id":"5","name":"Анна Смирнова","image":"/images/useful/author-roma.png","connections":["8"]},{"id":"6","name":"Дмитрий Иванов","image":"/images/useful/author-roma.png","connections":["7"]},{"id":"7","name":"Мария Петрова","image":"/images/useful/author-roma.png","connections":["9"]},{"id":"8","name":"Алексей Козлов","image":"/images/useful/author-roma.png","connections":["10"]},{"id":"9","name":"Елена Волкова","image":"/images/useful/author-roma.png","connections":[]},{"id":"10","name":"Игорь Соколов","image":"/images/useful/author-roma.png","connections":["9"]},{"id":"11","name":"Ольга Новикова","image":"/images/useful/author-roma.png","connections":["12"]},{"id":"12","name":"Сергей Морозов","image":"/images/useful/author-roma.png","connections":["13"]},{"id":"13","name":"Наталья Павлова","image":"/images/useful/author-roma.png","connections":["14"]},{"id":"14","name":"Андрей Федоров","image":"/images/useful/author-roma.png","connections":["16"]},{"id":"15","name":"Татьяна Михайлова","image":"/images/useful/author-roma.png","connections":["11"]},{"id":"16","name":"Владимир Васильев","image":"/images/useful/author-roma.png","connections":["18"]},{"id":"17","name":"Юлия Кузнецова","image":"/images/useful/author-roma.png","connections":["15"]},{"id":"18","name":"Николай Егоров","image":"/images/useful/author-roma.png","connections":["20"]},{"id":"19","name":"Ирина Сидорова","image":"/images/useful/author-roma.png","connections":["17"]},{"id":"20","name":"Максим Григорьев","image":"/images/useful/author-roma.png","connections":[]}]}');
 ;// ./src/javascript/components/O_canvasCards/O_canvasCards.jsx
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function O_canvasCards_slicedToArray(r, e) { return O_canvasCards_arrayWithHoles(r) || O_canvasCards_iterableToArrayLimit(r, e) || O_canvasCards_unsupportedIterableToArray(r, e) || O_canvasCards_nonIterableRest(); }

@@ -87,7 +87,6 @@
 
 .M_HeroContainer {
   display: flex;
-  width: 13.44vw;
   flex-direction: column;
   align-items: center;
   gap: var(--sm, 0.63vw);
@@ -331,7 +330,7 @@ html[data-theme='light'] .M_TextWithIcon svg path {
   padding: 0.78vw;
   overflow: hidden;
   position: absolute;
-  top: 10.47vw;
+  top: 9.17vw;
 
   display: flex;
   align-items: center;
@@ -377,27 +376,47 @@ html[data-theme='light'] .M_TextWithIcon svg path {
   z-index: 100;
 }
 
+.M_Paragraph,
+.M_DividerLine,
+.M_ImageWithCaption,
+.M_Quote {
+  width: 49.27vw;
+}
+
 @media screen and (max-width: 1440px) {
   .M_AboutInfo {
     width: 64.72vw;
+  }
+
+  .M_ButtonBig {
+    top: 14vw;
+    width: 56.18vw;
+    height: 13.75vw;
   }
 
   .M_ADCInfo {
     width: 26.94vw;
     height: 160px;
   }
+
+  .M_Paragraph,
+  .M_DividerLine,
+  .M_ImageWithCaption,
+  .M_Quote {
+    width: 50.56vw;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .M_AboutInfo {
-    width: 67.5vw;
+    width: 70.5vw;
   }
 
   .M_ButtonBig {
     width: 55.94vw;
     height: 15.47vw;
     padding: 1.09vw;
-    top: 11.8vw;
+    top: 13.1vw;
 
     > h2 {
       margin-left: 11.72vw;
@@ -405,11 +424,25 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
     > div {
       right: -2.73vw;
+      width: 32.74vw;
+      height: 32.74vw;
+      filter: blur(60px);
     }
   }
 
   .M_ADCInfo {
     width: 32.81vw;
+  }
+
+  .M_NumberQuestion {
+    display: none;
+  }
+
+  .M_Paragraph,
+  .M_DividerLine,
+  .M_ImageWithCaption,
+  .M_Quote {
+    width: 56.48vw;
   }
 }
 
@@ -431,10 +464,10 @@ html[data-theme='light'] .M_TextWithIcon svg path {
   }
 
   .M_ButtonBig {
-    width: 100%;
-    height: 16.8vw;
+    width: 78.78vw;
+    height: 25.78vw;
     padding: 1.82vw;
-    top: 19.66vw;
+    top: 17.5vw;
 
     > h2 {
       margin-left: 12.7vw;
@@ -442,11 +475,17 @@ html[data-theme='light'] .M_TextWithIcon svg path {
 
     > div {
       right: -4.56vw;
+      width: 419.133px;
+      height: 419.133px;
     }
   }
 
   .M_ADCInfo {
     width: 53.39vw;
+  }
+
+  .M_UsefulImage {
+    height: 45.18vw;
   }
 }
 
@@ -459,7 +498,7 @@ html[data-theme='light'] .M_TextWithIcon svg path {
     width: 100%;
     height: 29.32vw;
     padding: 2.27vw;
-    top: 28.86vw;
+    top: 40.86vw;
 
     > img {
       width: 24.73vw;
@@ -475,5 +514,9 @@ html[data-theme='light'] .M_TextWithIcon svg path {
       width: 74.47vw;
       height: 74.47vw;
     }
+  }
+
+  .M_UsefulImage {
+    height: 78.86vw;
   }
 }

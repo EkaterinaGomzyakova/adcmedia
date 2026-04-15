@@ -39,7 +39,6 @@
 .SO_ArticleContent {
   display: flex;
   width: 52.81vw;
-  margin: 0 auto;
   flex-direction: column;
   align-items: flex-end;
   gap: var(--4xl, 3.33vw);
@@ -154,11 +153,52 @@
 @media screen and (max-width: 1440px) {
   .SO_QuoteBlock {
     gap: 2.78vw;
+    height: 36.29vw;
+  }
+
+  .SO_HeadingArticle {
+    width: 55.28vw;
+    gap: var(--3xl, 5vw);
+  }
+
+  .SO_ArticleContent {
+    width: 55.28vw;
+  }
+
+  .T_ArticleBody {
+    gap: 1.11vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .SO_HeadingArticle {
+    width: 55.78vw;
+    gap: var(--2xl, 5vw);
+  }
+
+  .SO_ArticleContent {
+    width: 56.48vw;
+  }
+
+  .T_ArticleBody {
+    gap: 1.88vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .T_MainPage {
+    width: 90.1vw;
+  }
+
+  .SO_QuoteBlock {
+    flex-direction: column;
+    height: 88.29vw;
   }
 }
 
 @media screen and (max-width: 440px) {
   .SO_QuoteBlock {
     flex-direction: column;
+    height: 122.29vw;
   }
 }

@@ -6,11 +6,11 @@
     "tags": ["Продукт", "Корпорация", "Фриланс"],
     "author": {
       "name": "Мариной Устиновской",
-      "avatar": "/adcmedia/images/author2.png"
+      "avatar": "/images/author2.png"
     },
     "images": {
-      "cover1": "/adcmedia/images/interviews/cover1-article2.png",
-      "cover2": "/adcmedia/images/interviews/cover2-article2.png"
+      "cover1": "/images/interviews/cover1-article2.png",
+      "cover2": "/images/interviews/cover2-article2.png"
     },
     "description": "Студентка рассказывает о совмещении работы и учебы, профессиональном пути от Redis до Ozon, работе над проектами и о том, как найти свое место в дизайне"
   },
@@ -44,7 +44,7 @@
     },
     {
       "type": "image",
-      "image": "/adcmedia/images/interviews/article-2-image-1.png",
+      "image": "/images/interviews/article-2-image-1.png",
       "caption": "Конференция Ozon"
     },
     {
@@ -161,7 +161,7 @@
     },
     {
       "type": "image",
-      "image": "/adcmedia/images/interviews/article-2-image-2.png",
+      "image": "/images/interviews/article-2-image-2.png",
       "caption": "Кейс с летней школы Яндекса"
     },
     {

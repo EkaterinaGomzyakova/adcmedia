@@ -24,12 +24,14 @@ function getArticleSlugFromPath() {
 import article1Data from '../../data/articles/article1.json'
 import article2Data from '../../data/articles/article2.json'
 import article3Data from '../../data/articles/article3.json'
+import article4Data from '../../data/articles/article4.json'
 
 // Маппинг slug -> данные статьи
 const articlesMap = {
   article1: article1Data,
   article2: article2Data,
-  article3: article3Data
+  article3: article3Data,
+  article4: article4Data
 }
 
 function loadArticle() {
