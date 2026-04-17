@@ -29,6 +29,7 @@
   border-radius: var(--xs, 0.42vw);
   background: var(--button-primary, #3cc68b);
   color: #191919;
+  font-size: var(--button);
 }
 
 .A_ButtonCircle {
@@ -39,6 +40,7 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--xs, 0.42vw);
+  flex-shrink: 0;
   background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
 }
 
@@ -285,6 +287,25 @@ html[data-theme='light'] .A_SearchInput::placeholder {
   }
   .A_ButtonCircleNone {
     display: flex;
+  }
+
+  .A_TextArticle {
+    font-size: var(--paragraph);
+  }
+
+  .A_Button {
+    font-size: 14px;
+  }
+
+  .A_ButtonAction {
+    width: 100%;
+    padding: 16px;
+    font-size: var(--button, 14px);
+    gap: 8px;
+  }
+
+  .A_SearchInput {
+    width: 100%;
   }
 }
 

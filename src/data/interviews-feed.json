@@ -29,7 +29,8 @@
     "readTime": "12 минут",
     "imageCollageType": "type1",
     "imageDark": "/images/interviews/interview-3-author.png",
-    "imageLight": "/images/interviews/interview-3-authorLight.png"
+    "imageLight": "/images/interviews/interview-3-authorLight.png",
+    "articleSlug": "article5"
   },
   {
     "id": 4,
@@ -61,7 +62,8 @@
     "readTime": "12 минут",
     "imageCollageType": "type2",
     "imageDark": "/images/interviews/interview-6-author.png",
-    "imageLight": "/images/interviews/interview-6-authorLight.png"
+    "imageLight": "/images/interviews/interview-6-authorLight.png",
+    "articleSlug": "article6"
   },
   {
     "id": 7,
@@ -71,6 +73,18 @@
     "readTime": "8 минут",
     "imageCollageType": "type1",
     "imageDark": "/images/interviews/interview-7-author.png",
-    "imageLight": "/images/interviews/interview-7-authorLight.png"
+    "imageLight": "/images/interviews/interview-7-authorLight.png",
+    "articleSlug": "article7"
+  },
+  {
+    "id": 8,
+    "tags": ["Пет-проект", "Фриланс", "Диджитал"],
+    "title": "Студенческое медиа, которое вышло в реальный мир — Мария Шевчун о Secret Sause",
+    "description": "Инсайты работы над своим проектам, подбор команды и выход в реальный мир из студенческого проекта",
+    "readTime": "16 минут",
+    "imageCollageType": "type2",
+    "imageDark": "/images/interviews/interview-8-author.png",
+    "imageLight": "/images/interviews/interview-8-authorLight.png",
+    "articleSlug": "article8"
   }
 ]

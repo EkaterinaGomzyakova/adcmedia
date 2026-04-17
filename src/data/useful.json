@@ -4,6 +4,7 @@
       "id": "useful-1",
       "slug": "design-operations",
       "type": "article",
+      "articleSlug": "useful3",
       "title": "Что такое Design Operations?",
       "description": "Понимание роли и задач Design Operations в современных командах",
       "author": {
@@ -109,7 +110,7 @@
         "readingTime": "8 мин",
         "tags": ["Воркшоп", "Диджитал"]
       },
-      "articleSlug": "design-drills-workshop",
+      "articleSlug": "useful1",
       "content": [
         {
           "type": "section",
@@ -137,6 +138,7 @@
       "id": "useful-3",
       "slug": "visual-thinking-lecture",
       "type": "article",
+      "articleSlug": "useful4",
       "title": "Лекция «Визуальное мышление как новый soft-skill»",
       "description": "Развитие навыков визуального мышления для эффективной коммуникации",
       "author": {
@@ -166,7 +168,7 @@
       },
       "preview": {
         "image": "/images/useful/design-drills-banner3.png",
-        "imageLight": "/images/useful/design-drills-banner3Light.png",
+        "imageLight": "/images/useful/design-drills-banner3.png",
         "excerpt": "Развитие навыков визуального мышления для эффективной коммуникации"
       },
       "seo": {
@@ -180,6 +182,7 @@
       "id": "useful-4",
       "slug": "ui-kit-workshop",
       "type": "article",
+      "articleSlug": "useful2",
       "title": "Воркшоп по продвинутой сборке UI-kit",
       "description": "Практическое руководство по созданию масштабируемых UI-китов",
       "author": {
@@ -209,7 +212,7 @@
       },
       "preview": {
         "image": "/images/useful/design-drills-banner4.png",
-        "imageLight": "/images/useful/design-drills-banner4Light.png",
+        "imageLight": "/images/useful/design-drills-banner4.png",
         "excerpt": "Практическое руководство по созданию масштабируемых UI-китов"
       },
       "seo": {

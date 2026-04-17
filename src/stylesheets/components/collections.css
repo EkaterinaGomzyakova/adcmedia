@@ -173,7 +173,108 @@
     display: flex;
     gap: 5.45vw;
   }
+
+  .C_UsefulListGrid {
+    margin: 32px 0;
+    gap: 40px;
+  }
+
+  .C_wordsAbout {
+    position: absolute;
+    width: 1050px;
+  }
 }
 
 @media screen and (max-width: 440px) {
+}
+
+/* Mobile Menu */
+.C_MobileMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--cards-background, #191919);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.C_MobileMenuClose {
+  position: absolute;
+  top: 38px;
+  right: 16px;
+  color: #fdfdfd;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+[data-theme='light'] .C_MobileMenuClose {
+  color: #191919;
+}
+
+.C_MobileMenuClose svg path {
+  stroke: #fdfdfd;
+}
+
+[data-theme='light'] .C_MobileMenuClose svg path {
+  stroke: #191919;
+}
+
+.C_MobileMenuNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.C_MobileMenuLink {
+  font-size: var(--heading-1, 32px);
+  color: #fdfdfd;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+
+[data-theme='light'] .C_MobileMenuLink {
+  color: #191919;
+}
+
+.C_MobileMenuLink:not(.C_MobileMenuLink--active) {
+  opacity: 0.4;
+}
+
+.C_MobileMenuLink:hover {
+  opacity: 1;
+}
+
+.C_MobileMenuDot {
+  margin: 0 auto;
+  background: #fdfdfd;
+}
+
+[data-theme='light'] .C_MobileMenuDot {
+  background: #191919;
+}
+
+.C_MobileMenuTheme {
+  margin-top: 22px;
+  border-radius: var(--xs, 8px);
+  background: var(--menu-transparent, rgba(34, 34, 34, 0.4));
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
 }

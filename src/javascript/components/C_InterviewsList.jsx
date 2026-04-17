@@ -5,7 +5,7 @@ import interviewsData from '../../data/interviews-feed.json'
 
 const C_InterviewsList = ({ selectedTags = [] }) => {
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 7
+  const itemsPerPage = 8
 
   // Filter interviews based on selected tags
   const filteredInterviews =

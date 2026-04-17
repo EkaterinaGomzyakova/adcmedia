@@ -3,10 +3,14 @@ import '../utils/theme.js'
 import '../utils/scroll.js'
 import '../utils/navigation.js'
 import '../utils/search-modal.js'
+import '../utils/mobile-menu.js'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import UsefulArticle from '../components/article/UsefulArticle.jsx'
-import designDrillsData from '../../data/useful-design-drills-workshop.json'
+import useful1Data from '../../data/useful/useful1.json'
+import useful2Data from '../../data/useful/useful2.json'
+import useful3Data from '../../data/useful/useful3.json'
+import useful4Data from '../../data/useful/useful4.json'
 
 // Получить slug из pathname
 function getArticleSlugFromPath() {
@@ -17,7 +21,7 @@ function getArticleSlugFromPath() {
 
   // Если это базовый путь /useful/article.html, используем дефолтное значение
   if (slug === 'article' || slug === 'useful' || slug === '') {
-    return 'design-drills-workshop'
+    return 'useful1'
   }
 
   return slug
@@ -75,7 +79,10 @@ function adaptUsefulToArticle(article) {
 
 // Маппинг slug -> данные статьи
 const articlesMap = {
-  'design-drills-workshop': designDrillsData
+  useful1: useful1Data,
+  useful2: useful2Data,
+  useful3: useful3Data,
+  useful4: useful4Data
 }
 
 function loadArticle() {

@@ -1,7 +1,7 @@
 .W_Telegram {
   display: flex;
   width: var(--footer-telegram-card-width, 24.11vw);
-  padding: var(--lg, 1.25vw) var(--lg, 1.25vw) 2.29vw var(--lg, 1.25vw);
+  padding: var(--lg, 24px) var(--lg, 24px) 44px var(--lg, 24px);
   align-items: flex-start;
   gap: var(--md, 0.83vw);
   border-radius: var(--xs, 0.42vw);
@@ -36,6 +36,14 @@
   width: 13.33vw;
   flex-direction: column;
   gap: var(--xl, 1.67vw);
+
+  .W_MenuContainer__chevron {
+    display: none;
+  }
+
+  .M_TextWithIcon__left {
+    display: contents;
+  }
 }
 
 .W_BannerContent {
@@ -44,7 +52,7 @@
   align-items: center;
   gap: 4.95vw;
   margin-top: 11.51vw;
-  width: 21.67vw;
+  width: 416px;
   text-align: center;
   z-index: 3;
 }
@@ -62,9 +70,9 @@
 
 .W_AboutCenter {
   position: absolute;
-  top: 2.6vw;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   > img {
     position: relative;
@@ -86,8 +94,13 @@
     display: none;
   }
 
+  & > img:nth-child(4) {
+    display: none;
+  }
+
   & > img:nth-child(2) {
     display: block;
+    width: 35.64vw;
   }
 
   [data-theme='light'] & > img:nth-child(2) {
@@ -96,6 +109,7 @@
 
   [data-theme='light'] & > img:nth-child(3) {
     display: block;
+    width: 35.64vw;
   }
 }
 
@@ -329,6 +343,79 @@
   .W_infoMain {
     gap: 4.17vw;
   }
+
+  .W_MenuContainer {
+    position: static;
+    width: 100%;
+    background: var(--cards-background, #191919);
+    border-radius: 2.6vw;
+    padding: 3.9vw 5.2vw;
+    gap: 0;
+    overflow: hidden;
+
+    .M_TextWithIcon--toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      cursor: pointer;
+
+      .M_TextWithIcon__left {
+        display: flex;
+        align-items: center;
+        gap: 2.6vw;
+      }
+    }
+
+    .W_MenuContainer__chevron {
+      display: block;
+    }
+
+    .С_MenuItemsContainer {
+      display: none;
+      margin-top: 3.13vw;
+      gap: 2.08vw;
+    }
+
+    &.W_MenuContainer--open .С_MenuItemsContainer {
+      display: flex;
+    }
+  }
+
+  .W_ContentHeaderArticle {
+    gap: var(--lg);
+  }
+
+  .W_BannerContent {
+    gap: 106px;
+    margin-top: 221px;
+    width: 517px;
+
+    > h2 {
+      width: 67.29vw;
+    }
+  }
+
+  .W_textsAbout {
+    height: 620px;
+    flex-direction: column;
+  }
+
+  .W_AboutCenter {
+    > h1 {
+      font-size: var(--heading-1);
+      width: 52.31vw;
+    }
+
+    & > img:nth-child(2),
+    [data-theme='light'] & > img:nth-child(3) {
+      display: none;
+    }
+
+    & > img:nth-child(4) {
+      display: block;
+    }
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -382,5 +469,11 @@
   .W_infoMain {
     width: 100%;
     gap: 7.27vw;
+  }
+
+  .W_AboutCenter {
+    > h1 {
+      width: 54.09vw;
+    }
   }
 }

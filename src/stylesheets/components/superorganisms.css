@@ -28,11 +28,13 @@
     top: 50%;
     left: 0.57vw;
     transform: translate(0, -50%);
+    width: 27.71vw;
   }
 
   > img:nth-child(3) {
     top: 8.18vw;
     right: 0.89vw;
+    width: 27.71vw;
   }
 }
 
@@ -54,6 +56,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--xl, 1.67vw);
+  width: 100%;
 }
 
 .SO_Banner {
@@ -94,6 +97,10 @@
   width: 85.21vw;
   gap: 1.04vw;
   align-items: flex-start;
+}
+
+.T_UsefulArticleBody {
+  justify-content: center;
 }
 
 .Navbar {
@@ -162,7 +169,12 @@
   }
 
   .SO_ArticleContent {
+    align-items: flex-start;
     width: 55.28vw;
+  }
+
+  .SO_UsefulMaterialContent {
+    width: 93.06vw;
   }
 
   .T_ArticleBody {
@@ -178,10 +190,24 @@
 
   .SO_ArticleContent {
     width: 56.48vw;
+    align-items: flex-start;
   }
 
   .T_ArticleBody {
     gap: 1.88vw;
+  }
+
+  .SO_HeadingArticleWrapper {
+    > img:nth-child(2) {
+      left: -15.43vw;
+      width: 47.71vw;
+    }
+
+    > img:nth-child(3) {
+      top: 8.18vw;
+      right: -19.11vw;
+      width: 47.71vw;
+    }
   }
 }
 
@@ -190,9 +216,67 @@
     width: 90.1vw;
   }
 
+  .T_ArticleBody {
+    margin-top: 32px;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .SO_ArticleContent {
+    width: 100%;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .SO_HeadingArticle {
+    width: 72.14vw;
+    gap: 3.13vw;
+    border-radius: 31.25vw;
+  }
+
   .SO_QuoteBlock {
     flex-direction: column;
-    height: 88.29vw;
+    gap: 30.78vw;
+    height: 115.29vw;
+  }
+
+  .SO_Banner {
+    height: 620px;
+  }
+
+  .SO_AboutPage {
+    overflow-x: hidden;
+  }
+
+  .SO_UsefulMaterialContent {
+    margin-top: 32px;
+  }
+
+  .SO_UsefulHero {
+    height: 75.52vw;
+
+    > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .SO_UsefulArticle {
+    gap: 32px;
+  }
+
+  .SO_HeadingArticleWrapper {
+    > img:nth-child(2) {
+      left: -15.43vw;
+      width: 77.71vw;
+    }
+
+    > img:nth-child(3) {
+      top: 8.18vw;
+      right: -19.11vw;
+      width: 77.71vw;
+    }
   }
 }
 
@@ -200,5 +284,11 @@
   .SO_QuoteBlock {
     flex-direction: column;
     height: 122.29vw;
+  }
+
+  .SO_HeadingArticle {
+    width: 90.91vw;
+    gap: 3.64vw;
+    border-radius: 36.36vw;
   }
 }

@@ -60,7 +60,10 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        options: {
+          sources: false
+        }
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|mp4|webm)$/i,
@@ -163,12 +166,68 @@ module.exports = {
       filename: './interviews/article4.html',
       chunks: ['interviews-article']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article5.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article6.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article7.html',
+      chunks: ['interviews-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/interviews-article.html',
+      filename: './interviews/article8.html',
+      chunks: ['interviews-article']
+    }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/useful-article.html',
       filename: './useful/article.html',
+      chunks: ['useful-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/useful-article.html',
+      filename: './useful/useful1.html',
+      chunks: ['useful-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/useful-article.html',
+      filename: './useful/useful2.html',
+      chunks: ['useful-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/useful-article.html',
+      filename: './useful/useful3.html',
+      chunks: ['useful-article']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/useful-article.html',
+      filename: './useful/useful4.html',
       chunks: ['useful-article']
     }),
     new HtmlWebpackPlugin({

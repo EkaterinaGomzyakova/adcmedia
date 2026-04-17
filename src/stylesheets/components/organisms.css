@@ -134,11 +134,12 @@
   position: relative;
   margin-top: var(--5xl);
   width: 100%;
-  height: 30.21vw;
+  height: 580px;
   border-radius: var(--sm, 0.63vw);
   background: var(--cards-background, #191919);
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .O_QuoteCards {
@@ -185,6 +186,7 @@
   padding: 2.5vw 0 1.93vw 0;
   border-radius: 0.42vw;
   background: var(--cards-background, #191919);
+  overflow: hidden;
 
   > img:nth-child(2) {
     display: none;
@@ -214,6 +216,11 @@
       gap: var(--4xl, 1.67vw);
       > p {
         font-size: var(--paragraph-large, 1.25vw);
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: calc(5 * 1.5 * var(--paragraph-large, 1.25vw));
       }
     }
   }
@@ -400,6 +407,10 @@
   .O_HeadingTextArticle {
     width: 46.53vw;
   }
+
+  .O_UsefulHeadingContent {
+    margin-left: 4.63vw;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -474,6 +485,10 @@
     width: 52.34vw;
     gap: var(--2xl, 5vw);
   }
+
+  .O_UsefulHeadingContent {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -496,6 +511,17 @@
 
     .M_Quote {
       width: 47.07vw;
+    }
+  }
+
+  .O_QuoteCard {
+    .M_Quote {
+      > div:nth-child(1) {
+        > p {
+          -webkit-line-clamp: 7;
+          min-height: calc(7 * 1.5 * var(--paragraph-large, 1.25vw));
+        }
+      }
     }
   }
 }
@@ -559,7 +585,7 @@
   .O_QuoteCards {
     position: relative;
     width: 62.76vw;
-    height: 77.86vw;
+    height: 99.86vw;
   }
 
   .O_QuoteCard {
@@ -567,6 +593,56 @@
 
     .M_Quote {
       width: 62.76vw;
+    }
+  }
+
+  .O_HeadingTextArticle {
+    width: 55.47vw;
+  }
+
+  .M_UsefulImage {
+    height: 347px;
+  }
+
+  .O_Banner {
+    margin-top: 0;
+    height: 580px;
+  }
+
+  .O_WordsContainerAbout {
+    height: 580px;
+  }
+
+  .O_sectionConnections {
+    width: 100%;
+    height: 860px;
+    border-radius: 12px;
+
+    > img {
+      height: 96.88vw;
+      width: auto;
+    }
+  }
+
+  .O_connectionViewAbout {
+    > h2 {
+      text-align: center;
+    }
+  }
+
+  .O_UsefulHeadingContent {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .O_QuoteCard {
+    .M_Quote {
+      > div:nth-child(1) {
+        > p {
+          -webkit-line-clamp: 11;
+          min-height: calc(11 * 1.5 * var(--paragraph-large, 1.25vw));
+        }
+      }
     }
   }
 }
@@ -640,6 +716,17 @@
 
     .M_Quote {
       width: 88.64vw;
+    }
+  }
+
+  .O_HeadingTextArticle {
+    width: 83.64vw;
+  }
+
+  .O_sectionConnections {
+    > img {
+      height: 168.41vw;
+      width: auto;
     }
   }
 }

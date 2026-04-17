@@ -41,6 +41,20 @@
 
 .Q_UsefulBanner {
   border-radius: var(--sm, 0.63vw);
+  width: 100%;
+  height: auto;
+}
+
+.Q_UsefulBannerLight {
+  display: none;
+}
+
+html[data-theme='light'] .Q_UsefulBannerDark {
+  display: none;
+}
+
+html[data-theme='light'] .Q_UsefulBannerLight {
+  display: block;
 }
 
 .Q_LineArticelHero {
@@ -110,12 +124,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 17.07vw;
-  height: 17.07vw;
-  aspect-ratio: 1/1;
+  width: 327.648px;
+  height: 327.648px;
   border-radius: 46.88vw;
   background: #b28add -5.12vw -5.12vw / 160.039% 160.039% no-repeat;
-  filter: blur(3.13vw);
+  filter: blur(60px);
 }
 
 .Q_SnapshotAboutSection {
@@ -123,13 +136,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 17.07vw;
-  height: 17.07vw;
+  width: 327.65px;
+  height: 327.65px;
   border-radius: 46.88vw;
   background:
     linear-gradient(0deg, #3cc68b 0%, #3cc68b 100%),
     lightgray -5.12vw -5.12vw / 160.039% 160.039% no-repeat;
-  filter: blur(3.13vw);
+  filter: blur(60px);
 }
 
 .Q_SnapshotMain {
@@ -175,53 +188,6 @@
   filter: blur(5.21vw);
 }
 
-@media screen and (max-width: 1440px) {
-  .Q_Line3 {
-    top: 10.92vw;
-  }
-
-  .Q_LineArticelHero {
-    &:nth-child(5) {
-      top: -8.06vw;
-    }
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .Q_Line2 {
-    height: 81.56vw;
-  }
-
-  .Q_LineArticelHero {
-    &:nth-child(5) {
-      top: -9.06vw;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Q_Line1 {
-    top: 44.01vw;
-  }
-
-  .Q_Line2 {
-    height: 132.81vw;
-  }
-
-  .Q_Line3 {
-    top: 39.32vw;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .Q_Line1 {
-    top: 41.82vw;
-  }
-  .Q_Line2 {
-    height: 217.81vw;
-  }
-}
-
 .Q_InlineIcon {
   position: relative;
   display: inline-flex;
@@ -259,5 +225,108 @@
     width: 19vw;
     z-index: 10;
     pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .Q_Line3 {
+    top: 10.92vw;
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -8.06vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Q_Line2 {
+    height: 81.56vw;
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -115px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Q_Line1 {
+    top: 44.01vw;
+  }
+
+  .Q_Line2 {
+    height: 132.81vw;
+  }
+
+  .Q_Line3 {
+    top: 39.32vw;
+  }
+
+  .Q_ContentMark {
+    width: 1.56vw;
+    height: 2px;
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -175px;
+      height: 41.04vw;
+    }
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(4) {
+      top: 63.56vw;
+    }
+
+    &:nth-child(6) {
+      top: 46.88vw;
+    }
+  }
+
+  .Q_Snapshot {
+    width: 327.648px;
+    height: 327.648px;
+    filter: blur(60px);
+  }
+
+  .Q_SnapshotSearch {
+    right: 0;
+    left: auto;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Q_Line1 {
+    top: 41.82vw;
+  }
+  .Q_Line2 {
+    height: 217.81vw;
+  }
+
+  .Q_UsefulBanner {
+    height: 128.07vw;
+
+    > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--sm, 0.63vw);
+    }
+  }
+
+  .Q_LineArticelHero {
+    &:nth-child(5) {
+      top: -175px;
+      height: 101.04vw;
+    }
+  }
+
+  .Q_ImageCover {
+    display: none;
   }
 }

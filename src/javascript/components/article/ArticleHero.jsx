@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ArticleHero = ({ hero }) => {
   const { title, readTime, tags, author, description, images } = hero
+  const [showToast, setShowToast] = useState(false)
 
   const handleCopyLink = () => {
     const url = window.location.href
     navigator.clipboard
       .writeText(url)
       .then(() => {
-        console.log('Ссылка скопирована:', url)
+        setShowToast(true)
+        setTimeout(() => setShowToast(false), 2000)
       })
       .catch((err) => {
         console.error('Ошибка копирования:', err)
@@ -61,7 +63,14 @@ const ArticleHero = ({ hero }) => {
 
           <p className="A_TextArticle">{description}</p>
 
-          <button className="A_ButtonCircle" onClick={handleCopyLink}>
+          <div className="M_ShareWrapper">
+            {showToast && (
+              <div className="M_Tip">
+                <p>Ссылка скопирована!</p>
+              </div>
+            )}
+
+            <button className="A_ButtonCircle" onClick={handleCopyLink}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -137,6 +146,8 @@ const ArticleHero = ({ hero }) => {
               </defs>
             </svg>
           </button>
+          </div>
+
         </div>
       </div>
 

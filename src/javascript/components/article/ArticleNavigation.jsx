@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 const ArticleNavigation = ({ content }) => {
   const sections = content.filter((block) => block.type === 'section')
   const [activeSection, setActiveSection] = useState(sections[0]?.id || null)
+  const [isOpen, setIsOpen] = useState(false)
   const isClickScrolling = useRef(false)
   const scrollTimeout = useRef(null)
 
@@ -37,6 +38,10 @@ const ArticleNavigation = ({ content }) => {
     return () => observer.disconnect()
   }, [sections])
 
+  const handleToggle = () => {
+    setIsOpen((prev) => !prev)
+  }
+
   const handleClick = (e, sectionId) => {
     e.preventDefault()
 
@@ -57,52 +62,70 @@ const ArticleNavigation = ({ content }) => {
   }
 
   return (
-    <nav className="W_MenuContainer">
-      <div className="M_TextWithIcon">
+    <nav className={`W_MenuContainer${isOpen ? ' W_MenuContainer--open' : ''}`}>
+      <div className="M_TextWithIcon M_TextWithIcon--toggle" onClick={handleToggle}>
+        <div className="M_TextWithIcon__left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clipPath="url(#clip0_2027_7562)">
+              <path
+                d="M10 6H20"
+                stroke="#8E8E8E"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M4 12H20"
+                stroke="#8E8E8E"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M7 12H20"
+                stroke="#8E8E8E"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M4 18H14"
+                stroke="#8E8E8E"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2027_7562">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p className="A_Text">В этой истории</p>
+        </div>
         <svg
+          className="W_MenuContainer__chevron"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
         >
-          <g clipPath="url(#clip0_2027_7562)">
-            <path
-              d="M10 6H20"
-              stroke="#8E8E8E"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4 12H20"
-              stroke="#8E8E8E"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M7 12H20"
-              stroke="#8E8E8E"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4 18H14"
-              stroke="#8E8E8E"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_2027_7562">
-              <rect width="24" height="24" fill="white" />
-            </clipPath>
-          </defs>
+          <path
+            d={isOpen ? 'M18 15L12 9L6 15' : 'M6 9L12 15L18 9'}
+            stroke="#8E8E8E"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
-        <p className="A_Text">В этой истории</p>
       </div>
       <div className="С_MenuItemsContainer">
         {sections.map((section, index) => (
@@ -114,7 +137,10 @@ const ArticleNavigation = ({ content }) => {
             <a
               href={`#${section.id}`}
               className="A_Text"
-              onClick={(e) => handleClick(e, section.id)}
+              onClick={(e) => {
+                handleClick(e, section.id)
+                setIsOpen(false)
+              }}
             >
               {section.title}
             </a>
